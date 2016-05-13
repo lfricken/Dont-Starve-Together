@@ -1,0 +1,91 @@
+A Thulecite Club is only 200 uses, and a Dark Sword is easier to obtain and deals more damage! Sad the the Thulecite items aren't even that good compared to how much work it is to get all that Thulecite and all those Gems? Want to use all that nightmare fuel you have accumulated? This mod is for you! 
+
+The Thulecite items now last a lot longer, are better, and would likely require multiple Worlds to get all of them. Are you up for the challenge? Some items have been modified to be less boring, and provide something not provided by vanilla items. The Thulecite Crown for instance is quite a bit different. The Construction Amulet and Deconstruction Staff were changed, otherwise they could be used for insane amounts of Thulecite. 
+
+Coming to Don't Starve Together soon. 
+
+====================================================== 
+
+Table Format 
+New Value (Old Value) 
+
+Thulecite Suit 
+Toughest armor around. 
+30 Thulecite, 30 Nightmare Fuel (6,4) 
+90% Absoption (90%) 
+40000 Durability (1800) 
+
+Thulecite Crown 
+A shield for your head. 
+30 Thulecite, 30 Nightmare Fuel (4,4) 
+0% Absorption (90%) 
+100% Shield Chance (33%) 
+10s Duration (4s) 
+10s Cooldown (9s) 
+40000 Durability (1200) 
+Only damaged when Shield is on. 
+
+Thulecite Club 
+Bash things. 
+30 Thulecite, 30 Nightmare Fuel, 20 Living Logs (4,4,3) 
+85 Damage (59.5 <- wtf is this number even?) 
+2000 Uses (200) 
+50% Shadow Tentacle Chance (20%) 
+
+Pick/Axe 
+Farm stuff easier. 
+20 Thulecite, 1 Luxury Axe, 1 Opulent Pickaxe (2, 1, 1) 
+3 Times Faster (1.3) -- Now a large tree takes 5 hits to fell. 
+20000 Uses (134 - 400) 
+
+Energy Amulet 
+Fill your belly with pure energy. Repurposed Construction Amulet 
+20 Thulecite, 10 Nightmare Fuel, 3 Green Gems, 10 Slurper Pelt (2,3,1,0) 
+42 Days (Hunger Belt is 8) -- so 20000 real seconds, 5.5 real hours. 
+10% Hunger Rate (Hunger Belt is 40%) 
+
+Anti-Energy Staff 
+Make things sleepy. Repurposed Deconstruction Amulet 
+25 Nightmare Fuel, 10 Living Log, 4 Green Gems (4, 2, 2) 
+20000 Uses 
+Equivalent of 3 sleep darts. Meaning some bosses need two casts. 
+5 Sanity Per Use (20) 
+
+Magiluminescence 
+Remove the dark. 
+20 Thulecite, 10 Nightmare Fuel, 4 Yellow Gems (2, 3, 1) 
+Lots of light. 
+Sanity gain of two Tam o' Shanter's 
+42 Days (8) 
+No speed boost. 
+
+====================================================== 
+
+You get the idea. 
+Lazy Explorer gives 35% speed boost (25%), 5 sanity per use (15). 
+Star Callers Staff 20000 uses, 5 sanity per use (20). 
+Lazy Forager picks up faster, 20000 uses (225). 
+Houndius Shootius 10000 health (1000). 
+Thulecite Walls 20000 health. (no extra cost) 
+
+====================================================== 
+
+Increased Thulecite stack to 40. Sorry if this overrides your other stack mods. Shouldn't crash though! 
+¯\_(?)_/¯ 
+
+Metrics and Strategy: 
+The average item is about 5 times better per cost than it used to be. 
+
+The Energy Amulet saves Wilson about 2800 hunger (20 meaty stews), and the convenience of not carrying around food. It is also really effective for Wolfgang to easily hold 290 + hunger and get his speed and damage buff. With the Thulecite Club and max food, he would deal 170 damage per hit, killing Deerclops in 12 hits, and 16 hits with the Dark Sword. Combine this with the Anti-Energy Staff, and bosses are easily dispatched. 
+
+The Thulecite Crown can be used to kill hordes of spiders and other creatures, since you are invincible and immune to Stun Lock. Just be sure to get to safety for when the Shield disapears. 
+
+Use the Magiluminescence to explore caves. It provides a huge sanity buff, and provides light. 
+
+The Pick/Axe plus Lazy Forager make tree and boulder farming insanely fast. 
+
+Lazy Explorer is an improved walking cane with teleporting abilities. Obvious implications. 
+
+Anti-Energy Staff lets you catch birds really easily. Just put them to sleep when they land. 
+
+Obviously if you have any of this stuff in your game currently, it will be at its old durability.
