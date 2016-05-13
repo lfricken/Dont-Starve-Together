@@ -85,18 +85,20 @@ end
 
 local function onequip_green(inst, owner)
     owner.AnimState:OverrideSymbol("swap_body", "torso_amulets", "greenamulet")
-    owner.components.builder.ingredientmod = TUNING.GREENAMULET_INGREDIENTMOD
-    inst.onitembuild = function()
-        inst.components.finiteuses:Use(1)
+    if owner.components.hunger then
+        owner.components.hunger.burnrate = TUNING.HungerRate
     end
-    inst:ListenForEvent("consumeingredients", inst.onitembuild, owner)
 
+    inst.components.fueled:StartConsuming()
 end
 
 local function onunequip_green(inst, owner)
     owner.AnimState:ClearOverrideSymbol("swap_body")
-    owner.components.builder.ingredientmod = 1
-    inst:RemoveEventCallback("consumeingredients", inst.onitembuild, owner)
+    if owner.components.hunger then
+        owner.components.hunger.burnrate = 1
+    end
+
+    inst.components.fueled:StopConsuming()
 end
 
 ---ORANGE
@@ -136,7 +138,7 @@ end
 
 local function onequip_orange(inst, owner)
     owner.AnimState:OverrideSymbol("swap_body", "torso_amulets", "orangeamulet")
-    inst.task = inst:DoPeriodicTask(TUNING.ORANGEAMULET_ICD, pickup, nil, owner)
+    inst.task = inst:DoPeriodicTask(TUNING.PickupRate, pickup, nil, owner)
 end
 
 local function onunequip_orange(inst, owner)
@@ -339,11 +341,13 @@ local function green()
     inst.components.equippable:SetOnEquip(onequip_green)
     inst.components.equippable:SetOnUnequip(onunequip_green)
 
-    inst:AddComponent("finiteuses")
-    inst.components.finiteuses:SetOnFinished(inst.Remove)
-    inst.components.finiteuses:SetMaxUses(TUNING.GREENAMULET_USES)
-    inst.components.finiteuses:SetUses(TUNING.GREENAMULET_USES)
+    inst:AddComponent("fueled")
+    inst.components.fueled.fueltype = "MAGIC"
+    inst.components.fueled:InitializeFuelLevel(TUNING.EndGame_Thulecite_Durability)
+    inst.components.fueled:SetDepletedFn(inst.Remove)
 
+    inst.components.equippable.dapperness = 0
+    
     MakeHauntableLaunch(inst)
 
     return inst
@@ -364,11 +368,13 @@ local function orange()
 
     inst:AddComponent("finiteuses")
     inst.components.finiteuses:SetOnFinished(inst.Remove)
-    inst.components.finiteuses:SetMaxUses(TUNING.ORANGEAMULET_USES)
-    inst.components.finiteuses:SetUses(TUNING.ORANGEAMULET_USES)
+    inst.components.finiteuses:SetMaxUses(TUNING.EndGame_Thulecite_Durability)
+    inst.components.finiteuses:SetUses(TUNING.EndGame_Thulecite_Durability)
 
     MakeHauntableLaunch(inst)
 
+    inst.components.equippable.dapperness = 0
+    
     return inst
 end
 
@@ -381,14 +387,16 @@ local function yellow()
 
     inst.components.equippable:SetOnEquip(onequip_yellow)
     inst.components.equippable:SetOnUnequip(onunequip_yellow)
-    inst.components.equippable.walkspeedmult = 1.2
+    inst.components.equippable.walkspeedmult = 1.0
     inst.components.inventoryitem:SetOnDroppedFn(turnoff_yellow)
 
     inst:AddComponent("fueled")
     inst.components.fueled.fueltype = FUELTYPE.NIGHTMARE
-    inst.components.fueled:InitializeFuelLevel(TUNING.YELLOWAMULET_FUEL)
+    inst.components.fueled:InitializeFuelLevel(TUNING.EndGame_Thulecite_Durability)
     inst.components.fueled:SetDepletedFn(inst.Remove)
     inst.components.fueled.accepting = true
+    
+    inst.components.equippable.dapperness = TUNING.SanityGain
 
     MakeHauntableLaunch(inst)
 
@@ -407,10 +415,10 @@ local function yellowlightfn()
 
     inst:AddTag("FX")
 
-    inst.Light:SetRadius(2)
-    inst.Light:SetFalloff(.7)
-    inst.Light:SetIntensity(.65)
-    inst.Light:SetColour(223 / 255, 208 / 255, 69 / 255)
+    inst.Light:SetFalloff(0.4)
+    inst.Light:SetIntensity(.8)
+    inst.Light:SetRadius(3.5)
+    inst.Light:SetColour(223/255, 208/255, 69/255)
 
     inst.entity:SetPristine()
 
