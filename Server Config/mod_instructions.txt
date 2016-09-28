@@ -1,0 +1,44 @@
+Mods:
+Download it.
+Move it to C:\Program Files (x86)\Steam\steamapps\common\Don't Starve Together Dedicated Server\mods
+
+Add it to the \dedicated_server_mods_setup.lua
+
+\dedicated_server_mods_setup.lua : 
+--Craftable Feathers
+ServerModSetup("683566513")
+--Better Thulecite Items
+ServerModSetup("683788408")
+--Sane Nightmare Items
+ServerModSetup("683837082")
+
+ServerModSetup("346962876")
+ServerModSetup("346968521")
+ServerModSetup("352499675")
+ServerModSetup("378160973")
+
+ServerModSetup("382177939")
+ServerModSetup("385006082")
+
+Add it to each of the modoverrides.lua files in 
+
+C:\Users\leon\Desktop\Mods\DontStarveTogether\Server Config\DoNotStarveTogether_EasyConfigOverworld\Cluster_1\Master
+
+C:\Users\leon\Desktop\Mods\DontStarveTogether\Server Config\DoNotStarveTogether_EasyConfigCaves\Cluster_1\Master
+
+
+
+
+
+What is modsettings.lua for?
+
+
+
+
+
+
+
+
+
+
+

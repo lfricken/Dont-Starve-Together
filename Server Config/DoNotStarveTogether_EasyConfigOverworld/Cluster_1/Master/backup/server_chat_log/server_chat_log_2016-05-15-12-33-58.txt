@@ -1,0 +1,103 @@
+[00:01:49]: [Join Announcement] Striker
+[00:04:55]: [Join Announcement] Untrius
+[00:07:27]: [Join Announcement] Eagles and Apples
+[00:08:25]: [Say] (KU_3DNugH8W) Striker: search for beefalo
+[00:08:36]: [Say] (KU_3DNugH8W) Striker: check map
+[00:08:39]: [Say] (KU_3DNugH8W) Striker: we can see eachother
+[00:08:47]: [Say] (KU_3DNugH8W) Striker: also, found beefalo
+[00:08:51]: [Say] (KU_6omkkCsT) Untrius: Ok
+[00:10:17]: [Say] (KU_3DNugH8W) Striker: look fro a place with lots of rabbits
+[00:13:46]: [Say] (KU_XLVzuluj) Eagles and Apples: hey found any bunnies?
+[00:14:00]: [Say] (KU_6omkkCsT) Untrius: not really
+[00:14:26]: [Say] (KU_XLVzuluj) Eagles and Apples: how much flint do you have
+[00:14:32]: [Say] (KU_6omkkCsT) Untrius: 2
+[00:15:10]: [Say] (KU_3DNugH8W) Striker: rock biomes?
+[00:15:18]: [Say] (KU_6omkkCsT) Untrius: not yet
+[00:16:00]: [Say] (KU_6omkkCsT) Untrius: Found the pig village with food, but no king.
+[00:23:13]: [Say] (KU_3DNugH8W) Striker: do not make afier pit
+[00:23:16]: [Say] (KU_3DNugH8W) Striker: fire pit i mean
+[00:24:05]: [Say] (KU_6omkkCsT) Untrius: found rabbits and beefallo, but not together...
+[00:24:58]: [Say] (KU_6omkkCsT) Untrius: found graveyard
+[00:25:05]: [Say] (KU_3DNugH8W) Striker: yeah
+[00:25:07]: [Say] (KU_3DNugH8W) Striker: we got all that
+[00:25:31]: [Say] (KU_6omkkCsT) Untrius: Oh, lol, didn't see you.
+[00:26:08]: [Say] (KU_3DNugH8W) Striker: come up here
+[00:26:11]: [Say] (KU_3DNugH8W) Striker: im making base camp
+[00:27:42]: [Say] (KU_3DNugH8W) Striker: ok, where are reabits
+[00:28:01]: [Say] (KU_6omkkCsT) Untrius: hereish
+[00:28:55]: [Say] (KU_6omkkCsT) Untrius: Lol, he's way out there.
+[00:29:02]: [Say] (KU_3DNugH8W) Striker: stay there
+[00:29:18]: [Say] (KU_3DNugH8W) Striker: get charcoal
+[00:31:32]: [Say] (KU_3DNugH8W) Striker: where are squerels
+[00:32:07]: [Say] (KU_3DNugH8W) Striker: where are rabbits imean
+[00:33:23]: [Say] (KU_3DNugH8W) Striker: anyone? where are rabbits
+[00:33:37]: [Say] (KU_3DNugH8W) Striker: bueler?
+[00:33:39]: [Say] (KU_6omkkCsT) Untrius: Where Kristine and I camped last night.
+[00:33:54]: [Say] (KU_XLVzuluj) Eagles and Apples: not enough
+[00:34:12]: [Say] (KU_6omkkCsT) Untrius: Only ones I've seen.
+[00:34:16]: [Say] (KU_3DNugH8W) Striker: where i am now
+[00:35:06]: [Say] (KU_XLVzuluj) Eagles and Apples: bunnies were leon is
+[00:35:18]: [Say] (KU_XLVzuluj) Eagles and Apples: where
+[00:36:25]: [Say] (KU_3DNugH8W) Striker: base is on me
+[00:36:37]: [Say] (KU_6omkkCsT) Untrius: ok
+[00:36:59]: [Say] (KU_6omkkCsT) Untrius: I have 23 charcoal
+[00:38:06]: [Say] (KU_3DNugH8W) Striker: please come to base with resources now
+[00:38:25]: [Say] (KU_6omkkCsT) Untrius: fighting rook
+[00:45:04]: [Say] (KU_3DNugH8W) Striker: we have a base btw
+[00:45:09]: [Say] (KU_3DNugH8W) Striker: need wood and twigs
+[00:45:35]: [Say] (KU_6omkkCsT) Untrius: got wood, need twigs.
+[00:46:29]: [Say] (KU_3DNugH8W) Striker: we need gears too
+[00:47:07]: [Skin Announcement] Untrius body_sweatervest_blue_snowbird
+[00:47:21]: [Say] (KU_3DNugH8W) Striker: need gold
+[00:47:28]: [Say] (KU_6omkkCsT) Untrius: got 3
+[00:47:29]: [Say] (KU_3DNugH8W) Striker: making refrigerator
+[00:47:36]: [Say] (KU_3DNugH8W) Striker: give em
+[00:47:50]: [Say] (KU_3DNugH8W) Striker: need 6 rocks
+[00:48:15]: [Say] (KU_3DNugH8W) Striker: dont eat muh
+[00:49:28]: [Say] (KU_3DNugH8W) Striker:  need 2 more stone
+[00:50:32]: [Say] (KU_3DNugH8W) Striker: put food in icebox
+[00:50:37]: [Say] (KU_3DNugH8W) Striker: and bring me meat
+[00:51:09]: [Say] (KU_3DNugH8W) Striker: we need more twigs
+[00:52:24]: [Say] (KU_3DNugH8W) Striker: do you have meat?
+[00:52:34]: [Say] (KU_6omkkCsT) Untrius: I put mine in the fridge
+[00:52:37]: [Say] (KU_3DNugH8W) Striker: ok
+[00:52:45]: [Say] (KU_3DNugH8W) Striker: do you need food?
+[00:52:48]: [Say] (KU_6omkkCsT) Untrius: Whohas my wood?
+[00:52:56]: [Say] (KU_3DNugH8W) Striker: it was used to make boards
+[00:53:08]: [Say] (KU_3DNugH8W) Striker: i need 1 more
+[00:53:12]: [Say] (KU_3DNugH8W) Striker: 1 morewood
+[00:53:19]: [Say] (KU_6omkkCsT) Untrius: no tengo
+[00:54:01]: [Say] (KU_3DNugH8W) Striker: anyone have an axe?
+[00:54:12]: [Say] (KU_6omkkCsT) Untrius: yeah
+[00:55:31]: [Say] (KU_3DNugH8W) Striker: get twigs
+[00:55:34]: [Say] (KU_3DNugH8W) Striker: i dont have nay
+[00:55:38]: [Say] (KU_3DNugH8W) Striker: any
+[00:56:19]: [Say] (KU_3DNugH8W) Striker: i cant get any twigs
+[00:56:24]: [Say] (KU_3DNugH8W) Striker: craig, can you get any?
+[00:56:32]: [Say] (KU_6omkkCsT) Untrius: yeah, working on it
+[00:56:52]: [Say] (KU_3DNugH8W) Striker: give me one
+[00:58:24]: [Say] (KU_3DNugH8W) Striker: put your twiggy tree pinecones near the base
+[00:58:54]: [Say] (KU_3DNugH8W) Striker: dogs
+[00:59:26]: [Leave Announcement] Eagles and Apples
+[01:02:06]: [Say] (KU_6omkkCsT) Untrius: I lag too much to fight effectively...
+[01:02:10]: [Say] (KU_3DNugH8W) Striker: eah sorry
+[01:02:13]: [Say] (KU_3DNugH8W) Striker: my bad computer
+[01:02:34]: [Say] (KU_6omkkCsT) Untrius: Meh, most is always the only one who can really fight.
+[01:02:40]: [Say] (KU_6omkkCsT) Untrius: *host
+[01:03:03]: [Join Announcement] Eagles and Apples
+[01:03:08]: [Say] (KU_3DNugH8W) Striker: gibve me your twigy tree cones
+[01:04:06]: [Say] (KU_3DNugH8W) Striker: don't use the meat
+[01:04:11]: [Say] (KU_3DNugH8W) Striker: for anything but meat stew
+[01:04:17]: [Say] (KU_3DNugH8W) Striker: use monster meat
+[01:07:03]: [Say] (KU_3DNugH8W) Striker: where are all our pinecones?
+[01:07:52]: [Say] (KU_3DNugH8W) Striker: craig?
+[01:07:58]: [Say] (KU_6omkkCsT) Untrius: I don't have them
+[01:08:40]: [Say] (KU_6omkkCsT) Untrius: Accidently picked a rose...
+[01:08:52]: [Death Announcement] Eagles and Apples was killed by Darkness. He became a spooky ghost!
+[01:08:57]: [Leave Announcement] Eagles and Apples
+[01:09:31]: [Say] (KU_3DNugH8W) Striker: having too much lag
+[01:09:34]: [Say] (KU_3DNugH8W) Striker: want to stop for now?
+[01:09:52]: [Say] (KU_6omkkCsT) Untrius: sure, idc
+[01:09:56]: [Say] (KU_3DNugH8W) Striker: ok, cya
+[01:10:01]: [Leave Announcement] Striker
+[01:10:07]: [Leave Announcement] Untrius

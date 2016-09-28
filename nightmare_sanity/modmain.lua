@@ -1,0 +1,17 @@
+STRINGS = GLOBAL.STRINGS
+RECIPETABS = GLOBAL.RECIPETABS
+Recipe = GLOBAL.Recipe
+Ingredient = GLOBAL.Ingredient
+TECH = GLOBAL.TECH
+
+--Prestihatitator
+
+TUNING.SanityPerSwing = 1
+TUNING.SwordSanityDrain = 0
+
+TUNING.ARMOR_SANITY_DMG_AS_SANITY = 0.1
+TUNING.ArmourSanityDrain = 0
+
+TUNING.NightmareFuelFuel = TUNING.TOTAL_DAY_TIME
+TUNING.NIGHTLIGHT_FUEL_MAX = TUNING.TOTAL_DAY_TIME*3
+TUNING.NightmareLightSanityAura = 0

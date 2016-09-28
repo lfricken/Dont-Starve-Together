@@ -1,0 +1,9 @@
+Nightmare items no longer drain Sanity with time, just when used.
+
+No longer lose sanity for having these equipped.
+
+Dark Sword - Takes one Sanity for each Use.
+Night Armour - 10% of damage taken is subtracted from Sanity. (unmodified)
+Night Light - Does not drain sanity. A nightmare fuel provides a day of light. Can be given three fuel for three days of light! Great for ruins and caves.
+
+

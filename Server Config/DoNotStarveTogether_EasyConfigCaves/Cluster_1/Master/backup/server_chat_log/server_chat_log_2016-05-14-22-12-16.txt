@@ -1,0 +1,2 @@
+[00:01:23]: [Join Announcement] Striker
+[00:02:27]: [Leave Announcement] Striker
