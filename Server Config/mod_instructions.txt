@@ -20,7 +20,7 @@ ServerModSetup("378160973")
 ServerModSetup("382177939")
 ServerModSetup("385006082")
 
-Add it to each of the modoverrides.lua files in 
+Add it as each of the modoverrides.lua files in 
 
 C:\Users\leon\Desktop\Mods\DontStarveTogether\Server Config\DoNotStarveTogether_EasyConfigOverworld\Cluster_1\Master
 
@@ -31,7 +31,7 @@ C:\Users\leon\Desktop\Mods\DontStarveTogether\Server Config\DoNotStarveTogether_
 
 
 What is modsettings.lua for?
-
+Controls the mods that have settings options.
 
 
 

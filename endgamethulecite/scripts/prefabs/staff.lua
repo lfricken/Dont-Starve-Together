@@ -734,7 +734,8 @@ local function green()
     inst.fxcolour = {51/255,153/255,51/255}
     inst:AddComponent("spellcaster")
     inst.components.spellcaster.canuseontargets = true
-    --inst.components.spellcaster.canonlyuseonlocomotors = true
+    inst.components.spellcaster.canusefrominventory = true
+    inst.components.spellcaster.canonlyuseonlocomotors = true
     inst.components.spellcaster:SetSpellFn(sleepSpell)
 
     inst.components.finiteuses:SetMaxUses(TUNING.EndGame_Thulecite_Durability)
