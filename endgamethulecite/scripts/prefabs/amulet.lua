@@ -343,7 +343,7 @@ local function green()
 
     inst:AddComponent("fueled")
     inst.components.fueled.fueltype = "MAGIC"
-    inst.components.fueled:InitializeFuelLevel(TUNING.EndGame_Thulecite_Durability)
+    inst.components.fueled:InitializeFuelLevel(TUNING.EndGame_Thulecite_Durability_Time)
     inst.components.fueled:SetDepletedFn(inst.Remove)
 
     inst.components.equippable.dapperness = 0
@@ -392,7 +392,7 @@ local function yellow()
 
     inst:AddComponent("fueled")
     inst.components.fueled.fueltype = FUELTYPE.NIGHTMARE
-    inst.components.fueled:InitializeFuelLevel(TUNING.EndGame_Thulecite_Durability)
+    inst.components.fueled:InitializeFuelLevel(TUNING.EndGame_Thulecite_Durability_Time)
     inst.components.fueled:SetDepletedFn(inst.Remove)
     inst.components.fueled.accepting = true
     

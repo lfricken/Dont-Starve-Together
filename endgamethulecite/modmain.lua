@@ -4,29 +4,33 @@ Recipe = GLOBAL.Recipe
 Ingredient = GLOBAL.Ingredient
 TECH = GLOBAL.TECH
 
+local dayTime = 8 * 60
+
 --Rename
 STRINGS.NAMES.GREENAMULET = "Energy Amulet"
 STRINGS.NAMES.GREENSTAFF = "Anti-Energy Staff"
 
 --General
-TUNING.EndGame_Thulecite_Durability = 20000
+TUNING.EndGame_Thulecite_Durability = 3000
+TUNING.EndGame_Thulecite_Durability_Time = dayTime * 30
+TUNING.EndGame_Thulecite_Durability_Uses = 300
 
 --Description
 STRINGS.RECIPE_DESC.MULTITOOL_AXE_PICKAXE = "Triply useful."
-STRINGS.RECIPE_DESC.GREENSTAFF = "Make things sleepy."
+STRINGS.RECIPE_DESC.GREENSTAFF = "Make things more basic."
 STRINGS.RECIPE_DESC.GREENAMULET = "Fill your belly with pure energy."
 
 --Tool Tip
-STRINGS.GREENAMULET_TOOLTIP = "Reduced food consumption."
+STRINGS.GREENAMULET_TOOLTIP = "Regular Craft Cost"
 
 --Bat
-TUNING.RuinsBatUses = 2000
-TUNING.RuinsBatDamage = TUNING.NIGHTSWORD_DAMAGE*1.25
+TUNING.RuinsBatUses = TUNING.EndGame_Thulecite_Durability_Uses
+TUNING.RuinsBatDamage = TUNING.NIGHTSWORD_DAMAGE*1.5
 TUNING.RuinsBatSummonChance = 0.5
 
 
 --For Both Armors
-TUNING.RuinsArmorDurability = 40000
+TUNING.RuinsArmorDurability = TUNING.EndGame_Thulecite_Durability
 --Crown
 TUNING.RuinsHatAbsorption = 0.0
 
@@ -54,11 +58,12 @@ TUNING.SanityGain = TUNING.DAPPERNESS_LARGE*2
 --Staff Use
 TUNING.SanityOnUse = 5
 --Green Staff
-TUNING.SleepPower = 3
-TUNING.SleepTime = TUNING.PANFLUTE_SLEEPTIME
+--TUNING.GREENSTAFF_USES = 5
 --Orange Staff
 TUNING.SpeedMult = 1.35
+TUNING.ORANGESTAFF_USES = TUNING.EndGame_Thulecite_Durability_Uses
 --Yellow Staff
+TUNING.YELLOWSTAFF_USES = TUNING.EndGame_Thulecite_Durability_Uses
 
 --Thulecite Stack
 TUNING.ThuleciteStackSize = 40
@@ -67,21 +72,21 @@ TUNING.ThuleciteStackSize = 40
 TUNING.RegenRate = 20
 TUNING.EyeTurretDamage = TUNING.NIGHTSWORD_DAMAGE
 
-Recipe("nightmare_timepiece", {Ingredient("thulecite", 1), Ingredient("nightmarefuel", 1)}, RECIPETABS.ANCIENT, TECH.ANCIENT_TWO, nil, nil, true)
+AddRecipe("nightmare_timepiece", {Ingredient("thulecite", 1), Ingredient("nightmarefuel", 1)}, RECIPETABS.ANCIENT, TECH.ANCIENT_TWO, nil, nil, true)
 
-Recipe("eyeturret_item", {Ingredient("deerclops_eyeball", 1), Ingredient("minotaurhorn", 1), Ingredient("thulecite", 5)}, RECIPETABS.ANCIENT, TECH.ANCIENT_FOUR, nil, nil, true)
+AddRecipe("eyeturret_item", {Ingredient("deerclops_eyeball", 1), Ingredient("minotaurhorn", 1), Ingredient("thulecite", 5)}, RECIPETABS.ANCIENT, TECH.ANCIENT_FOUR, nil, nil, true)
 
-Recipe("multitool_axe_pickaxe", {Ingredient("thulecite", 20), Ingredient("goldenaxe", 2),Ingredient("goldenpickaxe", 2)}, RECIPETABS.ANCIENT, TECH.ANCIENT_FOUR, nil, nil, true)
+AddRecipe("multitool_axe_pickaxe", {Ingredient("thulecite", 8), Ingredient("goldenaxe", 2),Ingredient("goldenpickaxe", 2)}, RECIPETABS.ANCIENT, TECH.ANCIENT_FOUR, nil, nil, true)
 
-Recipe("orangeamulet", {Ingredient("thulecite", 20), Ingredient("nightmarefuel", 10),Ingredient("orangegem", 4)}, RECIPETABS.ANCIENT,  TECH.ANCIENT_FOUR, nil, nil, true)
-Recipe("yellowamulet", {Ingredient("thulecite", 20), Ingredient("nightmarefuel", 10),Ingredient("yellowgem", 4)}, RECIPETABS.ANCIENT, TECH.ANCIENT_TWO, nil, nil, true)
-Recipe("greenamulet", {Ingredient("thulecite", 20), Ingredient("slurper_pelt", 10),Ingredient("greengem", 4)}, RECIPETABS.ANCIENT,  TECH.ANCIENT_TWO, nil, nil, true)
+AddRecipe("orangeamulet", {Ingredient("thulecite", 5), Ingredient("nightmarefuel", 5),Ingredient("orangegem", 2)}, RECIPETABS.ANCIENT,  TECH.ANCIENT_FOUR, nil, nil, true)
+AddRecipe("yellowamulet", {Ingredient("thulecite", 5), Ingredient("nightmarefuel", 5),Ingredient("yellowgem", 2)}, RECIPETABS.ANCIENT, TECH.ANCIENT_TWO, nil, nil, true)
+AddRecipe("greenamulet", {Ingredient("thulecite", 5), Ingredient("slurper_pelt", 5),Ingredient("greengem", 2)}, RECIPETABS.ANCIENT,  TECH.ANCIENT_TWO, nil, nil, true)
 
-Recipe("orangestaff", {Ingredient("nightmarefuel", 25), Ingredient("livinglog", 10), Ingredient("orangegem", 4)}, RECIPETABS.ANCIENT, TECH.ANCIENT_FOUR, nil, nil, true)
-Recipe("yellowstaff", {Ingredient("nightmarefuel", 25), Ingredient("livinglog", 10), Ingredient("yellowgem", 4)}, RECIPETABS.ANCIENT, TECH.ANCIENT_TWO, nil, nil, true)
-Recipe("greenstaff", {Ingredient("nightmarefuel", 25), Ingredient("livinglog", 10), Ingredient("greengem", 4)}, RECIPETABS.ANCIENT, TECH.ANCIENT_TWO, nil, nil, true)
+AddRecipe("orangestaff", {Ingredient("nightmarefuel", 6), Ingredient("livinglog", 3), Ingredient("orangegem", 2)}, RECIPETABS.ANCIENT, TECH.ANCIENT_FOUR, nil, nil, true)
+AddRecipe("yellowstaff", {Ingredient("nightmarefuel", 8), Ingredient("livinglog", 5), Ingredient("yellowgem", 2)}, RECIPETABS.ANCIENT, TECH.ANCIENT_TWO, nil, nil, true)
+AddRecipe("greenstaff", {Ingredient("nightmarefuel", 10), Ingredient("livinglog", 7), Ingredient("greengem", 2)}, RECIPETABS.ANCIENT, TECH.ANCIENT_TWO, nil, nil, true)
 
-Recipe("ruinshat", {Ingredient("thulecite", 30), Ingredient("nightmarefuel", 30)}, RECIPETABS.ANCIENT, TECH.ANCIENT_FOUR, nil, nil, true)
-Recipe("armorruins", {Ingredient("thulecite", 30), Ingredient("nightmarefuel", 30)}, RECIPETABS.ANCIENT, TECH.ANCIENT_FOUR, nil, nil, true)
-Recipe("ruins_bat", {Ingredient("thulecite", 30), Ingredient("nightmarefuel", 30), Ingredient("livinglog", 20)}, RECIPETABS.ANCIENT, TECH.ANCIENT_FOUR, nil, nil, true)
+AddRecipe("ruinshat", {Ingredient("thulecite", 6), Ingredient("nightmarefuel", 6)}, RECIPETABS.ANCIENT, TECH.ANCIENT_FOUR, nil, nil, true)
+AddRecipe("armorruins", {Ingredient("thulecite", 8), Ingredient("nightmarefuel", 8)}, RECIPETABS.ANCIENT, TECH.ANCIENT_FOUR, nil, nil, true)
+AddRecipe("ruins_bat", {Ingredient("thulecite", 6), Ingredient("nightmarefuel", 6), Ingredient("livinglog", 6)}, RECIPETABS.ANCIENT, TECH.ANCIENT_FOUR, nil, nil, true)
 

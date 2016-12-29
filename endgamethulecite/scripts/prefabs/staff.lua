@@ -10,6 +10,7 @@ local prefabs =
     "fire_projectile",
     "staffcastfx",
     "stafflight",
+    "staffcoldlight",
     "cutgrass",
 }
 
@@ -145,6 +146,8 @@ end
 
 ---------PURPLE STAFF---------
 
+require "prefabs/telebase"
+
 local function getrandomposition(caster)
     local ground = TheWorld
     local centers = {}
@@ -164,6 +167,14 @@ end
 local function teleport_end(teleportee, locpos, loctarget)
     if loctarget ~= nil and loctarget:IsValid() and loctarget.onteleto ~= nil then
         loctarget:onteleto()
+    end
+
+    if teleportee.components.inventory ~= nil and teleportee.components.inventory:IsHeavyLifting() then
+        teleportee.components.inventory:DropItem(
+            teleportee.components.inventory:Unequip(EQUIPSLOTS.BODY),
+            true,
+            true
+        )
     end
 
     --#v2c hacky way to prevent lightning from igniting us
@@ -266,38 +277,12 @@ local function teleport_targets_sort_fn(a, b)
 end
 
 local function teleport_func(inst, target)
-    local mindistance = 1
-    local caster = inst.components.inventoryitem.owner
-    local tar = target or caster
-    if not caster then caster = tar end
-    local pt = tar:GetPosition()
-    -- Note! This returns closest first, so if you replace it, make sure you get the closest...
-    local ents = TheSim:FindEntities(pt.x,pt.y,pt.z, 9000, {"telebase"})
-
-    if #ents <= 0 then
-        --There's no bases, active or inactive. Teleport randomly.
-        teleport_start(tar, inst, caster)
-        return
+    local caster = inst.components.inventoryitem.owner or target
+    if target == nil then
+        target = caster
     end
-
-    local targets = {}
-    for k,v in pairs(ents) do
-        local v_pt = v:GetPosition()
-        if distsq(pt, v_pt) >= mindistance * mindistance then
-            table.insert(targets, {base = v, distance = distsq(pt, v_pt)}) 
-        end
-    end
-
-    table.sort(targets, teleport_targets_sort_fn)
-    for i = 1, #targets do
-        local teletarget = targets[i]
-        if teletarget.base and teletarget.base.canteleto(teletarget.base) then
-            teleport_start(tar, inst, caster, teletarget.base)
-            return
-        end
-    end
-
-    teleport_start(tar, inst, caster)
+    local x, y, z = target.Transform:GetWorldPosition()
+    teleport_start(target, inst, caster, FindNearestActiveTelebase(x, y, z, nil, 1))
 end
 
 local function onhauntpurple(inst)
@@ -454,7 +439,7 @@ local function destroystructure(staff, target)
         if caster ~= nil and DESTSOUNDSMAP[v.type] ~= nil then
             caster.SoundEmitter:PlaySound(DESTSOUNDSMAP[v.type])
         end
-        if not string.find(v.type, "gem") then
+        if string.sub(v.type, -3) ~= "gem" or string.sub(v.type, -11, -4) == "precious" then
             --V2C: always at least one in case ingredient_percent is 0%
             local amt = math.max(1, math.ceil(v.amount * ingredient_percent))
             for n = 1, amt do
@@ -467,7 +452,7 @@ local function destroystructure(staff, target)
         caster.SoundEmitter:PlaySound("dontstarve/common/staff_dissassemble")
 
         if caster.components.sanity ~= nil then
-            caster.components.sanity:DoDelta(-TUNING.SANITY_MEDLARGE)
+            caster.components.sanity:DoDelta(-TUNING.SanityOnUse)
         end
     end
 
@@ -479,6 +464,22 @@ local function destroystructure(staff, target)
 
     if target.components.container ~= nil then
         target.components.container:DropEverything()
+    end
+
+    if target.components.spawner ~= nil and target.components.spawner:IsOccupied() then
+        target.components.spawner:ReleaseChild()
+    end
+
+    if target.components.occupiable ~= nil and target.components.occupiable:IsOccupied() then
+        local item = target.components.occupiable:Harvest()
+        if item ~= nil then
+            item.Transform:SetPosition(target.Transform:GetWorldPosition())
+            item.components.inventoryitem:OnDropped()
+        end
+    end
+
+    if target.components.trap ~= nil then
+        target.components.trap:Harvest()
     end
 
     if target.components.stackable ~= nil then
@@ -506,10 +507,10 @@ local function onhauntgreen(inst)
     return false
 end
 
----------YELLOW STAFF-------------
+---------YELLOW/OPAL STAFF-------------
 
 local function createlight(staff, target, pos)
-    local light = SpawnPrefab("stafflight")
+    local light = SpawnPrefab(staff.prefab == "opalstaff" and "staffcoldlight" or "stafflight")
     light.Transform:SetPosition(pos:Get())
     staff.components.finiteuses:Use(1)
 
@@ -519,19 +520,20 @@ local function createlight(staff, target, pos)
     end
 end
 
-local function yellow_reticuletargetfn()
+local function light_reticuletargetfn()
     return Vector3(ThePlayer.entity:LocalToWorldSpace(5, 0, 0))
 end
 
-local function onhauntyellow(inst)
+local function onhauntlight(inst)
     if math.random() <= TUNING.HAUNT_CHANCE_RARE then
         local pos = inst:GetPosition()
         local start_angle = math.random() * 2 * PI
         local offset = FindWalkableOffset(pos, start_angle, math.random(3, 12), 60, false, true)
-        local pt = pos + offset
-        createlight(inst, nil, pt)
-        inst.components.hauntable.hauntvalue = TUNING.HAUNT_LARGE
-        return true
+        if offset ~= nil then
+            createlight(inst, nil, pos + offset)
+            inst.components.hauntable.hauntvalue = TUNING.HAUNT_LARGE
+            return true
+        end
     end
     return false
 end
@@ -561,7 +563,6 @@ local onunequip = function(inst, owner)
 end
 
 local function commonfn(colour, tags)
-
     local inst = CreateEntity()
 
     inst.entity:AddTransform()
@@ -595,6 +596,8 @@ local function commonfn(colour, tags)
     
     inst:AddComponent("inventoryitem")
     
+    inst:AddComponent("tradable")
+
     inst:AddComponent("equippable")
     inst.components.equippable:SetOnEquip(function(inst, owner) 
         owner.AnimState:OverrideSymbol("swap_object", "swap_staffs", colour.."staff")
@@ -666,7 +669,7 @@ local function purple()
     inst.components.spellcaster:SetSpellFn(teleport_func)
     inst.components.spellcaster.canuseontargets = true
     inst.components.spellcaster.canusefrominventory = true
-    inst.components.spellcaster.canonlyuseonlocomotors = true
+    inst.components.spellcaster.canonlyuseonlocomotorspvp = true
 
     MakeHauntableLaunch(inst)
     AddHauntableCustomReaction(inst, onhauntpurple, true, false, true)
@@ -678,7 +681,7 @@ local function yellow()
     local inst = commonfn("yellow", { "nopunch" })
 
     inst:AddComponent("reticule")
-    inst.components.reticule.targetfn = yellow_reticuletargetfn
+    inst.components.reticule.targetfn = light_reticuletargetfn
     inst.components.reticule.ease = true
 
     if not TheWorld.ismastersim then
@@ -692,36 +695,13 @@ local function yellow()
     inst.components.spellcaster:SetSpellFn(createlight)
     inst.components.spellcaster.canuseonpoint = true
 
-    inst.components.finiteuses:SetMaxUses(TUNING.EndGame_Thulecite_Durability)
-    inst.components.finiteuses:SetUses(TUNING.EndGame_Thulecite_Durability)
+    inst.components.finiteuses:SetMaxUses(TUNING.YELLOWSTAFF_USES)
+    inst.components.finiteuses:SetUses(TUNING.YELLOWSTAFF_USES)
 
     MakeHauntableLaunch(inst)
-    AddHauntableCustomReaction(inst, onhauntyellow, true, false, true)
+    AddHauntableCustomReaction(inst, onhauntlight, true, false, true)
 
     return inst
-end
-
-local function sleepSpell(staff, target)
-    if target.components.sleeper ~= nil then
-        target.components.sleeper:AddSleepiness(TUNING.SleepPower, TUNING.SleepTime)
-    elseif target.components.grogginess ~= nil then
-        target.components.grogginess:AddGrogginess(TUNING.SleepPower, TUNING.SleepTime)
-    else
-        return
-    end
-    
-    local caster = staff.components.inventoryitem.owner
-    if caster.components.sanity then
-        caster.components.sanity:DoDelta(-TUNING.SanityOnUse)
-    end
-end
-
-local function canCastSleep(staff, caster, target)
-    if target then
-        return target.components.locomotor ~= nil
-    end
-
-    return true
 end
 
 local function green()
@@ -734,12 +714,11 @@ local function green()
     inst.fxcolour = {51/255,153/255,51/255}
     inst:AddComponent("spellcaster")
     inst.components.spellcaster.canuseontargets = true
-    inst.components.spellcaster.canusefrominventory = true
-    inst.components.spellcaster.canonlyuseonlocomotors = true
-    inst.components.spellcaster:SetSpellFn(sleepSpell)
+    inst.components.spellcaster.canonlyuseonrecipes = true
+    inst.components.spellcaster:SetSpellFn(destroystructure)
 
-    inst.components.finiteuses:SetMaxUses(TUNING.EndGame_Thulecite_Durability)
-    inst.components.finiteuses:SetUses(TUNING.EndGame_Thulecite_Durability)
+    inst.components.finiteuses:SetMaxUses(TUNING.GREENSTAFF_USES)
+    inst.components.finiteuses:SetUses(TUNING.GREENSTAFF_USES)
 
     MakeHauntableLaunch(inst)
     AddHauntableCustomReaction(inst, onhauntgreen, true, false, true)
@@ -766,11 +745,38 @@ local function orange()
 
     inst.components.equippable.walkspeedmult = TUNING.SpeedMult
 
-    inst.components.finiteuses:SetMaxUses(TUNING.EndGame_Thulecite_Durability)
-    inst.components.finiteuses:SetUses(TUNING.EndGame_Thulecite_Durability)
+    inst.components.finiteuses:SetMaxUses(TUNING.ORANGESTAFF_USES)
+    inst.components.finiteuses:SetUses(TUNING.ORANGESTAFF_USES)
 
     MakeHauntableLaunch(inst)
     AddHauntableCustomReaction(inst, onhauntorange, true, false, true)
+
+    return inst
+end
+
+local function opal()
+    local inst = commonfn("opal", { "nopunch" })
+
+    inst:AddComponent("reticule")
+    inst.components.reticule.targetfn = light_reticuletargetfn
+    inst.components.reticule.ease = true
+
+    if not TheWorld.ismastersim then
+        return inst
+    end
+
+    inst.fxcolour = {64/255, 64/255, 208/255}
+    inst.castsound = "dontstarve/common/staffteleport"
+
+    inst:AddComponent("spellcaster")
+    inst.components.spellcaster:SetSpellFn(createlight)
+    inst.components.spellcaster.canuseonpoint = true
+
+    inst.components.finiteuses:SetMaxUses(TUNING.OPALSTAFF_USES)
+    inst.components.finiteuses:SetUses(TUNING.OPALSTAFF_USES)
+
+    MakeHauntableLaunch(inst)
+    AddHauntableCustomReaction(inst, onhauntlight, true, false, true)
 
     return inst
 end
@@ -780,4 +786,8 @@ return Prefab("icestaff", blue, assets, prefabs),
     Prefab("telestaff", purple, assets, prefabs),
     Prefab("orangestaff", orange, assets, prefabs),
     Prefab("greenstaff", green, assets, prefabs),
-    Prefab("yellowstaff", yellow, assets, prefabs)
+    Prefab("yellowstaff", yellow, assets, prefabs),
+    Prefab("opalstaff", opal, assets, prefabs)
+
+	
+	
