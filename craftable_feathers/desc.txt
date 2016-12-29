@@ -1,5 +1,7 @@
-Each of the three feathers may now be crafted using the Prestihatitator or Shadow Manipulator under the Refine tab.
+Each of the four feathers may now be crafted using the Prestihatitator or Shadow Manipulator under the Refine tab.
 
-Azure - Hound's Tooth, Twigs, Nightmare Fuel
-Crimson - Charcoal, Twigs, Nightmare Fuel
-Jet - Stinger, Twigs, Nightmare Fuel
+Azure - 2 Hound's Tooth, 2 Twigs, Nightmare Fuel
+Crimson - 2 Charcoal, 2 Twigs, Nightmare Fuel
+Jet - 2 Stinger, 2 Twigs, Nightmare Fuel
+Safron - 3 Gold, 2 Twigs, Nightmare Fuel
+

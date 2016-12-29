@@ -35,7 +35,7 @@ AddRecipe("feather_crow", {
 --Safron Feather
 STRINGS.RECIPE_DESC.FEATHER_CANARY = "Gold as... gold."
 AddRecipe("feather_canary", {
-	Ingredient("gold", 2),
+	Ingredient("goldnugget", 3),
 	Ingredient("twigs", 2),
 	Ingredient("nightmarefuel", 1)
 }, RECIPETABS.REFINE, TECH.MAGIC_TWO)

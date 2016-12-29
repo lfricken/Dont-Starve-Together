@@ -1,10 +1,10 @@
 name = "Craftable Feathers"
 
-description = "Each of the three feathers may now be crafted using magic." 
+description = "Each of the four feathers may now be crafted using magic." 
 
 author = "Striker"
 
-version = "1.7"
+version = "1.9"
 
 api_version = 6
 api_version_dst = 10
