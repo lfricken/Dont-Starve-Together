@@ -1,11 +1,11 @@
 -- Multi-player Only
 name = "Pig Army"
 
-description = "Create an army of Pigmen! Feed a Pigman two Meaty Stews or an equivalent hunger value of meat and he will become loyal permanently. Make him stop following temporarily by trying to give him a twig. He will also say how much health he has. Feeding meat will heal him. Make him follow again by giving him a vegetable. Pigs and Werepigs are much stronger in combat now too. After reloading the game, pigs stay loyal, but stop following, so just give him a vegetable."
+description = "Create an army of Pigmen and Bunnymen! Pigmen and Bunnymen can kill spiders more quickly now, and the One Man Band item now lasts longer and doesn't drain sanity as quickly. You can heal followers with food now, equal to food and health value combined."
 
 author = "Striker"
 
-version = "1.0"
+version = "1.7"
 
 api_version_dst = 10
 dst_compatible = true

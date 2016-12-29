@@ -1,5 +1,7 @@
 c_connect("127.0.0.1", 10999, "lol")
 
+c_announce("hi")
+
 c_give("minerhat")
 c_give("honeyham",40)
 c_give("armorwood")

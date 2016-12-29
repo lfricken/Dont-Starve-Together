@@ -1,0 +1,134 @@
+[00:00:00]: 
+System Memory:
+	Memory Load: 32%
+	Available Physical Memory: 11019m/16317m
+	Available Page File: 11977m/18749m
+	Available Virtual Memory: 3998m/4095m
+	Available Extended Virtual Memory: 0m
+[00:00:00]: 
+Process Memory:
+	Peak Working Set Size: 10m
+	Working Set Size: 10m
+	Quota Peak Page Pool Usage: 179k
+	Quota Page Pool Usage: 179k
+	Quota Peak Non Paged Pool Usage:14k
+	Quota Non Paged Pool Usage: 13k
+	Page File Usage: 3m
+	Peak Page File Usage: 3m
+[00:00:00]: PersistRootStorage is now APP:Klei//DST_Cave1/Cluster_1/Master/ 
+[00:00:00]: Starting Up
+[00:00:00]: Version: 198581
+[00:00:00]: Current time: Wed Dec 14 18:19:51 2016
+
+[00:00:00]: Don't Starve Together: 198581 WIN32
+[00:00:00]: Build Date: 1630
+[00:00:00]: Parsing command line
+[00:00:00]: Command Line Arguments: -conf_dir DST_Cave1 -console 
+[00:00:00]: [WARNING] -console has been deprecated: Use the [MISC] / console_enabled setting instead.
+[00:00:00]: Initializing distribution platform
+[00:00:00]: Initializing Minidump handler
+[00:00:00]: ....Done
+[00:00:00]: ....Done
+[00:00:00]: Fixing DPI
+[00:00:00]: ...Done
+[00:00:00]: THREAD - started 'GAClient' (5800)
+[00:00:00]: CurlRequestManager::ClientThread::Main()
+[00:00:00]: ProfileIndex:4.25
+[00:00:00]: [Connect] PendingConnection::Reset(true)
+[00:00:00]: Network tick rate: U=15(2), D=0
+[00:00:00]: Network tick rate: U=15(2), D=0
+[00:00:00]: Authorized application C:\Program Files (x86)\Steam\steamapps\common\Don't Starve Together Dedicated Server\bin\dontstarve_dedicated_server_nullrenderer.exe is enabled in the firewall.
+[00:00:00]: WindowsFirewall - Application already authorized
+[00:00:00]: OnLoadPermissionList: APP:Klei//DST_Cave1/Cluster_1/blocklist.txt (Failure)
+[00:00:00]: OnLoadPermissionList: APP:Klei//DST_Cave1/Cluster_1/adminlist.txt (Failure)
+[00:00:00]: OnLoadUserIdList: APP:Klei//DST_Cave1/Cluster_1/whitelist.txt (Failure)
+[00:00:00]: Token retrieved from: APP:Klei//DST_Cave1/Cluster_1/cluster_token.txt
+[00:00:00]: Token retrieved from: APP:Klei//DST_Cave1/Cluster_1/cluster_token.txt
+[00:00:00]: THREAD - started 'ConsoleInput' (13960)
+[00:00:01]: HardwareStats:
+  OS                        
+    name                      Microsoft Windows 10 Education
+    version                   10.0.14393
+    architecture              64-bit
+    platformSpecific          SP 0.0
+  CPU                       
+    numCores                  4
+    features                  SSE,SSE2,SSE3,SSSE3,SSE41,SSE42,AVX
+    name                      Intel(R) Core(TM) i5-6500 CPU @ 3.20GHz
+    manufacturer              GenuineIntel
+    clockSpeed                3201
+  RAM                       
+    megsOfRam                 16384
+  GPU                       
+    name                      NVIDIA GeForce GTX 970
+    driverDate                20160916000000.000000-000
+    megsOfRam                 4095
+    refreshRate               60
+    videoModeDescription      1600 x 900 x 4294967296 colors
+    driverVersion             21.21.13.7290
+
+[00:00:01]: cGame::InitializeOnMainThread
+[00:00:01]: Renderer initialize: Okay
+[00:00:01]: AnimManager initialize: Okay
+[00:00:01]: Buffers initialize: Okay
+[00:00:01]: cDontStarveGame::DoGameSpecificInitialize()
+[00:00:01]: FMOD Error: An invalid object handle was used. 
+[00:00:01]: GameSpecific initialize: Okay
+[00:00:01]: cGame::StartPlaying
+[00:00:01]: LOADING LUA
+[00:00:01]: DoLuaFile scripts/main.lua
+[00:00:01]: DoLuaFile loading buffer scripts/main.lua
+[00:00:01]: running main.lua
+	
+[00:00:02]: loaded modindex	
+[00:00:02]: ModIndex: Beginning normal load sequence for dedicated server.
+	
+[00:00:02]: DownloadMods(20)
+[00:00:02]: Download server mod 346962876
+[00:00:02]: Download server mod 352499675
+[00:00:02]: Download server mod 378160973
+[00:00:03]: Download server mod 382177939
+[00:00:03]: Download server mod 456028339
+[00:00:03]: Download server mod 537902048
+[00:00:03]: Download server mod 576037565
+[00:00:04]: Download server mod 670918115
+[00:00:04]: Download server mod 771629575
+[00:00:04]: Download server mod 683788408
+[00:00:05]: cWorkshopMod::UnzipMod ../mods/workshop-683788408
+[00:00:05]: Download server mod 816057392
+[00:00:05]: Download server mod 758532836
+[00:00:05]: Download server mod 797304209
+[00:00:06]: cWorkshopMod::UnzipMod ../mods/workshop-797304209
+[00:00:06]: Download server mod 365119238
+[00:00:06]: DelFile [../mods/workshop-365119238/modmain_segments/containerwidgetfunction.lua] 32: FAILED
+[00:00:06]: DelDirectory [../mods/workshop-365119238/modmain_segments] 145: FAILED
+[00:00:06]: DelFile [../mods/workshop-365119238/scripts/cooking_replica.lua] 32: FAILED
+[00:00:06]: DelDirectory [../mods/workshop-365119238/scripts] 145: FAILED
+[00:00:06]: DelDirectory [../mods/workshop-365119238] 145: FAILED
+[00:00:06]: cWorkshopMod::UnzipMod ../mods/workshop-365119238
+[00:00:06]: Download server mod 375850593
+[00:00:07]: cWorkshopMod::UnzipMod ../mods/workshop-375850593
+[00:00:07]: Download server mod 345692228
+[00:00:07]: cWorkshopMod::UnzipMod ../mods/workshop-345692228
+[00:00:07]: Download server mod 458587300
+[00:00:08]: cWorkshopMod::UnzipMod ../mods/workshop-458587300
+[00:00:08]: Download server mod 380423963
+[00:00:08]: cWorkshopMod::UnzipMod ../mods/workshop-380423963
+[00:00:08]: Download server mod 363989569
+[00:00:09]: cWorkshopMod::UnzipMod ../mods/workshop-363989569
+[00:00:09]: Download server mod 556027744
+[00:00:09]: DelFile [../mods/workshop-556027744/anim/foot_shadow.zip] 32: FAILED
+[00:00:09]: DelDirectory [../mods/workshop-556027744/anim] 145: FAILED
+[00:00:09]: DelFile [../mods/workshop-556027744/images/modicon.tex] 32: FAILED
+[00:00:09]: DelDirectory [../mods/workshop-556027744/images] 145: FAILED
+[00:00:09]: DelDirectory [../mods/workshop-556027744] 145: FAILED
+[00:00:09]: cWorkshopMod::UnzipMod ../mods/workshop-556027744
+[00:00:09]: ERROR: Failed to load modoverrides.lua	
+[00:00:11]: FMOD Error: An invalid object handle was used. 
+[00:00:12]: LOADING LUA SUCCESS
+[00:00:13]: PlayerDeaths could not load morgue	
+[00:00:13]: PlayerHistory could not load player_history	
+[00:00:13]: bloom_enabled	false	
+[00:00:13]: loaded saveindex	
+[00:00:13]: OnFilesLoaded()	
+[00:00:13]: OnUpdatePurchaseStateComplete	

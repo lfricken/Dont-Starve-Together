@@ -29,99 +29,84 @@ local function ontalk(inst, script)
     inst.SoundEmitter:PlaySound("dontstarve/pig/grunt")
 end
 
-local function CalcSanityAura(inst, observer)
-    return (inst.components.werebeast ~= nil and inst.components.werebeast:IsInWereState() and -TUNING.SANITYAURA_LARGE)
-        or (inst.components.follower ~= nil and inst.components.follower.leader == observer and TUNING.SANITYAURA_SMALL)
-        or 0
-end
-
+--leon mod
 local function SayHealth(inst)
 	local health = inst.components.health:GetPercent()
 	local healthStatus = ""
 	if(health == 1) then
 		healthStatus = "Feeling great!"
 	elseif(health >= 0.75) then
-		healthStatus = "Doing well."
+		healthStatus = "Feel OK."
 	elseif(health >= 0.50) then
-		healthStatus = "Hurts little."
+		healthStatus = "A little hurt."
 	elseif(health >= 0.25) then
 		healthStatus = "Body hurts!"
 	else
 		healthStatus = "HURTS!"
 	end
 	
-	inst.components.talker:Say(healthStatus)
+	inst.components.talker:StopIgnoringAll("sayhealth")
+	inst.components.talker:Say(healthStatus, 3, nil, true)
+	inst.components.talker:IgnoreAll("sayhealth")
+end
+--leon mod end
+
+local function CalcSanityAura(inst, observer)
+    return (inst.prefab == "moonpig" and -TUNING.SANITYAURA_LARGE)
+        or (inst.components.werebeast ~= nil and inst.components.werebeast:IsInWereState() and -TUNING.SANITYAURA_LARGE)
+        or (inst.components.follower ~= nil and inst.components.follower.leader == observer and TUNING.SANITYAURA_SMALL)
+        or 0
 end
 
 local function ShouldAcceptItem(inst, item)
-
-	--Accept Hats
     if item.components.equippable ~= nil and item.components.equippable.equipslot == EQUIPSLOTS.HEAD then
         return true
-	
-	--If Edible
     elseif item.components.edible ~= nil then
         local foodtype = item.components.edible.foodtype
-		
-		--If Meat
         if foodtype == FOODTYPE.MEAT or foodtype == FOODTYPE.HORRIBLE then
-            return true
-			
-		--If Veggie
-        elseif foodtype == FOODTYPE.VEGGIE then
-            return true
+            return inst.components.follower.leader == nil or inst.components.follower:GetLoyaltyPercent() <= 0.9
+        elseif foodtype == FOODTYPE.VEGGIE or foodtype == FOODTYPE.RAW then
+            local last_eat_time = inst.components.eater:TimeSinceLastEating()
+            return (last_eat_time == nil or
+                    last_eat_time >= TUNING.PIG_MIN_POOP_PERIOD)
+                and (inst.components.inventory == nil or
+                    not inst.components.inventory:Has(item.prefab, 1))
         end
+        return true
     end
-	
-	--If Not Meat or Veggie stop following and 
-	SayHealth(inst)
-	inst.components.follower:SetLeader(nil)
-	return false
 end
 
 local function OnGetItemFromPlayer(inst, giver, item)
-	local consumed = false
-	
-	--If Edible
+    --I eat food
     if item.components.edible ~= nil then
         --meat makes us friends (unless I'm a guard)
         if item.components.edible.foodtype == FOODTYPE.MEAT or item.components.edible.foodtype == FOODTYPE.HORRIBLE then
-		
-			consumed = true
-		
-			--Stop Attacking
             if inst.components.combat:TargetIs(giver) then
                 inst.components.combat:SetTarget(nil)
-			end
-			
-			--Heal Pig --Striker Mod
-			inst.components.health:DoDelta(item.components.edible:GetHunger() * TUNING.PIG_HEALTH_PER_FOOD_STAT)
-			inst.components.health:DoDelta(item.components.edible:GetHealth() * TUNING.PIG_HEALTH_PER_FOOD_STAT)
-			local health = inst.components.health.currenthealth
-			SayHealth(inst)
-			
-			--Add Loyalty Points --Striker Mod
-			inst.components.follower:DoTameDelta(item.components.edible:GetHunger())
+            elseif giver.components.leader ~= nil and not inst:HasTag("guard") then
+                giver:PushEvent("makefriend")
+                giver.components.leader:AddFollower(inst)
+                inst.components.follower:AddLoyaltyTime(item.components.edible:GetHunger() * TUNING.PIG_LOYALTY_PER_HUNGER)
+                inst.components.follower.maxfollowtime =
+                    giver:HasTag("polite")
+                    and TUNING.PIG_LOYALTY_MAXTIME + TUNING.PIG_LOYALTY_POLITENESS_MAXTIME_BONUS
+                    or TUNING.PIG_LOYALTY_MAXTIME
+					
+				--leon mod --heal
+				inst.components.health:DoDelta(item.components.edible:GetHunger() * TUNING.HEALTH_PER_FOOD_STAT)
+				inst.components.health:DoDelta(item.components.edible:GetHealth() * TUNING.HEALTH_PER_FOOD_STAT)
+				local health = inst.components.health.currenthealth
+				SayHealth(inst)
+				--leon mod end
+            end
         end
         if inst.components.sleeper:IsAsleep() then
             inst.components.sleeper:WakeUp()
         end
     end
 
-	--Will Follow If Tamed
-	if(giver.components.leader ~= nil and inst.components.follower:IsTame()) then
-		inst.components.talker:Say(TUNING.LEADER_VERIFY)
-		giver:PushEvent("makefriend")
-		giver.components.leader:AddFollower(inst)
-		inst.components.follower:AddLoyaltyTime(TUNING.PIG_LOYALTY_MAXTIME)
-		if inst.components.combat:TargetIs(giver) then
-			inst.components.combat:SetTarget(nil)
-		end
-	end
-	
     --I wear hats
     if item.components.equippable ~= nil and item.components.equippable.equipslot == EQUIPSLOTS.HEAD then
-		consumed = true
         local current = inst.components.inventory:GetEquippedItem(EQUIPSLOTS.HEAD)
         if current ~= nil then
             inst.components.inventory:DropItem(current)
@@ -129,17 +114,6 @@ local function OnGetItemFromPlayer(inst, giver, item)
         inst.components.inventory:Equip(item)
         inst.AnimState:Show("hat")
     end
-	
-	--Give Item Back if not used by pig
-	if (consumed == false) then
-		if (giver.components.inventory ~= nil) then
-			giver.components.inventory:GiveItem(item)
-		end
-	end
-	
-	--print(tostring(consumed))
-	--print(inst.components.follower.tameCount)
-	--print(inst.components.follower.targettime)
 end
 
 local function OnRefuseItem(inst, item)
@@ -147,6 +121,8 @@ local function OnRefuseItem(inst, item)
     if inst.components.sleeper:IsAsleep() then
         inst.components.sleeper:WakeUp()
     end
+	
+	SayHealth(inst)
 end
 
 local function OnEat(inst, food)
@@ -197,12 +173,7 @@ local function OnAttacked(inst, data)
     --print(inst, "OnAttacked")
     local attacker = data.attacker
     inst:ClearBufferedAction()
-	
-	if attacker == inst.components.leader then
-		inst.components.talker:Say("Why!?")
-		return
-	end
-	
+
     if attacker.prefab == "deciduous_root" and attacker.owner ~= nil then 
         OnAttackedByDecidRoot(inst, attacker.owner)
     elseif attacker.prefab ~= "deciduous_root" then
@@ -216,6 +187,10 @@ local function OnAttacked(inst, data)
             inst.components.combat:ShareTarget(attacker, SHARE_TARGET_DIST, IsNonWerePig, MAX_TARGET_SHARES)
         end
     end
+	
+	--leon mod
+	SayHealth(inst)
+	--leon mod end
 end
 
 local function OnNewTarget(inst, data)
@@ -285,7 +260,7 @@ local function SetNormalPig(inst)
 
     inst.components.lootdropper:SetLoot({})
     inst.components.lootdropper:AddRandomLoot("meat", 3)
-    inst.components.lootdropper:AddRandomLoot("pigskin", 2)
+    inst.components.lootdropper:AddRandomLoot("pigskin", 1)
     inst.components.lootdropper.numrandomloot = 1
 
     inst.components.health:SetMaxHealth(TUNING.PIG_HEALTH)
@@ -387,7 +362,7 @@ local function SetGuardPig(inst)
 
     inst.components.lootdropper:SetLoot({})
     inst.components.lootdropper:AddRandomLoot("meat", 3)
-    inst.components.lootdropper:AddRandomLoot("pigskin", 2)
+    inst.components.lootdropper:AddRandomLoot("pigskin", 1)
     inst.components.lootdropper.numrandomloot = 1
 
     inst.components.trader:Enable()
@@ -401,7 +376,7 @@ local function WerepigRetargetFn(inst)
         SpringCombatMod(TUNING.PIG_TARGET_DIST),
         function(guy)
             return inst.components.combat:CanTarget(guy)
-               and not (guy.sg ~= nil and guy.sg:HasStateTag("transform"))
+                and not (guy.sg ~= nil and guy.sg:HasStateTag("transform"))
         end,
         { "_combat" }, --See entityreplica.lua (re: "_combat" tag)
         { "werepig", "alwaysblock", "beaver" }
@@ -413,6 +388,32 @@ local function WerepigKeepTargetFn(inst, target)
            and not target:HasTag("werepig")
            and not target:HasTag("beaver")
            and not (target.sg ~= nil and target.sg:HasStateTag("transform"))
+end
+
+local function IsNearMoonBase(inst, dist)
+    local moonbase = inst.components.entitytracker:GetEntity("moonbase")
+    return moonbase == nil or inst:IsNear(moonbase, dist)
+end
+
+local function MoonpigRetargetFn(inst)
+    return IsNearMoonBase(inst, TUNING.MOONPIG_AGGRO_DIST)
+        and FindEntity(
+                inst,
+                TUNING.PIG_TARGET_DIST,
+                function(guy)
+                    return inst.components.combat:CanTarget(guy)
+                        and not (guy.sg ~= nil and guy.sg:HasStateTag("transform"))
+                end,
+                { "_combat" }, --See entityreplica.lua (re: "_combat" tag)
+                { "werepig", "alwaysblock", "beaver", "moonbeast" }
+            )
+        or nil
+end
+
+local function MoonpigKeepTargetFn(inst, target)
+    return IsNearMoonBase(inst, TUNING.MOONPIG_RETURN_DIST)
+        and not target:HasTag("moonbeast")
+        and WerepigKeepTargetFn(inst, target)
 end
 
 local function WerepigSleepTest(inst)
@@ -442,7 +443,7 @@ local function SetWerePig(inst)
     inst.components.sleeper:SetSleepTest(WerepigSleepTest)
     inst.components.sleeper:SetWakeTest(WerepigWakeTest)
 
-    inst.components.lootdropper:SetLoot({ "meat", "meat", "meat", "pigskin", "pigskin", "pigskin" })
+    inst.components.lootdropper:SetLoot({ "meat", "meat", "pigskin" })
     inst.components.lootdropper.numrandomloot = 0
 
     inst.components.health:SetMaxHealth(TUNING.WEREPIG_HEALTH)
@@ -460,6 +461,10 @@ local function GetStatus(inst)
         or (inst:HasTag("guard") and "GUARD")
         or (inst.components.follower.leader ~= nil and "FOLLOWER")
         or nil
+end
+
+local function displaynamefn(inst)
+    return inst.name
 end
 
 local function OnSave(inst, data)
@@ -484,7 +489,7 @@ local function CustomOnHaunt(inst)
     end
 end
 
-local function common()
+local function common(moonbeast)
     local inst = CreateEntity()
 
     inst.entity:AddTransform()
@@ -506,18 +511,32 @@ local function common()
     inst.AnimState:PlayAnimation("idle_loop")
     inst.AnimState:Hide("hat")
 
-    --trader (from trader component) added to pristine state for optimization
-    inst:AddTag("trader")
+    if not moonbeast then
+        --trader (from trader component) added to pristine state for optimization
+        inst:AddTag("trader")
+    end
 
     --Sneak these into pristine state for optimization
     inst:AddTag("_named")
 
-    inst:AddComponent("talker")
-    inst.components.talker.fontsize = 35
-    inst.components.talker.font = TALKINGFONT
-    --inst.components.talker.colour = Vector3(133/255, 140/255, 167/255)
-    inst.components.talker.offset = Vector3(0, -400, 0)
-    inst.components.talker:MakeChatter()
+    if moonbeast then
+        inst:AddTag("werepig")
+        inst:AddTag("moonbeast")
+        inst.AnimState:SetBuild("werepig_build")
+        --Since we override prefab name, we will need to use the higher
+        --priority displaynamefn to return us back plain old .name LOL!
+        inst:SetPrefabNameOverride("pigman")
+        inst.displaynamefn = displaynamefn
+
+        inst:AddComponent("spawnfader")
+    else
+        inst:AddComponent("talker")
+        inst.components.talker.fontsize = 35
+        inst.components.talker.font = TALKINGFONT
+        --inst.components.talker.colour = Vector3(133/255, 140/255, 167/255)
+        inst.components.talker.offset = Vector3(0, -400, 0)
+        inst.components.talker:MakeChatter()
+    end
 
     inst.entity:SetPristine()
 
@@ -528,7 +547,9 @@ local function common()
     --Remove these tags so that they can be added properly when replicating components below
     inst:RemoveTag("_named")
 
-    inst.components.talker.ontalk = ontalk
+    if not moonbeast then
+        inst.components.talker.ontalk = ontalk
+    end
 
     inst:AddComponent("locomotor") -- locomotor must be constructed before the stategraph
     inst.components.locomotor.runspeed = TUNING.PIG_RUN_SPEED --5
@@ -555,12 +576,15 @@ local function common()
     inst.components.named:PickNewName()
 
     ------------------------------------------
-    inst:AddComponent("werebeast")
-    inst.components.werebeast:SetOnWereFn(SetWerePig)
-    inst.components.werebeast:SetTriggerLimit(4)
-
     MakeHauntablePanic(inst)
-    AddHauntableCustomReaction(inst, CustomOnHaunt, true, nil, true)
+
+    if not moonbeast then
+        inst:AddComponent("werebeast")
+        inst.components.werebeast:SetOnWereFn(SetWerePig)
+        inst.components.werebeast:SetTriggerLimit(4)
+
+        AddHauntableCustomReaction(inst, CustomOnHaunt, true, nil, true)
+    end
 
     ------------------------------------------
     inst:AddComponent("follower")
@@ -579,11 +603,13 @@ local function common()
 
     ------------------------------------------
 
-    inst:AddComponent("trader")
-    inst.components.trader:SetAcceptTest(ShouldAcceptItem)
-    inst.components.trader.onaccept = OnGetItemFromPlayer
-    inst.components.trader.onrefuse = OnRefuseItem
-    inst.components.trader.deleteitemonaccept = false
+    if not moonbeast then
+        inst:AddComponent("trader")
+        inst.components.trader:SetAcceptTest(ShouldAcceptItem)
+        inst.components.trader.onaccept = OnGetItemFromPlayer
+        inst.components.trader.onrefuse = OnRefuseItem
+        inst.components.trader.deleteitemonaccept = false
+    end
     
     ------------------------------------------
 
@@ -603,8 +629,10 @@ local function common()
     inst.components.inspectable.getstatus = GetStatus
     ------------------------------------------
 
-    inst.OnSave = OnSave
-    inst.OnLoad = OnLoad
+    if not moonbeast then
+        inst.OnSave = OnSave
+        inst.OnLoad = OnLoad
+    end
 
     inst:ListenForEvent("attacked", OnAttacked)
     inst:ListenForEvent("newcombattarget", OnNewTarget)
@@ -613,7 +641,7 @@ local function common()
 end
 
 local function normal()
-    local inst = common()
+    local inst = common(false)
 
     if not TheWorld.ismastersim then
         return inst
@@ -626,7 +654,7 @@ local function normal()
 end
 
 local function guard()
-    local inst = common()
+    local inst = common(false)
 
     if not TheWorld.ismastersim then
         return inst
@@ -638,5 +666,78 @@ local function guard()
     return inst
 end
 
+local gargoyles =
+{
+    "gargoyle_werepigatk",
+    "gargoyle_werepigdeath",
+    "gargoyle_werepighowl",
+}
+local moonpigprefabs = {}
+for i, v in ipairs(gargoyles) do
+    table.insert(moonpigprefabs, v)
+end
+for i, v in ipairs(prefabs) do
+    table.insert(moonpigprefabs, v)
+end
+
+local moonbeastbrain = require "brains/moonbeastbrain"
+
+local function OnMoonPetrify(inst)
+    if not inst.components.health:IsDead() and (not inst.sg:HasStateTag("busy") or inst:IsAsleep()) then
+        local x, y, z = inst.Transform:GetWorldPosition()
+        local rot = inst.Transform:GetRotation()
+        local name = inst.components.named.name
+        inst:Remove()
+        local gargoyle = SpawnPrefab(gargoyles[math.random(#gargoyles)])
+        gargoyle.components.named:SetName(name)
+        gargoyle.Transform:SetPosition(x, y, z)
+        gargoyle.Transform:SetRotation(rot)
+        gargoyle:Petrify()
+    end
+end
+
+local function OnMoonTransformed(inst, data)
+    inst.components.named:SetName(data.old.components.named.name)
+    inst.sg:GoToState("howl")
+end
+
+local function moon()
+    local inst = common(true)
+
+    if not TheWorld.ismastersim then
+        return inst
+    end
+
+    inst:AddComponent("entitytracker")
+
+    inst:SetBrain(moonbeastbrain)
+    inst:SetStateGraph("SGmoonpig")
+
+    inst.components.sleeper:SetResistance(3)
+    inst.components.freezable:SetDefaultWearOffTime(TUNING.MOONPIG_FREEZE_WEAR_OFF_TIME)
+
+    inst.components.combat:SetDefaultDamage(TUNING.WEREPIG_DAMAGE)
+    inst.components.combat:SetAttackPeriod(TUNING.WEREPIG_ATTACK_PERIOD)
+    inst.components.locomotor.runspeed = TUNING.WEREPIG_RUN_SPEED 
+    inst.components.locomotor.walkspeed = TUNING.WEREPIG_WALK_SPEED 
+
+    inst.components.sleeper:SetSleepTest(WerepigSleepTest)
+    inst.components.sleeper:SetWakeTest(WerepigWakeTest)
+
+    inst.components.lootdropper:SetLoot({ "meat", "meat", "pigskin" })
+    inst.components.lootdropper.numrandomloot = 0
+
+    inst.components.health:SetMaxHealth(TUNING.WEREPIG_HEALTH)
+    inst.components.combat:SetTarget(nil)
+    inst.components.combat:SetRetargetFunction(3, MoonpigRetargetFn)
+    inst.components.combat:SetKeepTargetFunction(MoonpigKeepTargetFn)
+
+    inst:ListenForEvent("moonpetrify", OnMoonPetrify)
+    inst:ListenForEvent("moontransformed", OnMoonTransformed)
+
+    return inst
+end
+
 return Prefab("pigman", normal, assets, prefabs),
-    Prefab("pigguard", guard, assets, prefabs)
+    Prefab("pigguard", guard, assets, prefabs),
+    Prefab("moonpig", moon, assets, moonpigprefabs)

@@ -1,0 +1,28 @@
+[00:01:19]: [Join Announcement] Striker
+[00:02:08]: [Join Announcement] Eagles and Apples
+[00:16:54]: [Join Announcement] Striker1919
+[00:23:11]: [Join Announcement] Sherlurk
+[00:38:31]: [Skin Announcement] Sherlurk body_suspenders_pink_pearl
+[00:46:24]: [Skin Announcement] Eagles and Apples body_pj_blue_agean
+[00:51:28]: [Death Announcement] Striker1919 was killed by Treeguard. He became a spooky ghost!
+[00:52:53]: [Resurrect Announcement] Striker1919 was resurrected by Eagles and Apples.
+[01:06:06]: [Skin Announcement] Striker1919 body_flannel_green_napier
+[01:26:46]: [Skin Announcement] Eagles and Apples body_cardigan_red_cardinal
+[01:38:30]: [Leave Announcement] Striker1919
+[01:40:31]: [Join Announcement] Striker1919
+[01:45:09]: [Skin Announcement] Sherlurk legs_skirt_basic_grey_dark
+[01:50:26]: [Leave Announcement] Sherlurk
+[01:52:49]: [Join Announcement] Sherlurk
+[02:22:49]: [Skin Announcement] Striker1919 backpack_basic_blue_catcoon
+[02:26:35]: [Leave Announcement] Striker1919
+[02:30:00]: [Join Announcement] Striker1919
+[03:01:22]: [Leave Announcement] Striker1919
+[03:08:27]: [Join Announcement] Striker1919
+[03:10:52]: [Skin Announcement] Striker body_tshirt_purple_mauve
+[03:35:02]: [Skin Announcement] Sherlurk hand_shortgloves_white_smoke
+[03:49:45]: [Leave Announcement] Sherlurk
+[03:50:20]: [Leave Announcement] Striker1919
+[03:53:31]: [Join Announcement] Striker1919
+[03:54:42]: [Leave Announcement] Eagles and Apples
+[03:55:20]: [Leave Announcement] Striker
+[03:55:53]: [Leave Announcement] Striker1919

@@ -34,6 +34,26 @@ local function IsCrazyGuy(guy)
     return sanity ~= nil and sanity:GetPercentNetworked() <= (guy:HasTag("dappereffects") and TUNING.DAPPER_BEARDLING_SANITY or TUNING.BEARDLING_SANITY)
 end
 
+--leon mod
+local function SayHealth(inst)
+	local health = inst.components.health:GetPercent()
+	local healthStatus = ""
+	if(health == 1) then
+		healthStatus = "Feeling great!"
+	elseif(health >= 0.75) then
+		healthStatus = "Doing well."
+	elseif(health >= 0.50) then
+		healthStatus = "Head hurts."
+	elseif(health >= 0.25) then
+		healthStatus = "Body hurts!"
+	else
+		healthStatus = "HURTS!"
+	end
+	
+	inst.components.talker:Say(healthStatus)
+end
+--leon mod end
+
 local function ontalk(inst)
     inst.SoundEmitter:PlaySound("dontstarve/creatures/bunnyman/idle_med")
 end
@@ -91,6 +111,13 @@ local function OnGetItemFromPlayer(inst, giver, item)
                     and TUNING.RABBIT_CARROT_LOYALTY + TUNING.RABBIT_POLITENESS_LOYALTY_BONUS
                     or TUNING.RABBIT_CARROT_LOYALTY
                 )
+				
+				--leon mod --heal
+				inst.components.health:DoDelta(item.components.edible:GetHunger() * TUNING.HEALTH_PER_FOOD_STAT)
+				inst.components.health:DoDelta(item.components.edible:GetHealth() * TUNING.HEALTH_PER_FOOD_STAT)
+				local health = inst.components.health.currenthealth
+				SayHealth(inst)
+				--leon mod end
             end
         end
         if inst.components.sleeper:IsAsleep() then
@@ -114,11 +141,19 @@ local function OnRefuseItem(inst, item)
     if inst.components.sleeper:IsAsleep() then
         inst.components.sleeper:WakeUp()
     end
+	
+	--leon mod
+	SayHealth(inst)
+	--leon mod end
 end
 
 local function OnAttacked(inst, data)
     inst.components.combat:SetTarget(data.attacker)
     inst.components.combat:ShareTarget(data.attacker, SHARE_TARGET_DIST, function(dude) return dude.prefab == inst.prefab end, MAX_TARGET_SHARES)
+	
+	--leon mod
+	SayHealth(inst)
+	--leon mod end
 end
 
 local function OnNewTarget(inst, data)
@@ -320,8 +355,6 @@ local function fn()
     inst.components.locomotor.walkspeed = TUNING.BUNNYMAN_WALK_SPEED
 
     inst.components.health:SetMaxHealth(TUNING.BUNNYMAN_HEALTH)
-
-    inst.components.trader:Enable()
 
     MakeHauntablePanic(inst, 5, nil, 5)
 
