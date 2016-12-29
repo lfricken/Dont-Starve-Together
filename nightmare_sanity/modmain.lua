@@ -4,7 +4,7 @@ Recipe = GLOBAL.Recipe
 Ingredient = GLOBAL.Ingredient
 TECH = GLOBAL.TECH
 
---Prestihatitator
+AddRecipe("nightlight", {Ingredient("goldnugget", 16), Ingredient("nightmarefuel", 12),Ingredient("redgem", 2)}, RECIPETABS.MAGIC,  TECH.MAGIC_TWO, "nightlight_placer")
 
 TUNING.SanityPerSwing = 1
 TUNING.SwordSanityDrain = 0

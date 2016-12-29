@@ -5,7 +5,7 @@ description = "Improved Dark Sword, Night Armour, and Night Light."
 
 author = "Striker"
 
-version = "1.3"
+version = "1.4"
 
 api_version_dst = 10
 dst_compatible = true
