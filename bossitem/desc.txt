@@ -1,0 +1,24 @@
+[url=http://steamcommunity.com/profiles/76561198103077369/myworkshopfiles/?appid=322330&p=1&numperpage=30]Check out my other mods![/url]
+[url=http://steamcommunity.com/profiles/76561198103077369/myworkshopfiles/?appid=322330&p=1&numperpage=30] [img]https://s29.postimg.org/5vx6wwgcn/linkimage.png[/img] [/url]
+
+
+
+The items bosses make have been improved dramatically.
+
+Insulated Pack - Can now prevent frozen items (ice,icecream, etc.) from spoiling. Piggyback size.
+
+Luxury Fan - 25 uses instead of 15. Cools more. Larger cooling radius.
+
+Weather Pain - 25 uses instead of 15.
+
+Hibearnation Vest - Twice the insulation factor (now 480), equivalent to wearing a Beefalo Hat and Puffy Vest.
+
+Scailmail - 50% more durable. Absorbs 99% of damage instead of 70%
+
+Scaled Chest - I haven't figured out how to improve this yet. (working on it)
+
+Scaled Flooring - Double movement speed. Trippled heat resistance for structures or objects on it.
+
+Scaled Furnace - This is already good.
+
+Eyebrella - Lasts 15 days instead of 9. Can still be repaired.

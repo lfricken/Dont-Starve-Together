@@ -1,6 +1,7 @@
 c_connect("127.0.0.1", 10999, "lol")
 
 c_announce("hi")
+c_announce("Tip: Use the Resurection Shelter at base to respawn!", secondsInterval)
 
 c_give("minerhat")
 c_give("honeyham",40)
