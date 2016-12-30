@@ -1,0 +1,2237 @@
+[00:00:00]: 
+System Memory:
+	Memory Load: 21%
+	Available Physical Memory: 12871m/16317m
+	Available Page File: 14971m/18749m
+	Available Virtual Memory: 3998m/4095m
+	Available Extended Virtual Memory: 0m
+[00:00:00]: 
+Process Memory:
+	Peak Working Set Size: 10m
+	Working Set Size: 10m
+	Quota Peak Page Pool Usage: 179k
+	Quota Page Pool Usage: 179k
+	Quota Peak Non Paged Pool Usage:14k
+	Quota Non Paged Pool Usage: 13k
+	Page File Usage: 3m
+	Peak Page File Usage: 3m
+[00:00:00]: PersistRootStorage is now APP:Klei//DST_ColdOverworld/Cluster_1/Master/ 
+[00:00:00]: Starting Up
+[00:00:00]: Version: 201210
+[00:00:00]: Current time: Fri Dec 23 17:47:43 2016
+
+[00:00:00]: Don't Starve Together: 201210 WIN32
+[00:00:00]: Build Date: 1717
+[00:00:00]: Parsing command line
+[00:00:00]: Command Line Arguments: -conf_dir DST_ColdOverworld -console 
+[00:00:00]: [WARNING] -console has been deprecated: Use the [MISC] / console_enabled setting instead.
+[00:00:00]: Initializing distribution platform
+[00:00:00]: Initializing Minidump handler
+[00:00:00]: ....Done
+[00:00:00]: ....Done
+[00:00:00]: Fixing DPI
+[00:00:00]: ...Done
+[00:00:00]: THREAD - started 'GAClient' (10828)
+[00:00:00]: CurlRequestManager::ClientThread::Main()
+[00:00:00]: ProfileIndex:3.70
+[00:00:00]: [Connect] PendingConnection::Reset(true)
+[00:00:00]: Network tick rate: U=15(2), D=0
+[00:00:00]: Network tick rate: U=15(2), D=0
+[00:00:00]: Authorized application C:\Program Files (x86)\Steam\steamapps\common\Don't Starve Together Dedicated Server\bin\dontstarve_dedicated_server_nullrenderer.exe is enabled in the firewall.
+[00:00:00]: WindowsFirewall - Application already authorized
+[00:00:01]: OnLoadPermissionList: APP:Klei//DST_ColdOverworld/Cluster_1/blocklist.txt (Failure)
+[00:00:01]: THREAD - started 'ConsoleInput' (6704)
+[00:00:01]: OnLoadPermissionList: APP:Klei//DST_ColdOverworld/Cluster_1/adminlist.txt (Failure)
+[00:00:01]: OnLoadUserIdList: APP:Klei//DST_ColdOverworld/Cluster_1/whitelist.txt (Failure)
+[00:00:01]: Token retrieved from: APP:Klei//DST_ColdOverworld/Cluster_1/cluster_token.txt
+[00:00:01]: Token retrieved from: APP:Klei//DST_ColdOverworld/Cluster_1/cluster_token.txt
+[00:00:01]: HardwareStats:
+  OS                        
+    name                      Microsoft Windows 10 Education
+    version                   10.0.14393
+    architecture              64-bit
+    platformSpecific          SP 0.0
+  CPU                       
+    numCores                  4
+    features                  SSE,SSE2,SSE3,SSSE3,SSE41,SSE42,AVX
+    name                      Intel(R) Core(TM) i5-6500 CPU @ 3.20GHz
+    manufacturer              GenuineIntel
+    clockSpeed                3201
+  RAM                       
+    megsOfRam                 16384
+  GPU                       
+    name                      NVIDIA GeForce GTX 970
+    driverDate                20160916000000.000000-000
+    megsOfRam                 4095
+    refreshRate               60
+    videoModeDescription      1600 x 900 x 4294967296 colors
+    driverVersion             21.21.13.7290
+
+[00:00:01]: cGame::InitializeOnMainThread
+[00:00:01]: Renderer initialize: Okay
+[00:00:01]: AnimManager initialize: Okay
+[00:00:01]: Buffers initialize: Okay
+[00:00:01]: cDontStarveGame::DoGameSpecificInitialize()
+[00:00:01]: FMOD Error: An invalid object handle was used. 
+[00:00:01]: GameSpecific initialize: Okay
+[00:00:01]: cGame::StartPlaying
+[00:00:01]: LOADING LUA
+[00:00:01]: DoLuaFile scripts/main.lua
+[00:00:01]: DoLuaFile loading buffer scripts/main.lua
+[00:00:02]: running main.lua
+	
+[00:00:02]: loaded modindex	
+[00:00:03]: ModIndex: Beginning normal load sequence for dedicated server.
+	
+[00:00:03]: DownloadMods(20)
+[00:00:03]: Download server mod 346962876
+[00:00:04]: Download server mod 352499675
+[00:00:04]: Download server mod 378160973
+[00:00:04]: Download server mod 382177939
+[00:00:04]: Download server mod 456028339
+[00:00:05]: Download server mod 537902048
+[00:00:05]: Download server mod 576037565
+[00:00:05]: Download server mod 670918115
+[00:00:06]: Download server mod 771629575
+[00:00:06]: Download server mod 683788408
+[00:00:06]: Download server mod 816057392
+[00:00:07]: Download server mod 758532836
+[00:00:07]: Download server mod 797304209
+[00:00:07]: Download server mod 365119238
+[00:00:07]: Download server mod 375850593
+[00:00:08]: Download server mod 345692228
+[00:00:08]: Download server mod 458587300
+[00:00:08]: Download server mod 380423963
+[00:00:08]: Download server mod 363989569
+[00:00:09]: Download server mod 556027744
+[00:00:09]: modoverrides.lua enabling workshop-758532836	
+[00:00:09]: modoverrides.lua enabling workshop-346962876	
+[00:00:09]: modoverrides.lua enabling workshop-378160973	
+[00:00:09]: modoverrides.lua enabling workshop-576037565	
+[00:00:09]: modoverrides.lua enabling workshop-797304209	
+[00:00:09]: modoverrides.lua enabling workshop-771629575	
+[00:00:09]: modoverrides.lua enabling workshop-352499675	
+[00:00:09]: modoverrides.lua enabling workshop-670918115	
+[00:00:09]: modoverrides.lua enabling workshop-816057392	
+[00:00:09]: modoverrides.lua enabling workshop-382177939	
+[00:00:09]: modoverrides.lua enabling workshop-380423963	
+[00:00:09]: modoverrides.lua enabling workshop-458587300	
+[00:00:09]: modoverrides.lua enabling workshop-375850593	
+[00:00:09]: modoverrides.lua enabling workshop-683788408	
+[00:00:09]: modoverrides.lua enabling workshop-456028339	
+[00:00:09]: modoverrides.lua enabling workshop-365119238	
+[00:00:09]: modoverrides.lua enabling workshop-556027744	
+[00:00:09]: modoverrides.lua enabling workshop-363989569	
+[00:00:09]: modoverrides.lua enabling workshop-537902048	
+[00:00:09]: modoverrides.lua enabling workshop-345692228	
+[00:00:09]: ModIndex:GetModsToLoad inserting moddir, 	workshop-345692228	
+[00:00:09]: ModIndex:GetModsToLoad inserting moddir, 	workshop-346962876	
+[00:00:09]: ModIndex:GetModsToLoad inserting moddir, 	workshop-352499675	
+[00:00:09]: ModIndex:GetModsToLoad inserting moddir, 	workshop-363989569	
+[00:00:09]: ModIndex:GetModsToLoad inserting moddir, 	workshop-365119238	
+[00:00:09]: ModIndex:GetModsToLoad inserting moddir, 	workshop-375850593	
+[00:00:09]: ModIndex:GetModsToLoad inserting moddir, 	workshop-378160973	
+[00:00:09]: ModIndex:GetModsToLoad inserting moddir, 	workshop-380423963	
+[00:00:09]: ModIndex:GetModsToLoad inserting moddir, 	workshop-382177939	
+[00:00:09]: ModIndex:GetModsToLoad inserting moddir, 	workshop-456028339	
+[00:00:09]: ModIndex:GetModsToLoad inserting moddir, 	workshop-458587300	
+[00:00:09]: ModIndex:GetModsToLoad inserting moddir, 	workshop-537902048	
+[00:00:09]: ModIndex:GetModsToLoad inserting moddir, 	workshop-556027744	
+[00:00:09]: ModIndex:GetModsToLoad inserting moddir, 	workshop-576037565	
+[00:00:09]: ModIndex:GetModsToLoad inserting moddir, 	workshop-670918115	
+[00:00:09]: ModIndex:GetModsToLoad inserting moddir, 	workshop-683788408	
+[00:00:09]: ModIndex:GetModsToLoad inserting moddir, 	workshop-758532836	
+[00:00:09]: ModIndex:GetModsToLoad inserting moddir, 	workshop-771629575	
+[00:00:09]: ModIndex:GetModsToLoad inserting moddir, 	workshop-797304209	
+[00:00:09]: ModIndex:GetModsToLoad inserting moddir, 	workshop-816057392	
+[00:00:09]: Could not load mod_config_data/modconfiguration_workshop-345692228	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-758532836	
+[00:00:09]: Overriding mod workshop-758532836's option ENABLECLIENTPAUSE with value true	
+[00:00:09]: Overriding mod workshop-758532836's option ENABLEHOTKEY with value true	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-346962876	
+[00:00:09]: Overriding mod workshop-346962876's option blank with value 0	
+[00:00:09]: Overriding mod workshop-346962876's option chilltime with value 0.01	
+[00:00:09]: Overriding mod workshop-346962876's option f_recipe with value hard	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-378160973	
+[00:00:09]: Overriding mod workshop-378160973's option FIREOPTIONS with value 2	
+[00:00:09]: Overriding mod workshop-378160973's option SHAREMINIMAPPROGRESS with value true	
+[00:00:09]: Overriding mod workshop-378160973's option SHOWPLAYERICONS with value true	
+[00:00:09]: Overriding mod workshop-378160973's option OVERRIDEMODE with value false	
+[00:00:09]: Overriding mod workshop-378160973's option SHOWPLAYERSOPTIONS with value 2	
+[00:00:09]: Overriding mod workshop-378160973's option SHOWFIREICONS with value true	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-352499675	
+[00:00:09]: Overriding mod workshop-352499675's option  with value 0	
+[00:00:09]: Overriding mod workshop-352499675's option  with value 0	
+[00:00:09]: Overriding mod workshop-352499675's option Mode with value hard	
+[00:00:09]: Overriding mod workshop-352499675's option ShelterLight with value yes	
+[00:00:09]: Overriding mod workshop-352499675's option ShelterUses with value 10	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-382177939	
+[00:00:09]: Overriding mod workshop-382177939's option  with value true	
+[00:00:09]: Overriding mod workshop-382177939's option eightxten with value 8x10	
+[00:00:09]: Overriding mod workshop-382177939's option workit with value nope	
+[00:00:09]: Loading mod: workshop-345692228 (Minimap HUD) Version:1.0.7	
+[00:00:09]: Could not load mod_config_data/modconfiguration_workshop-346962876_CLIENT	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-758532836	
+[00:00:09]: Overriding mod workshop-758532836's option ENABLECLIENTPAUSE with value true	
+[00:00:09]: Overriding mod workshop-758532836's option ENABLEHOTKEY with value true	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-346962876	
+[00:00:09]: Overriding mod workshop-346962876's option blank with value 0	
+[00:00:09]: Overriding mod workshop-346962876's option chilltime with value 0.01	
+[00:00:09]: Overriding mod workshop-346962876's option f_recipe with value hard	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-378160973	
+[00:00:09]: Overriding mod workshop-378160973's option FIREOPTIONS with value 2	
+[00:00:09]: Overriding mod workshop-378160973's option SHAREMINIMAPPROGRESS with value true	
+[00:00:09]: Overriding mod workshop-378160973's option SHOWPLAYERICONS with value true	
+[00:00:09]: Overriding mod workshop-378160973's option OVERRIDEMODE with value false	
+[00:00:09]: Overriding mod workshop-378160973's option SHOWPLAYERSOPTIONS with value 2	
+[00:00:09]: Overriding mod workshop-378160973's option SHOWFIREICONS with value true	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-352499675	
+[00:00:09]: Overriding mod workshop-352499675's option  with value 0	
+[00:00:09]: Overriding mod workshop-352499675's option  with value 0	
+[00:00:09]: Overriding mod workshop-352499675's option Mode with value hard	
+[00:00:09]: Overriding mod workshop-352499675's option ShelterLight with value yes	
+[00:00:09]: Overriding mod workshop-352499675's option ShelterUses with value 10	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-382177939	
+[00:00:09]: Overriding mod workshop-382177939's option  with value true	
+[00:00:09]: Overriding mod workshop-382177939's option eightxten with value 8x10	
+[00:00:09]: Overriding mod workshop-382177939's option workit with value nope	
+[00:00:09]: Loading mod: workshop-346962876 (DST Freezer) Version:2.7	
+[00:00:09]: Could not load mod_config_data/modconfiguration_workshop-352499675_CLIENT	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-758532836	
+[00:00:09]: Overriding mod workshop-758532836's option ENABLECLIENTPAUSE with value true	
+[00:00:09]: Overriding mod workshop-758532836's option ENABLEHOTKEY with value true	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-346962876	
+[00:00:09]: Overriding mod workshop-346962876's option blank with value 0	
+[00:00:09]: Overriding mod workshop-346962876's option chilltime with value 0.01	
+[00:00:09]: Overriding mod workshop-346962876's option f_recipe with value hard	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-378160973	
+[00:00:09]: Overriding mod workshop-378160973's option FIREOPTIONS with value 2	
+[00:00:09]: Overriding mod workshop-378160973's option SHAREMINIMAPPROGRESS with value true	
+[00:00:09]: Overriding mod workshop-378160973's option SHOWPLAYERICONS with value true	
+[00:00:09]: Overriding mod workshop-378160973's option OVERRIDEMODE with value false	
+[00:00:09]: Overriding mod workshop-378160973's option SHOWPLAYERSOPTIONS with value 2	
+[00:00:09]: Overriding mod workshop-378160973's option SHOWFIREICONS with value true	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-352499675	
+[00:00:09]: Overriding mod workshop-352499675's option  with value 0	
+[00:00:09]: Overriding mod workshop-352499675's option  with value 0	
+[00:00:09]: Overriding mod workshop-352499675's option Mode with value hard	
+[00:00:09]: Overriding mod workshop-352499675's option ShelterLight with value yes	
+[00:00:09]: Overriding mod workshop-352499675's option ShelterUses with value 10	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-382177939	
+[00:00:09]: Overriding mod workshop-382177939's option  with value true	
+[00:00:09]: Overriding mod workshop-382177939's option eightxten with value 8x10	
+[00:00:09]: Overriding mod workshop-382177939's option workit with value nope	
+[00:00:09]: Loading mod: workshop-352499675 (DST Resurrection Shelter) Version:1.4	
+[00:00:09]: Could not load mod_config_data/modconfiguration_workshop-363989569_CLIENT	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-758532836	
+[00:00:09]: Overriding mod workshop-758532836's option ENABLECLIENTPAUSE with value true	
+[00:00:09]: Overriding mod workshop-758532836's option ENABLEHOTKEY with value true	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-346962876	
+[00:00:09]: Overriding mod workshop-346962876's option blank with value 0	
+[00:00:09]: Overriding mod workshop-346962876's option chilltime with value 0.01	
+[00:00:09]: Overriding mod workshop-346962876's option f_recipe with value hard	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-378160973	
+[00:00:09]: Overriding mod workshop-378160973's option FIREOPTIONS with value 2	
+[00:00:09]: Overriding mod workshop-378160973's option SHAREMINIMAPPROGRESS with value true	
+[00:00:09]: Overriding mod workshop-378160973's option SHOWPLAYERICONS with value true	
+[00:00:09]: Overriding mod workshop-378160973's option OVERRIDEMODE with value false	
+[00:00:09]: Overriding mod workshop-378160973's option SHOWPLAYERSOPTIONS with value 2	
+[00:00:09]: Overriding mod workshop-378160973's option SHOWFIREICONS with value true	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-352499675	
+[00:00:09]: Overriding mod workshop-352499675's option  with value 0	
+[00:00:09]: Overriding mod workshop-352499675's option  with value 0	
+[00:00:09]: Overriding mod workshop-352499675's option Mode with value hard	
+[00:00:09]: Overriding mod workshop-352499675's option ShelterLight with value yes	
+[00:00:09]: Overriding mod workshop-352499675's option ShelterUses with value 10	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-382177939	
+[00:00:09]: Overriding mod workshop-382177939's option  with value true	
+[00:00:09]: Overriding mod workshop-382177939's option eightxten with value 8x10	
+[00:00:09]: Overriding mod workshop-382177939's option workit with value nope	
+[00:00:09]: Loading mod: workshop-363989569 (Growable Marble Trees) Version:0.11	
+[00:00:09]: Could not load mod_config_data/modconfiguration_workshop-365119238	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-758532836	
+[00:00:09]: Overriding mod workshop-758532836's option ENABLECLIENTPAUSE with value true	
+[00:00:09]: Overriding mod workshop-758532836's option ENABLEHOTKEY with value true	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-346962876	
+[00:00:09]: Overriding mod workshop-346962876's option blank with value 0	
+[00:00:09]: Overriding mod workshop-346962876's option chilltime with value 0.01	
+[00:00:09]: Overriding mod workshop-346962876's option f_recipe with value hard	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-378160973	
+[00:00:09]: Overriding mod workshop-378160973's option FIREOPTIONS with value 2	
+[00:00:09]: Overriding mod workshop-378160973's option SHAREMINIMAPPROGRESS with value true	
+[00:00:09]: Overriding mod workshop-378160973's option SHOWPLAYERICONS with value true	
+[00:00:09]: Overriding mod workshop-378160973's option OVERRIDEMODE with value false	
+[00:00:09]: Overriding mod workshop-378160973's option SHOWPLAYERSOPTIONS with value 2	
+[00:00:09]: Overriding mod workshop-378160973's option SHOWFIREICONS with value true	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-352499675	
+[00:00:09]: Overriding mod workshop-352499675's option  with value 0	
+[00:00:09]: Overriding mod workshop-352499675's option  with value 0	
+[00:00:09]: Overriding mod workshop-352499675's option Mode with value hard	
+[00:00:09]: Overriding mod workshop-352499675's option ShelterLight with value yes	
+[00:00:09]: Overriding mod workshop-352499675's option ShelterUses with value 10	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-382177939	
+[00:00:09]: Overriding mod workshop-382177939's option  with value true	
+[00:00:09]: Overriding mod workshop-382177939's option eightxten with value 8x10	
+[00:00:09]: Overriding mod workshop-382177939's option workit with value nope	
+[00:00:09]: Loading mod: workshop-365119238 (SmartCrockPot) Version:4.02	
+[00:00:09]: Could not load mod_config_data/modconfiguration_workshop-375850593_CLIENT	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-758532836	
+[00:00:09]: Overriding mod workshop-758532836's option ENABLECLIENTPAUSE with value true	
+[00:00:09]: Overriding mod workshop-758532836's option ENABLEHOTKEY with value true	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-346962876	
+[00:00:09]: Overriding mod workshop-346962876's option blank with value 0	
+[00:00:09]: Overriding mod workshop-346962876's option chilltime with value 0.01	
+[00:00:09]: Overriding mod workshop-346962876's option f_recipe with value hard	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-378160973	
+[00:00:09]: Overriding mod workshop-378160973's option FIREOPTIONS with value 2	
+[00:00:09]: Overriding mod workshop-378160973's option SHAREMINIMAPPROGRESS with value true	
+[00:00:09]: Overriding mod workshop-378160973's option SHOWPLAYERICONS with value true	
+[00:00:09]: Overriding mod workshop-378160973's option OVERRIDEMODE with value false	
+[00:00:09]: Overriding mod workshop-378160973's option SHOWPLAYERSOPTIONS with value 2	
+[00:00:09]: Overriding mod workshop-378160973's option SHOWFIREICONS with value true	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-352499675	
+[00:00:09]: Overriding mod workshop-352499675's option  with value 0	
+[00:00:09]: Overriding mod workshop-352499675's option  with value 0	
+[00:00:09]: Overriding mod workshop-352499675's option Mode with value hard	
+[00:00:09]: Overriding mod workshop-352499675's option ShelterLight with value yes	
+[00:00:09]: Overriding mod workshop-352499675's option ShelterUses with value 10	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-382177939	
+[00:00:09]: Overriding mod workshop-382177939's option  with value true	
+[00:00:09]: Overriding mod workshop-382177939's option eightxten with value 8x10	
+[00:00:09]: Overriding mod workshop-382177939's option workit with value nope	
+[00:00:09]: Loading mod: workshop-375850593 (Extra Equip Slots) Version:1.8.0	
+[00:00:09]: Could not load mod_config_data/modconfiguration_workshop-378160973_CLIENT	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-758532836	
+[00:00:09]: Overriding mod workshop-758532836's option ENABLECLIENTPAUSE with value true	
+[00:00:09]: Overriding mod workshop-758532836's option ENABLEHOTKEY with value true	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-346962876	
+[00:00:09]: Overriding mod workshop-346962876's option blank with value 0	
+[00:00:09]: Overriding mod workshop-346962876's option chilltime with value 0.01	
+[00:00:09]: Overriding mod workshop-346962876's option f_recipe with value hard	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-378160973	
+[00:00:09]: Overriding mod workshop-378160973's option FIREOPTIONS with value 2	
+[00:00:09]: Overriding mod workshop-378160973's option SHAREMINIMAPPROGRESS with value true	
+[00:00:09]: Overriding mod workshop-378160973's option SHOWPLAYERICONS with value true	
+[00:00:09]: Overriding mod workshop-378160973's option OVERRIDEMODE with value false	
+[00:00:09]: Overriding mod workshop-378160973's option SHOWPLAYERSOPTIONS with value 2	
+[00:00:09]: Overriding mod workshop-378160973's option SHOWFIREICONS with value true	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-352499675	
+[00:00:09]: Overriding mod workshop-352499675's option  with value 0	
+[00:00:09]: Overriding mod workshop-352499675's option  with value 0	
+[00:00:09]: Overriding mod workshop-352499675's option Mode with value hard	
+[00:00:09]: Overriding mod workshop-352499675's option ShelterLight with value yes	
+[00:00:09]: Overriding mod workshop-352499675's option ShelterUses with value 10	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-382177939	
+[00:00:09]: Overriding mod workshop-382177939's option  with value true	
+[00:00:09]: Overriding mod workshop-382177939's option eightxten with value 8x10	
+[00:00:09]: Overriding mod workshop-382177939's option workit with value nope	
+[00:00:09]: Loading mod: workshop-378160973 (Global Positions) Version:1.6.5	
+[00:00:09]: Could not load mod_config_data/modconfiguration_workshop-380423963_CLIENT	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-758532836	
+[00:00:09]: Overriding mod workshop-758532836's option ENABLECLIENTPAUSE with value true	
+[00:00:09]: Overriding mod workshop-758532836's option ENABLEHOTKEY with value true	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-346962876	
+[00:00:09]: Overriding mod workshop-346962876's option blank with value 0	
+[00:00:09]: Overriding mod workshop-346962876's option chilltime with value 0.01	
+[00:00:09]: Overriding mod workshop-346962876's option f_recipe with value hard	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-378160973	
+[00:00:09]: Overriding mod workshop-378160973's option FIREOPTIONS with value 2	
+[00:00:09]: Overriding mod workshop-378160973's option SHAREMINIMAPPROGRESS with value true	
+[00:00:09]: Overriding mod workshop-378160973's option SHOWPLAYERICONS with value true	
+[00:00:09]: Overriding mod workshop-378160973's option OVERRIDEMODE with value false	
+[00:00:09]: Overriding mod workshop-378160973's option SHOWPLAYERSOPTIONS with value 2	
+[00:00:09]: Overriding mod workshop-378160973's option SHOWFIREICONS with value true	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-352499675	
+[00:00:09]: Overriding mod workshop-352499675's option  with value 0	
+[00:00:09]: Overriding mod workshop-352499675's option  with value 0	
+[00:00:09]: Overriding mod workshop-352499675's option Mode with value hard	
+[00:00:09]: Overriding mod workshop-352499675's option ShelterLight with value yes	
+[00:00:09]: Overriding mod workshop-352499675's option ShelterUses with value 10	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-382177939	
+[00:00:09]: Overriding mod workshop-382177939's option  with value true	
+[00:00:09]: Overriding mod workshop-382177939's option eightxten with value 8x10	
+[00:00:09]: Overriding mod workshop-382177939's option workit with value nope	
+[00:00:09]: Loading mod: workshop-380423963 (Mineable Gems) Version:2.20	
+[00:00:09]: Could not load mod_config_data/modconfiguration_workshop-382177939_CLIENT	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-758532836	
+[00:00:09]: Overriding mod workshop-758532836's option ENABLECLIENTPAUSE with value true	
+[00:00:09]: Overriding mod workshop-758532836's option ENABLEHOTKEY with value true	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-346962876	
+[00:00:09]: Overriding mod workshop-346962876's option blank with value 0	
+[00:00:09]: Overriding mod workshop-346962876's option chilltime with value 0.01	
+[00:00:09]: Overriding mod workshop-346962876's option f_recipe with value hard	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-378160973	
+[00:00:09]: Overriding mod workshop-378160973's option FIREOPTIONS with value 2	
+[00:00:09]: Overriding mod workshop-378160973's option SHAREMINIMAPPROGRESS with value true	
+[00:00:09]: Overriding mod workshop-378160973's option SHOWPLAYERICONS with value true	
+[00:00:09]: Overriding mod workshop-378160973's option OVERRIDEMODE with value false	
+[00:00:09]: Overriding mod workshop-378160973's option SHOWPLAYERSOPTIONS with value 2	
+[00:00:09]: Overriding mod workshop-378160973's option SHOWFIREICONS with value true	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-352499675	
+[00:00:09]: Overriding mod workshop-352499675's option  with value 0	
+[00:00:09]: Overriding mod workshop-352499675's option  with value 0	
+[00:00:09]: Overriding mod workshop-352499675's option Mode with value hard	
+[00:00:09]: Overriding mod workshop-352499675's option ShelterLight with value yes	
+[00:00:09]: Overriding mod workshop-352499675's option ShelterUses with value 10	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-382177939	
+[00:00:09]: Overriding mod workshop-382177939's option  with value true	
+[00:00:09]: Overriding mod workshop-382177939's option eightxten with value 8x10	
+[00:00:09]: Overriding mod workshop-382177939's option workit with value nope	
+[00:00:09]: Loading mod: workshop-382177939 (DST Storm Cellar) Version:1.8	
+[00:00:09]: Could not load mod_config_data/modconfiguration_workshop-456028339_CLIENT	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-758532836	
+[00:00:09]: Overriding mod workshop-758532836's option ENABLECLIENTPAUSE with value true	
+[00:00:09]: Overriding mod workshop-758532836's option ENABLEHOTKEY with value true	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-346962876	
+[00:00:09]: Overriding mod workshop-346962876's option blank with value 0	
+[00:00:09]: Overriding mod workshop-346962876's option chilltime with value 0.01	
+[00:00:09]: Overriding mod workshop-346962876's option f_recipe with value hard	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-378160973	
+[00:00:09]: Overriding mod workshop-378160973's option FIREOPTIONS with value 2	
+[00:00:09]: Overriding mod workshop-378160973's option SHAREMINIMAPPROGRESS with value true	
+[00:00:09]: Overriding mod workshop-378160973's option SHOWPLAYERICONS with value true	
+[00:00:09]: Overriding mod workshop-378160973's option OVERRIDEMODE with value false	
+[00:00:09]: Overriding mod workshop-378160973's option SHOWPLAYERSOPTIONS with value 2	
+[00:00:09]: Overriding mod workshop-378160973's option SHOWFIREICONS with value true	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-352499675	
+[00:00:09]: Overriding mod workshop-352499675's option  with value 0	
+[00:00:09]: Overriding mod workshop-352499675's option  with value 0	
+[00:00:09]: Overriding mod workshop-352499675's option Mode with value hard	
+[00:00:09]: Overriding mod workshop-352499675's option ShelterLight with value yes	
+[00:00:09]: Overriding mod workshop-352499675's option ShelterUses with value 10	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-382177939	
+[00:00:09]: Overriding mod workshop-382177939's option  with value true	
+[00:00:09]: Overriding mod workshop-382177939's option eightxten with value 8x10	
+[00:00:09]: Overriding mod workshop-382177939's option workit with value nope	
+[00:00:09]: Loading mod: workshop-456028339 (Craftable Living Logs) Version:1.0.7	
+[00:00:09]: Could not load mod_config_data/modconfiguration_workshop-458587300_CLIENT	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-758532836	
+[00:00:09]: Overriding mod workshop-758532836's option ENABLECLIENTPAUSE with value true	
+[00:00:09]: Overriding mod workshop-758532836's option ENABLEHOTKEY with value true	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-346962876	
+[00:00:09]: Overriding mod workshop-346962876's option blank with value 0	
+[00:00:09]: Overriding mod workshop-346962876's option chilltime with value 0.01	
+[00:00:09]: Overriding mod workshop-346962876's option f_recipe with value hard	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-378160973	
+[00:00:09]: Overriding mod workshop-378160973's option FIREOPTIONS with value 2	
+[00:00:09]: Overriding mod workshop-378160973's option SHAREMINIMAPPROGRESS with value true	
+[00:00:09]: Overriding mod workshop-378160973's option SHOWPLAYERICONS with value true	
+[00:00:09]: Overriding mod workshop-378160973's option OVERRIDEMODE with value false	
+[00:00:09]: Overriding mod workshop-378160973's option SHOWPLAYERSOPTIONS with value 2	
+[00:00:09]: Overriding mod workshop-378160973's option SHOWFIREICONS with value true	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-352499675	
+[00:00:09]: Overriding mod workshop-352499675's option  with value 0	
+[00:00:09]: Overriding mod workshop-352499675's option  with value 0	
+[00:00:09]: Overriding mod workshop-352499675's option Mode with value hard	
+[00:00:09]: Overriding mod workshop-352499675's option ShelterLight with value yes	
+[00:00:09]: Overriding mod workshop-352499675's option ShelterUses with value 10	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-382177939	
+[00:00:09]: Overriding mod workshop-382177939's option  with value true	
+[00:00:09]: Overriding mod workshop-382177939's option eightxten with value 8x10	
+[00:00:09]: Overriding mod workshop-382177939's option workit with value nope	
+[00:00:09]: Loading mod: workshop-458587300 (Fast Travel) Version:1.1.0	
+[00:00:09]: Could not load mod_config_data/modconfiguration_workshop-537902048_CLIENT	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-758532836	
+[00:00:09]: Overriding mod workshop-758532836's option ENABLECLIENTPAUSE with value true	
+[00:00:09]: Overriding mod workshop-758532836's option ENABLEHOTKEY with value true	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-346962876	
+[00:00:09]: Overriding mod workshop-346962876's option blank with value 0	
+[00:00:09]: Overriding mod workshop-346962876's option chilltime with value 0.01	
+[00:00:09]: Overriding mod workshop-346962876's option f_recipe with value hard	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-378160973	
+[00:00:09]: Overriding mod workshop-378160973's option FIREOPTIONS with value 2	
+[00:00:09]: Overriding mod workshop-378160973's option SHAREMINIMAPPROGRESS with value true	
+[00:00:09]: Overriding mod workshop-378160973's option SHOWPLAYERICONS with value true	
+[00:00:09]: Overriding mod workshop-378160973's option OVERRIDEMODE with value false	
+[00:00:09]: Overriding mod workshop-378160973's option SHOWPLAYERSOPTIONS with value 2	
+[00:00:09]: Overriding mod workshop-378160973's option SHOWFIREICONS with value true	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-352499675	
+[00:00:09]: Overriding mod workshop-352499675's option  with value 0	
+[00:00:09]: Overriding mod workshop-352499675's option  with value 0	
+[00:00:09]: Overriding mod workshop-352499675's option Mode with value hard	
+[00:00:09]: Overriding mod workshop-352499675's option ShelterLight with value yes	
+[00:00:09]: Overriding mod workshop-352499675's option ShelterUses with value 10	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-382177939	
+[00:00:09]: Overriding mod workshop-382177939's option  with value true	
+[00:00:09]: Overriding mod workshop-382177939's option eightxten with value 8x10	
+[00:00:09]: Overriding mod workshop-382177939's option workit with value nope	
+[00:00:09]: Loading mod: workshop-537902048 (Scythestest) Version:2.3	
+[00:00:09]: Could not load mod_config_data/modconfiguration_workshop-556027744_CLIENT	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-758532836	
+[00:00:09]: Overriding mod workshop-758532836's option ENABLECLIENTPAUSE with value true	
+[00:00:09]: Overriding mod workshop-758532836's option ENABLEHOTKEY with value true	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-346962876	
+[00:00:09]: Overriding mod workshop-346962876's option blank with value 0	
+[00:00:09]: Overriding mod workshop-346962876's option chilltime with value 0.01	
+[00:00:09]: Overriding mod workshop-346962876's option f_recipe with value hard	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-378160973	
+[00:00:09]: Overriding mod workshop-378160973's option FIREOPTIONS with value 2	
+[00:00:09]: Overriding mod workshop-378160973's option SHAREMINIMAPPROGRESS with value true	
+[00:00:09]: Overriding mod workshop-378160973's option SHOWPLAYERICONS with value true	
+[00:00:09]: Overriding mod workshop-378160973's option OVERRIDEMODE with value false	
+[00:00:09]: Overriding mod workshop-378160973's option SHOWPLAYERSOPTIONS with value 2	
+[00:00:09]: Overriding mod workshop-378160973's option SHOWFIREICONS with value true	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-352499675	
+[00:00:09]: Overriding mod workshop-352499675's option  with value 0	
+[00:00:09]: Overriding mod workshop-352499675's option  with value 0	
+[00:00:09]: Overriding mod workshop-352499675's option Mode with value hard	
+[00:00:09]: Overriding mod workshop-352499675's option ShelterLight with value yes	
+[00:00:09]: Overriding mod workshop-352499675's option ShelterUses with value 10	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-382177939	
+[00:00:09]: Overriding mod workshop-382177939's option  with value true	
+[00:00:09]: Overriding mod workshop-382177939's option eightxten with value 8x10	
+[00:00:09]: Overriding mod workshop-382177939's option workit with value nope	
+[00:00:09]: Loading mod: workshop-556027744 (SUMMON BIGFOOT( With Old Bell)) Version:1.6	
+[00:00:09]: Could not load mod_config_data/modconfiguration_workshop-576037565_CLIENT	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-758532836	
+[00:00:09]: Overriding mod workshop-758532836's option ENABLECLIENTPAUSE with value true	
+[00:00:09]: Overriding mod workshop-758532836's option ENABLEHOTKEY with value true	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-346962876	
+[00:00:09]: Overriding mod workshop-346962876's option blank with value 0	
+[00:00:09]: Overriding mod workshop-346962876's option chilltime with value 0.01	
+[00:00:09]: Overriding mod workshop-346962876's option f_recipe with value hard	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-378160973	
+[00:00:09]: Overriding mod workshop-378160973's option FIREOPTIONS with value 2	
+[00:00:09]: Overriding mod workshop-378160973's option SHAREMINIMAPPROGRESS with value true	
+[00:00:09]: Overriding mod workshop-378160973's option SHOWPLAYERICONS with value true	
+[00:00:09]: Overriding mod workshop-378160973's option OVERRIDEMODE with value false	
+[00:00:09]: Overriding mod workshop-378160973's option SHOWPLAYERSOPTIONS with value 2	
+[00:00:09]: Overriding mod workshop-378160973's option SHOWFIREICONS with value true	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-352499675	
+[00:00:09]: Overriding mod workshop-352499675's option  with value 0	
+[00:00:09]: Overriding mod workshop-352499675's option  with value 0	
+[00:00:09]: Overriding mod workshop-352499675's option Mode with value hard	
+[00:00:09]: Overriding mod workshop-352499675's option ShelterLight with value yes	
+[00:00:09]: Overriding mod workshop-352499675's option ShelterUses with value 10	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-382177939	
+[00:00:09]: Overriding mod workshop-382177939's option  with value true	
+[00:00:09]: Overriding mod workshop-382177939's option eightxten with value 8x10	
+[00:00:09]: Overriding mod workshop-382177939's option workit with value nope	
+[00:00:09]: Loading mod: workshop-576037565 (Ethereal spear) Version:1.1.3.1 (Old API! (mod: nil game: 10) )	
+[00:00:09]: Could not load mod_config_data/modconfiguration_workshop-670918115_CLIENT	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-758532836	
+[00:00:09]: Overriding mod workshop-758532836's option ENABLECLIENTPAUSE with value true	
+[00:00:09]: Overriding mod workshop-758532836's option ENABLEHOTKEY with value true	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-346962876	
+[00:00:09]: Overriding mod workshop-346962876's option blank with value 0	
+[00:00:09]: Overriding mod workshop-346962876's option chilltime with value 0.01	
+[00:00:09]: Overriding mod workshop-346962876's option f_recipe with value hard	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-378160973	
+[00:00:09]: Overriding mod workshop-378160973's option FIREOPTIONS with value 2	
+[00:00:09]: Overriding mod workshop-378160973's option SHAREMINIMAPPROGRESS with value true	
+[00:00:09]: Overriding mod workshop-378160973's option SHOWPLAYERICONS with value true	
+[00:00:09]: Overriding mod workshop-378160973's option OVERRIDEMODE with value false	
+[00:00:09]: Overriding mod workshop-378160973's option SHOWPLAYERSOPTIONS with value 2	
+[00:00:09]: Overriding mod workshop-378160973's option SHOWFIREICONS with value true	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-352499675	
+[00:00:09]: Overriding mod workshop-352499675's option  with value 0	
+[00:00:09]: Overriding mod workshop-352499675's option  with value 0	
+[00:00:09]: Overriding mod workshop-352499675's option Mode with value hard	
+[00:00:09]: Overriding mod workshop-352499675's option ShelterLight with value yes	
+[00:00:09]: Overriding mod workshop-352499675's option ShelterUses with value 10	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-382177939	
+[00:00:09]: Overriding mod workshop-382177939's option  with value true	
+[00:00:09]: Overriding mod workshop-382177939's option eightxten with value 8x10	
+[00:00:09]: Overriding mod workshop-382177939's option workit with value nope	
+[00:00:09]: Loading mod: workshop-670918115 (Imperishable Thermal Stone) Version:0.5	
+[00:00:09]: Could not load mod_config_data/modconfiguration_workshop-683788408_CLIENT	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-758532836	
+[00:00:09]: Overriding mod workshop-758532836's option ENABLECLIENTPAUSE with value true	
+[00:00:09]: Overriding mod workshop-758532836's option ENABLEHOTKEY with value true	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-346962876	
+[00:00:09]: Overriding mod workshop-346962876's option blank with value 0	
+[00:00:09]: Overriding mod workshop-346962876's option chilltime with value 0.01	
+[00:00:09]: Overriding mod workshop-346962876's option f_recipe with value hard	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-378160973	
+[00:00:09]: Overriding mod workshop-378160973's option FIREOPTIONS with value 2	
+[00:00:09]: Overriding mod workshop-378160973's option SHAREMINIMAPPROGRESS with value true	
+[00:00:09]: Overriding mod workshop-378160973's option SHOWPLAYERICONS with value true	
+[00:00:09]: Overriding mod workshop-378160973's option OVERRIDEMODE with value false	
+[00:00:09]: Overriding mod workshop-378160973's option SHOWPLAYERSOPTIONS with value 2	
+[00:00:09]: Overriding mod workshop-378160973's option SHOWFIREICONS with value true	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-352499675	
+[00:00:09]: Overriding mod workshop-352499675's option  with value 0	
+[00:00:09]: Overriding mod workshop-352499675's option  with value 0	
+[00:00:09]: Overriding mod workshop-352499675's option Mode with value hard	
+[00:00:09]: Overriding mod workshop-352499675's option ShelterLight with value yes	
+[00:00:09]: Overriding mod workshop-352499675's option ShelterUses with value 10	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-382177939	
+[00:00:09]: Overriding mod workshop-382177939's option  with value true	
+[00:00:09]: Overriding mod workshop-382177939's option eightxten with value 8x10	
+[00:00:09]: Overriding mod workshop-382177939's option workit with value nope	
+[00:00:09]: Loading mod: workshop-683788408 (Better Thulecite Items) Version:1.3	
+[00:00:09]: Could not load mod_config_data/modconfiguration_workshop-758532836_CLIENT	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-758532836	
+[00:00:09]: Overriding mod workshop-758532836's option ENABLECLIENTPAUSE with value true	
+[00:00:09]: Overriding mod workshop-758532836's option ENABLEHOTKEY with value true	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-346962876	
+[00:00:09]: Overriding mod workshop-346962876's option blank with value 0	
+[00:00:09]: Overriding mod workshop-346962876's option chilltime with value 0.01	
+[00:00:09]: Overriding mod workshop-346962876's option f_recipe with value hard	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-378160973	
+[00:00:09]: Overriding mod workshop-378160973's option FIREOPTIONS with value 2	
+[00:00:09]: Overriding mod workshop-378160973's option SHAREMINIMAPPROGRESS with value true	
+[00:00:09]: Overriding mod workshop-378160973's option SHOWPLAYERICONS with value true	
+[00:00:09]: Overriding mod workshop-378160973's option OVERRIDEMODE with value false	
+[00:00:09]: Overriding mod workshop-378160973's option SHOWPLAYERSOPTIONS with value 2	
+[00:00:09]: Overriding mod workshop-378160973's option SHOWFIREICONS with value true	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-352499675	
+[00:00:09]: Overriding mod workshop-352499675's option  with value 0	
+[00:00:09]: Overriding mod workshop-352499675's option  with value 0	
+[00:00:09]: Overriding mod workshop-352499675's option Mode with value hard	
+[00:00:09]: Overriding mod workshop-352499675's option ShelterLight with value yes	
+[00:00:09]: Overriding mod workshop-352499675's option ShelterUses with value 10	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-382177939	
+[00:00:09]: Overriding mod workshop-382177939's option  with value true	
+[00:00:09]: Overriding mod workshop-382177939's option eightxten with value 8x10	
+[00:00:09]: Overriding mod workshop-382177939's option workit with value nope	
+[00:00:09]: Loading mod: workshop-758532836 (Global Pause) Version:1.3.2	
+[00:00:09]: Could not load mod_config_data/modconfiguration_workshop-771629575_CLIENT	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-758532836	
+[00:00:09]: Overriding mod workshop-758532836's option ENABLECLIENTPAUSE with value true	
+[00:00:09]: Overriding mod workshop-758532836's option ENABLEHOTKEY with value true	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-346962876	
+[00:00:09]: Overriding mod workshop-346962876's option blank with value 0	
+[00:00:09]: Overriding mod workshop-346962876's option chilltime with value 0.01	
+[00:00:09]: Overriding mod workshop-346962876's option f_recipe with value hard	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-378160973	
+[00:00:09]: Overriding mod workshop-378160973's option FIREOPTIONS with value 2	
+[00:00:09]: Overriding mod workshop-378160973's option SHAREMINIMAPPROGRESS with value true	
+[00:00:09]: Overriding mod workshop-378160973's option SHOWPLAYERICONS with value true	
+[00:00:09]: Overriding mod workshop-378160973's option OVERRIDEMODE with value false	
+[00:00:09]: Overriding mod workshop-378160973's option SHOWPLAYERSOPTIONS with value 2	
+[00:00:09]: Overriding mod workshop-378160973's option SHOWFIREICONS with value true	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-352499675	
+[00:00:09]: Overriding mod workshop-352499675's option  with value 0	
+[00:00:09]: Overriding mod workshop-352499675's option  with value 0	
+[00:00:09]: Overriding mod workshop-352499675's option Mode with value hard	
+[00:00:09]: Overriding mod workshop-352499675's option ShelterLight with value yes	
+[00:00:09]: Overriding mod workshop-352499675's option ShelterUses with value 10	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-382177939	
+[00:00:09]: Overriding mod workshop-382177939's option  with value true	
+[00:00:09]: Overriding mod workshop-382177939's option eightxten with value 8x10	
+[00:00:09]: Overriding mod workshop-382177939's option workit with value nope	
+[00:00:09]: Loading mod: workshop-771629575 (Improved Beekeeper Hat) Version:1.2	
+[00:00:09]: Could not load mod_config_data/modconfiguration_workshop-797304209_CLIENT	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-758532836	
+[00:00:09]: Overriding mod workshop-758532836's option ENABLECLIENTPAUSE with value true	
+[00:00:09]: Overriding mod workshop-758532836's option ENABLEHOTKEY with value true	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-346962876	
+[00:00:09]: Overriding mod workshop-346962876's option blank with value 0	
+[00:00:09]: Overriding mod workshop-346962876's option chilltime with value 0.01	
+[00:00:09]: Overriding mod workshop-346962876's option f_recipe with value hard	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-378160973	
+[00:00:09]: Overriding mod workshop-378160973's option FIREOPTIONS with value 2	
+[00:00:09]: Overriding mod workshop-378160973's option SHAREMINIMAPPROGRESS with value true	
+[00:00:09]: Overriding mod workshop-378160973's option SHOWPLAYERICONS with value true	
+[00:00:09]: Overriding mod workshop-378160973's option OVERRIDEMODE with value false	
+[00:00:09]: Overriding mod workshop-378160973's option SHOWPLAYERSOPTIONS with value 2	
+[00:00:09]: Overriding mod workshop-378160973's option SHOWFIREICONS with value true	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-352499675	
+[00:00:09]: Overriding mod workshop-352499675's option  with value 0	
+[00:00:09]: Overriding mod workshop-352499675's option  with value 0	
+[00:00:09]: Overriding mod workshop-352499675's option Mode with value hard	
+[00:00:09]: Overriding mod workshop-352499675's option ShelterLight with value yes	
+[00:00:09]: Overriding mod workshop-352499675's option ShelterUses with value 10	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-382177939	
+[00:00:09]: Overriding mod workshop-382177939's option  with value true	
+[00:00:09]: Overriding mod workshop-382177939's option eightxten with value 8x10	
+[00:00:09]: Overriding mod workshop-382177939's option workit with value nope	
+[00:00:09]: Loading mod: workshop-797304209 (no grassgekko) Version:0.0	
+[00:00:09]: Could not load mod_config_data/modconfiguration_workshop-816057392_CLIENT	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-758532836	
+[00:00:09]: Overriding mod workshop-758532836's option ENABLECLIENTPAUSE with value true	
+[00:00:09]: Overriding mod workshop-758532836's option ENABLEHOTKEY with value true	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-346962876	
+[00:00:09]: Overriding mod workshop-346962876's option blank with value 0	
+[00:00:09]: Overriding mod workshop-346962876's option chilltime with value 0.01	
+[00:00:09]: Overriding mod workshop-346962876's option f_recipe with value hard	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-378160973	
+[00:00:09]: Overriding mod workshop-378160973's option FIREOPTIONS with value 2	
+[00:00:09]: Overriding mod workshop-378160973's option SHAREMINIMAPPROGRESS with value true	
+[00:00:09]: Overriding mod workshop-378160973's option SHOWPLAYERICONS with value true	
+[00:00:09]: Overriding mod workshop-378160973's option OVERRIDEMODE with value false	
+[00:00:09]: Overriding mod workshop-378160973's option SHOWPLAYERSOPTIONS with value 2	
+[00:00:09]: Overriding mod workshop-378160973's option SHOWFIREICONS with value true	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-352499675	
+[00:00:09]: Overriding mod workshop-352499675's option  with value 0	
+[00:00:09]: Overriding mod workshop-352499675's option  with value 0	
+[00:00:09]: Overriding mod workshop-352499675's option Mode with value hard	
+[00:00:09]: Overriding mod workshop-352499675's option ShelterLight with value yes	
+[00:00:09]: Overriding mod workshop-352499675's option ShelterUses with value 10	
+[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-382177939	
+[00:00:09]: Overriding mod workshop-382177939's option  with value true	
+[00:00:09]: Overriding mod workshop-382177939's option eightxten with value 8x10	
+[00:00:09]: Overriding mod workshop-382177939's option workit with value nope	
+[00:00:09]: Loading mod: workshop-816057392 (Combined Status Server Version) Version:1.6.14	
+[00:00:09]: Mod: workshop-380423963 (Mineable Gems)	Loading modworldgenmain.lua	
+[00:00:09]: Mod: workshop-380423963 (Mineable Gems)	  Mod had no modworldgenmain.lua. Skipping.	
+[00:00:09]: Mod: workshop-380423963 (Mineable Gems)	Loading modmain.lua	
+[00:00:09]: Mod: workshop-365119238 (SmartCrockPot)	Loading modworldgenmain.lua	
+[00:00:09]: Mod: workshop-365119238 (SmartCrockPot)	  Mod had no modworldgenmain.lua. Skipping.	
+[00:00:09]: Mod: workshop-365119238 (SmartCrockPot)	Loading modmain.lua	
+[00:00:09]: modimport: ../mods/workshop-365119238/modmain_segments/containerwidgetfunction.lua	
+[00:00:09]: modimport: ../mods/workshop-365119238/modmain_segments/containers_setup.lua	
+[00:00:09]: modimport: ../mods/workshop-365119238/modmain_segments/action_predict.lua	
+[00:00:09]: WARNING: Positional Action parameters are deprecated. Please pass action a table instead.	
+[00:00:09]: Action defined at 	../mods/workshop-365119238/modmain_segments/action_predict.lua:1 in (local) result (main) <0-0>	
+[00:00:09]: Mod: workshop-758532836 (Global Pause)	Loading modworldgenmain.lua	
+[00:00:09]: Mod: workshop-758532836 (Global Pause)	  Mod had no modworldgenmain.lua. Skipping.	
+[00:00:09]: Mod: workshop-758532836 (Global Pause)	Loading modmain.lua	
+[00:00:10]: Mod: workshop-375850593 (Extra Equip Slots)	Loading modworldgenmain.lua	
+[00:00:10]: Mod: workshop-375850593 (Extra Equip Slots)	  Mod had no modworldgenmain.lua. Skipping.	
+[00:00:10]: Mod: workshop-375850593 (Extra Equip Slots)	Loading modmain.lua	
+[00:00:10]: Mod: workshop-346962876 (DST Freezer)	Loading modworldgenmain.lua	
+[00:00:10]: Mod: workshop-346962876 (DST Freezer)	  Mod had no modworldgenmain.lua. Skipping.	
+[00:00:10]: Mod: workshop-346962876 (DST Freezer)	Loading modmain.lua	
+[00:00:10]: Warning: Calling Recipe from a mod is now deprecated. Please call AddRecipe from your modmain.lua file.	
+[00:00:10]: Mod: workshop-797304209 (no grassgekko)	Loading modworldgenmain.lua	
+[00:00:10]: Mod: workshop-797304209 (no grassgekko)	  Mod had no modworldgenmain.lua. Skipping.	
+[00:00:10]: Mod: workshop-797304209 (no grassgekko)	Loading modmain.lua	
+[00:00:10]: Mod: workshop-537902048 (Scythestest)	Loading modworldgenmain.lua	
+[00:00:10]: Mod: workshop-537902048 (Scythestest)	  Mod had no modworldgenmain.lua. Skipping.	
+[00:00:10]: Mod: workshop-537902048 (Scythestest)	Loading modmain.lua	
+[00:00:10]: Warning: Calling Recipe from a mod is now deprecated. Please call AddRecipe from your modmain.lua file.	
+[00:00:10]: Warning: Calling Recipe from a mod is now deprecated. Please call AddRecipe from your modmain.lua file.	
+[00:00:10]: WARNING: Positional Action parameters are deprecated. Please pass action a table instead.	
+[00:00:10]: Action defined at 	../mods/workshop-537902048/modmain.lua:130 in () ? (main) <0-0>	
+[00:00:10]: Mod: workshop-556027744 (SUMMON BIGFOOT( With Old Bell))	Loading modworldgenmain.lua	
+[00:00:10]: Mod: workshop-556027744 (SUMMON BIGFOOT( With Old Bell))	  Mod had no modworldgenmain.lua. Skipping.	
+[00:00:10]: Mod: workshop-556027744 (SUMMON BIGFOOT( With Old Bell))	Loading modmain.lua	
+[00:00:11]: Mod: workshop-345692228 (Minimap HUD)	Loading modworldgenmain.lua	
+[00:00:11]: Mod: workshop-345692228 (Minimap HUD)	  Mod had no modworldgenmain.lua. Skipping.	
+[00:00:11]: Mod: workshop-345692228 (Minimap HUD)	Loading modmain.lua	
+[00:00:11]: Mod: workshop-771629575 (Improved Beekeeper Hat)	Loading modworldgenmain.lua	
+[00:00:11]: Mod: workshop-771629575 (Improved Beekeeper Hat)	  Mod had no modworldgenmain.lua. Skipping.	
+[00:00:11]: Mod: workshop-771629575 (Improved Beekeeper Hat)	Loading modmain.lua	
+[00:00:11]: Mod: workshop-670918115 (Imperishable Thermal Stone)	Loading modworldgenmain.lua	
+[00:00:11]: Mod: workshop-670918115 (Imperishable Thermal Stone)	  Mod had no modworldgenmain.lua. Skipping.	
+[00:00:11]: Mod: workshop-670918115 (Imperishable Thermal Stone)	Loading modmain.lua	
+[00:00:11]: Mod: workshop-363989569 (Growable Marble Trees)	Loading modworldgenmain.lua	
+[00:00:11]: Mod: workshop-363989569 (Growable Marble Trees)	  Mod had no modworldgenmain.lua. Skipping.	
+[00:00:11]: Mod: workshop-363989569 (Growable Marble Trees)	Loading modmain.lua	
+[00:00:11]: Mod: workshop-458587300 (Fast Travel)	Loading modworldgenmain.lua	
+[00:00:11]: Mod: workshop-458587300 (Fast Travel)	  Mod had no modworldgenmain.lua. Skipping.	
+[00:00:11]: Mod: workshop-458587300 (Fast Travel)	Loading modmain.lua	
+[00:00:11]: Mod: workshop-576037565 (Ethereal spear)	Loading modworldgenmain.lua	
+[00:00:11]: Mod: workshop-576037565 (Ethereal spear)	  Mod had no modworldgenmain.lua. Skipping.	
+[00:00:11]: Mod: workshop-576037565 (Ethereal spear)	Loading modmain.lua	
+[00:00:11]: Warning: Calling Recipe from a mod is now deprecated. Please call AddRecipe from your modmain.lua file.	
+[00:00:11]: Mod: workshop-352499675 (DST Resurrection Shelter)	Loading modworldgenmain.lua	
+[00:00:11]: Mod: workshop-352499675 (DST Resurrection Shelter)	  Mod had no modworldgenmain.lua. Skipping.	
+[00:00:11]: Mod: workshop-352499675 (DST Resurrection Shelter)	Loading modmain.lua	
+[00:00:11]: Warning: Calling Recipe from a mod is now deprecated. Please call AddRecipe from your modmain.lua file.	
+[00:00:11]: Mod: workshop-456028339 (Craftable Living Logs)	Loading modworldgenmain.lua	
+[00:00:11]: Mod: workshop-456028339 (Craftable Living Logs)	  Mod had no modworldgenmain.lua. Skipping.	
+[00:00:11]: Mod: workshop-456028339 (Craftable Living Logs)	Loading modmain.lua	
+[00:00:11]: Warning: Calling Recipe from a mod is now deprecated. Please call AddRecipe from your modmain.lua file.	
+[00:00:11]: Mod: workshop-816057392 (Combined Status Server Version)	Loading modworldgenmain.lua	
+[00:00:11]: Mod: workshop-816057392 (Combined Status Server Version)	  Mod had no modworldgenmain.lua. Skipping.	
+[00:00:11]: Mod: workshop-816057392 (Combined Status Server Version)	Loading modmain.lua	
+[00:00:11]: ModIndex:GetModsToLoad inserting moddir, 	workshop-345692228	
+[00:00:11]: ModIndex:GetModsToLoad inserting moddir, 	workshop-346962876	
+[00:00:11]: ModIndex:GetModsToLoad inserting moddir, 	workshop-352499675	
+[00:00:11]: ModIndex:GetModsToLoad inserting moddir, 	workshop-363989569	
+[00:00:11]: ModIndex:GetModsToLoad inserting moddir, 	workshop-365119238	
+[00:00:11]: ModIndex:GetModsToLoad inserting moddir, 	workshop-375850593	
+[00:00:11]: ModIndex:GetModsToLoad inserting moddir, 	workshop-378160973	
+[00:00:11]: ModIndex:GetModsToLoad inserting moddir, 	workshop-380423963	
+[00:00:11]: ModIndex:GetModsToLoad inserting moddir, 	workshop-382177939	
+[00:00:11]: ModIndex:GetModsToLoad inserting moddir, 	workshop-456028339	
+[00:00:11]: ModIndex:GetModsToLoad inserting moddir, 	workshop-458587300	
+[00:00:11]: ModIndex:GetModsToLoad inserting moddir, 	workshop-537902048	
+[00:00:11]: ModIndex:GetModsToLoad inserting moddir, 	workshop-556027744	
+[00:00:11]: ModIndex:GetModsToLoad inserting moddir, 	workshop-576037565	
+[00:00:11]: ModIndex:GetModsToLoad inserting moddir, 	workshop-670918115	
+[00:00:11]: ModIndex:GetModsToLoad inserting moddir, 	workshop-683788408	
+[00:00:11]: ModIndex:GetModsToLoad inserting moddir, 	workshop-758532836	
+[00:00:11]: ModIndex:GetModsToLoad inserting moddir, 	workshop-771629575	
+[00:00:11]: ModIndex:GetModsToLoad inserting moddir, 	workshop-797304209	
+[00:00:11]: ModIndex:GetModsToLoad inserting moddir, 	workshop-816057392	
+[00:00:11]: Mod: workshop-683788408 (Better Thulecite Items)	Loading modworldgenmain.lua	
+[00:00:11]: Mod: workshop-683788408 (Better Thulecite Items)	  Mod had no modworldgenmain.lua. Skipping.	
+[00:00:11]: Mod: workshop-683788408 (Better Thulecite Items)	Loading modmain.lua	
+[00:00:11]: Warning: Calling Recipe from a mod is now deprecated. Please call AddRecipe from your modmain.lua file.	
+[00:00:11]: Warning: Calling Recipe from a mod is now deprecated. Please call AddRecipe from your modmain.lua file.	
+[00:00:11]: Warning: Calling Recipe from a mod is now deprecated. Please call AddRecipe from your modmain.lua file.	
+[00:00:11]: Warning: Calling Recipe from a mod is now deprecated. Please call AddRecipe from your modmain.lua file.	
+[00:00:11]: Warning: Calling Recipe from a mod is now deprecated. Please call AddRecipe from your modmain.lua file.	
+[00:00:11]: Warning: Calling Recipe from a mod is now deprecated. Please call AddRecipe from your modmain.lua file.	
+[00:00:11]: Warning: Calling Recipe from a mod is now deprecated. Please call AddRecipe from your modmain.lua file.	
+[00:00:11]: Warning: Calling Recipe from a mod is now deprecated. Please call AddRecipe from your modmain.lua file.	
+[00:00:11]: Warning: Calling Recipe from a mod is now deprecated. Please call AddRecipe from your modmain.lua file.	
+[00:00:11]: Warning: Calling Recipe from a mod is now deprecated. Please call AddRecipe from your modmain.lua file.	
+[00:00:11]: Warning: Calling Recipe from a mod is now deprecated. Please call AddRecipe from your modmain.lua file.	
+[00:00:11]: Warning: Calling Recipe from a mod is now deprecated. Please call AddRecipe from your modmain.lua file.	
+[00:00:11]: Mod: workshop-382177939 (DST Storm Cellar)	Loading modworldgenmain.lua	
+[00:00:11]: Mod: workshop-382177939 (DST Storm Cellar)	  Mod had no modworldgenmain.lua. Skipping.	
+[00:00:11]: Mod: workshop-382177939 (DST Storm Cellar)	Loading modmain.lua	
+[00:00:11]: Warning: Calling Recipe from a mod is now deprecated. Please call AddRecipe from your modmain.lua file.	
+[00:00:11]: Mod: workshop-378160973 (Global Positions)	Loading modworldgenmain.lua	
+[00:00:11]: Mod: workshop-378160973 (Global Positions)	  Mod had no modworldgenmain.lua. Skipping.	
+[00:00:11]: Mod: workshop-378160973 (Global Positions)	Loading modmain.lua	
+[00:00:11]: ModIndex:GetModsToLoad inserting moddir, 	workshop-345692228	
+[00:00:11]: ModIndex:GetModsToLoad inserting moddir, 	workshop-346962876	
+[00:00:11]: ModIndex:GetModsToLoad inserting moddir, 	workshop-352499675	
+[00:00:11]: ModIndex:GetModsToLoad inserting moddir, 	workshop-363989569	
+[00:00:11]: ModIndex:GetModsToLoad inserting moddir, 	workshop-365119238	
+[00:00:11]: ModIndex:GetModsToLoad inserting moddir, 	workshop-375850593	
+[00:00:11]: ModIndex:GetModsToLoad inserting moddir, 	workshop-378160973	
+[00:00:11]: ModIndex:GetModsToLoad inserting moddir, 	workshop-380423963	
+[00:00:11]: ModIndex:GetModsToLoad inserting moddir, 	workshop-382177939	
+[00:00:11]: ModIndex:GetModsToLoad inserting moddir, 	workshop-456028339	
+[00:00:11]: ModIndex:GetModsToLoad inserting moddir, 	workshop-458587300	
+[00:00:11]: ModIndex:GetModsToLoad inserting moddir, 	workshop-537902048	
+[00:00:11]: ModIndex:GetModsToLoad inserting moddir, 	workshop-556027744	
+[00:00:11]: ModIndex:GetModsToLoad inserting moddir, 	workshop-576037565	
+[00:00:11]: ModIndex:GetModsToLoad inserting moddir, 	workshop-670918115	
+[00:00:11]: ModIndex:GetModsToLoad inserting moddir, 	workshop-683788408	
+[00:00:11]: ModIndex:GetModsToLoad inserting moddir, 	workshop-758532836	
+[00:00:11]: ModIndex:GetModsToLoad inserting moddir, 	workshop-771629575	
+[00:00:11]: ModIndex:GetModsToLoad inserting moddir, 	workshop-797304209	
+[00:00:11]: ModIndex:GetModsToLoad inserting moddir, 	workshop-816057392	
+[00:00:15]: FMOD Error: An invalid object handle was used. 
+[00:00:16]: LOADING LUA SUCCESS
+[00:00:16]: Registering mod namespace "workshop-378160973"
+[00:00:16]: Registering mod namespace "globalpause"
+[00:00:17]: PlayerDeaths could not load morgue	
+[00:00:17]: PlayerHistory could not load player_history	
+[00:00:17]: bloom_enabled	false	
+[00:00:17]: loaded saveindex	
+[00:00:17]: OnFilesLoaded()	
+[00:00:17]: OnUpdatePurchaseStateComplete	
+[00:01:33]: Mod: workshop-380423963 (Mineable Gems)	Registering prefabs	
+[00:01:33]: Mod: workshop-380423963 (Mineable Gems)	  Registering default mod prefab	
+[00:01:33]: Mod: workshop-365119238 (SmartCrockPot)	Registering prefabs	
+[00:01:33]: Mod: workshop-365119238 (SmartCrockPot)	  Registering default mod prefab	
+[00:01:33]: Mod: workshop-758532836 (Global Pause)	Registering prefabs	
+[00:01:33]: Mod: workshop-758532836 (Global Pause)	  Registering default mod prefab	
+[00:01:33]: Mod: workshop-375850593 (Extra Equip Slots)	Registering prefabs	
+[00:01:33]: Mod: workshop-375850593 (Extra Equip Slots)	  Registering default mod prefab	
+[00:01:33]: Mod: workshop-346962876 (DST Freezer)	Registering prefabs	
+[00:01:33]: Mod: workshop-346962876 (DST Freezer)	  Registering prefab file: prefabs/freezer	
+[00:01:33]: Mod: workshop-346962876 (DST Freezer)	    freezer	
+[00:01:33]: Mod: workshop-346962876 (DST Freezer)	    freezer_placer	
+[00:01:33]: Mod: workshop-346962876 (DST Freezer)	  Registering default mod prefab	
+[00:01:33]: Mod: workshop-797304209 (no grassgekko)	Registering prefabs	
+[00:01:33]: Mod: workshop-797304209 (no grassgekko)	  Registering default mod prefab	
+[00:01:33]: Mod: workshop-537902048 (Scythestest)	Registering prefabs	
+[00:01:33]: Mod: workshop-537902048 (Scythestest)	  Registering prefab file: prefabs/scythe	
+[00:01:33]: Mod: workshop-537902048 (Scythestest)	    scythe	
+[00:01:33]: Mod: workshop-537902048 (Scythestest)	  Registering prefab file: prefabs/scythe_golden	
+[00:01:33]: Mod: workshop-537902048 (Scythestest)	    scythe_golden	
+[00:01:33]: Mod: workshop-537902048 (Scythestest)	  Registering default mod prefab	
+[00:01:33]: Mod: workshop-556027744 (SUMMON BIGFOOT( With Old Bell))	Registering prefabs	
+[00:01:33]: Mod: workshop-556027744 (SUMMON BIGFOOT( With Old Bell))	  Registering prefab file: prefabs/bigfoot	
+[00:01:33]: Mod: workshop-556027744 (SUMMON BIGFOOT( With Old Bell))	    bigfoot	
+[00:01:33]: Mod: workshop-556027744 (SUMMON BIGFOOT( With Old Bell))	    bigfootprint	
+[00:01:33]: Mod: workshop-556027744 (SUMMON BIGFOOT( With Old Bell))	    bigfootshadow	
+[00:01:33]: Mod: workshop-556027744 (SUMMON BIGFOOT( With Old Bell))	  Registering prefab file: prefabs/glommerbell	
+[00:01:33]: Mod: workshop-556027744 (SUMMON BIGFOOT( With Old Bell))	    bell	
+[00:01:33]: Mod: workshop-556027744 (SUMMON BIGFOOT( With Old Bell))	  Registering default mod prefab	
+[00:01:33]: Mod: workshop-345692228 (Minimap HUD)	Registering prefabs	
+[00:01:33]: Mod: workshop-345692228 (Minimap HUD)	  Registering default mod prefab	
+[00:01:33]: Mod: workshop-771629575 (Improved Beekeeper Hat)	Registering prefabs	
+[00:01:33]: Mod: workshop-771629575 (Improved Beekeeper Hat)	  Registering default mod prefab	
+[00:01:33]: Mod: workshop-670918115 (Imperishable Thermal Stone)	Registering prefabs	
+[00:01:33]: Mod: workshop-670918115 (Imperishable Thermal Stone)	  Registering default mod prefab	
+[00:01:33]: Mod: workshop-363989569 (Growable Marble Trees)	Registering prefabs	
+[00:01:33]: Mod: workshop-363989569 (Growable Marble Trees)	  Registering prefab file: prefabs/marbleseed	
+[00:01:33]: Mod: workshop-363989569 (Growable Marble Trees)	    marbleseed	
+[00:01:33]: Mod: workshop-363989569 (Growable Marble Trees)	    marbleseed_placer	
+[00:01:33]: Mod: workshop-363989569 (Growable Marble Trees)	  Registering default mod prefab	
+[00:01:33]: Mod: workshop-458587300 (Fast Travel)	Registering prefabs	
+[00:01:33]: Mod: workshop-458587300 (Fast Travel)	  Registering default mod prefab	
+[00:01:33]: Mod: workshop-576037565 (Ethereal spear)	Registering prefabs	
+[00:01:33]: Mod: workshop-576037565 (Ethereal spear)	  Registering prefab file: prefabs/ethrl_spear	
+[00:01:34]: Mod: workshop-576037565 (Ethereal spear)	    ethrl_spear	
+[00:01:34]: Mod: workshop-576037565 (Ethereal spear)	  Registering default mod prefab	
+[00:01:34]: Mod: workshop-352499675 (DST Resurrection Shelter)	Registering prefabs	
+[00:01:34]: Mod: workshop-352499675 (DST Resurrection Shelter)	  Registering prefab file: prefabs/r_shelter	
+[00:01:34]: Mod: workshop-352499675 (DST Resurrection Shelter)	    r_shelter	
+[00:01:34]: Mod: workshop-352499675 (DST Resurrection Shelter)	    r_shelter_placer	
+[00:01:34]: Mod: workshop-352499675 (DST Resurrection Shelter)	  Registering default mod prefab	
+[00:01:34]: Mod: workshop-456028339 (Craftable Living Logs)	Registering prefabs	
+[00:01:34]: Mod: workshop-456028339 (Craftable Living Logs)	  Registering default mod prefab	
+[00:01:34]: Mod: workshop-816057392 (Combined Status Server Version)	Registering prefabs	
+[00:01:34]: Mod: workshop-816057392 (Combined Status Server Version)	  Registering default mod prefab	
+[00:01:34]: Mod: workshop-683788408 (Better Thulecite Items)	Registering prefabs	
+[00:01:34]: Mod: workshop-683788408 (Better Thulecite Items)	  Registering default mod prefab	
+[00:01:34]: Mod: workshop-382177939 (DST Storm Cellar)	Registering prefabs	
+[00:01:34]: Mod: workshop-382177939 (DST Storm Cellar)	  Registering prefab file: prefabs/cellar	
+[00:01:34]: Mod: workshop-382177939 (DST Storm Cellar)	    cellar	
+[00:01:34]: Mod: workshop-382177939 (DST Storm Cellar)	    cellar_placer	
+[00:01:34]: Mod: workshop-382177939 (DST Storm Cellar)	  Registering default mod prefab	
+[00:01:34]: Mod: workshop-378160973 (Global Positions)	Registering prefabs	
+[00:01:34]: Mod: workshop-378160973 (Global Positions)	  Registering prefab file: prefabs/globalposition_classified	
+[00:01:34]: Mod: workshop-378160973 (Global Positions)	    globalposition_classified	
+[00:01:34]: Mod: workshop-378160973 (Global Positions)	  Registering prefab file: prefabs/smoketrail	
+[00:01:34]: Mod: workshop-378160973 (Global Positions)	    smoketrail	
+[00:01:34]: Mod: workshop-378160973 (Global Positions)	  Registering prefab file: prefabs/globalmapicon_noproxy	
+[00:01:34]: Mod: workshop-378160973 (Global Positions)	    globalmapicon_noproxy	
+[00:01:34]: Mod: workshop-378160973 (Global Positions)	  Registering prefab file: prefabs/pings	
+[00:01:34]: Mod: workshop-378160973 (Global Positions)	    ping_generic	
+[00:01:34]: Mod: workshop-378160973 (Global Positions)	    ping_omw	
+[00:01:34]: Mod: workshop-378160973 (Global Positions)	    ping_danger	
+[00:01:34]: Mod: workshop-378160973 (Global Positions)	    ping_explore	
+[00:01:34]: Mod: workshop-378160973 (Global Positions)	    ping_gohere	
+[00:01:34]: Mod: workshop-378160973 (Global Positions)	  Registering default mod prefab	
+[00:01:34]: 	Load FE	
+[00:01:37]: 	Load FE: done	
+[00:01:37]: ModIndex: Load sequence finished successfully.	
+[00:01:37]: Reset() returning
+[00:01:38]: [200] Account Communication Success (6)
+[00:01:38]: Received (KU_3DNugH8W) from TokenPurpose
+[00:01:38]: Starting Dedicated Server Game	
+[00:01:38]: Network tick rate: U=15(2), D=0
+[00:01:38]: About to start a server with the following settings:
+[00:01:38]:   Dedicated: true
+[00:01:38]:   Online: true
+[00:01:38]:   Passworded: true
+[00:01:38]:   ServerPort: 11001
+[00:01:38]:   SteamAuthPort: 12349
+[00:01:38]:   SteamMasterServerPort: 12350
+[00:01:38]:   ClanID: false
+[00:01:38]:   ClanOnly: false
+[00:01:38]:   ClanAdmin: false
+[00:01:38]:   LanOnly: false
+[00:01:38]:   FriendsOnly: false
+[00:01:38]:   EnableAutosaver: true
+[00:01:38]:   PVP: false
+[00:01:38]:   MaxPlayers: 16
+[00:01:38]:   GameMode: survival
+[00:01:38]:   OverridenDNS: 
+[00:01:38]:   PauseWhenEmpty: true
+[00:01:38]:   VoteEnabled: true
+[00:01:38]:   InternetBroadcasting: true
+[00:01:38]:   Intent: social
+[00:01:38]: [Warning] Could not confirm port 11001 is open in the firewall. 
+[00:01:38]: Could not load mod_config_data/modconfiguration_workshop-758532836	
+[00:01:38]: Could not load mod_config_data/modconfiguration_workshop-346962876	
+[00:01:38]: Could not load mod_config_data/modconfiguration_workshop-378160973	
+[00:01:38]: Could not load mod_config_data/modconfiguration_workshop-576037565	
+[00:01:38]: Could not load mod_config_data/modconfiguration_workshop-771629575	
+[00:01:38]: Could not load mod_config_data/modconfiguration_workshop-352499675	
+[00:01:38]: Could not load mod_config_data/modconfiguration_workshop-363989569	
+[00:01:38]: Could not load mod_config_data/modconfiguration_workshop-816057392	
+[00:01:38]: Could not load mod_config_data/modconfiguration_workshop-382177939	
+[00:01:38]: Could not load mod_config_data/modconfiguration_workshop-458587300	
+[00:01:38]: Could not load mod_config_data/modconfiguration_workshop-375850593	
+[00:01:38]: Could not load mod_config_data/modconfiguration_workshop-683788408	
+[00:01:38]: Could not load mod_config_data/modconfiguration_workshop-456028339	
+[00:01:38]: Could not load mod_config_data/modconfiguration_workshop-556027744	
+[00:01:38]: Could not load mod_config_data/modconfiguration_workshop-537902048	
+[00:01:38]: Online Server Started on port: 11001
+[00:01:38]: unloading prefabs for mod MOD_workshop-380423963	
+[00:01:38]: unloading prefabs for mod MOD_workshop-365119238	
+[00:01:38]: unloading prefabs for mod MOD_workshop-758532836	
+[00:01:38]: unloading prefabs for mod MOD_workshop-375850593	
+[00:01:38]: unloading prefabs for mod MOD_workshop-346962876	
+[00:01:38]: unloading prefabs for mod MOD_workshop-797304209	
+[00:01:38]: unloading prefabs for mod MOD_workshop-537902048	
+[00:01:38]: unloading prefabs for mod MOD_workshop-556027744	
+[00:01:38]: unloading prefabs for mod MOD_workshop-345692228	
+[00:01:38]: unloading prefabs for mod MOD_workshop-771629575	
+[00:01:38]: unloading prefabs for mod MOD_workshop-670918115	
+[00:01:38]: unloading prefabs for mod MOD_workshop-363989569	
+[00:01:38]: unloading prefabs for mod MOD_workshop-458587300	
+[00:01:38]: unloading prefabs for mod MOD_workshop-576037565	
+[00:01:38]: unloading prefabs for mod MOD_workshop-352499675	
+[00:01:38]: unloading prefabs for mod MOD_workshop-456028339	
+[00:01:38]: unloading prefabs for mod MOD_workshop-816057392	
+[00:01:38]: unloading prefabs for mod MOD_workshop-683788408	
+[00:01:38]: unloading prefabs for mod MOD_workshop-382177939	
+[00:01:38]: unloading prefabs for mod MOD_workshop-378160973	
+[00:01:38]: Collecting garbage...
+[00:01:38]: lua_gc took 0.01 seconds
+[00:01:38]: ~ShardLuaProxy()
+[00:01:38]: ~ItemServerLuaProxy()
+[00:01:38]: ~InventoryLuaProxy()
+[00:01:38]: ~NetworkLuaProxy()
+[00:01:38]: ~SimLuaProxy()
+[00:01:38]: lua_close took 0.02 seconds
+[00:01:38]: ReleaseAll
+[00:01:38]: ReleaseAll Finished
+[00:01:38]: cGame::StartPlaying
+[00:01:38]: LOADING LUA
+[00:01:38]: DoLuaFile scripts/main.lua
+[00:01:38]: DoLuaFile loading buffer scripts/main.lua
+[00:01:38]: running main.lua
+	
+[00:01:38]: loaded modindex	
+[00:01:38]: ModIndex: Beginning normal load sequence for dedicated server.
+	
+[00:01:38]: modoverrides.lua enabling workshop-758532836	
+[00:01:38]: modoverrides.lua enabling workshop-346962876	
+[00:01:38]: modoverrides.lua enabling workshop-378160973	
+[00:01:38]: modoverrides.lua enabling workshop-576037565	
+[00:01:38]: modoverrides.lua enabling workshop-797304209	
+[00:01:38]: modoverrides.lua enabling workshop-771629575	
+[00:01:38]: modoverrides.lua enabling workshop-352499675	
+[00:01:38]: modoverrides.lua enabling workshop-670918115	
+[00:01:38]: modoverrides.lua enabling workshop-816057392	
+[00:01:38]: modoverrides.lua enabling workshop-382177939	
+[00:01:38]: modoverrides.lua enabling workshop-380423963	
+[00:01:38]: modoverrides.lua enabling workshop-458587300	
+[00:01:38]: modoverrides.lua enabling workshop-375850593	
+[00:01:38]: modoverrides.lua enabling workshop-683788408	
+[00:01:38]: modoverrides.lua enabling workshop-456028339	
+[00:01:38]: modoverrides.lua enabling workshop-365119238	
+[00:01:38]: modoverrides.lua enabling workshop-556027744	
+[00:01:38]: modoverrides.lua enabling workshop-363989569	
+[00:01:38]: modoverrides.lua enabling workshop-537902048	
+[00:01:38]: modoverrides.lua enabling workshop-345692228	
+[00:01:38]: ModIndex:GetModsToLoad inserting moddir, 	workshop-345692228	
+[00:01:38]: ModIndex:GetModsToLoad inserting moddir, 	workshop-346962876	
+[00:01:38]: ModIndex:GetModsToLoad inserting moddir, 	workshop-352499675	
+[00:01:38]: ModIndex:GetModsToLoad inserting moddir, 	workshop-363989569	
+[00:01:38]: ModIndex:GetModsToLoad inserting moddir, 	workshop-365119238	
+[00:01:38]: ModIndex:GetModsToLoad inserting moddir, 	workshop-375850593	
+[00:01:38]: ModIndex:GetModsToLoad inserting moddir, 	workshop-378160973	
+[00:01:38]: ModIndex:GetModsToLoad inserting moddir, 	workshop-380423963	
+[00:01:38]: ModIndex:GetModsToLoad inserting moddir, 	workshop-382177939	
+[00:01:38]: ModIndex:GetModsToLoad inserting moddir, 	workshop-456028339	
+[00:01:38]: ModIndex:GetModsToLoad inserting moddir, 	workshop-458587300	
+[00:01:38]: ModIndex:GetModsToLoad inserting moddir, 	workshop-537902048	
+[00:01:38]: ModIndex:GetModsToLoad inserting moddir, 	workshop-556027744	
+[00:01:38]: ModIndex:GetModsToLoad inserting moddir, 	workshop-576037565	
+[00:01:38]: ModIndex:GetModsToLoad inserting moddir, 	workshop-670918115	
+[00:01:38]: ModIndex:GetModsToLoad inserting moddir, 	workshop-683788408	
+[00:01:38]: ModIndex:GetModsToLoad inserting moddir, 	workshop-758532836	
+[00:01:38]: ModIndex:GetModsToLoad inserting moddir, 	workshop-771629575	
+[00:01:38]: ModIndex:GetModsToLoad inserting moddir, 	workshop-797304209	
+[00:01:38]: ModIndex:GetModsToLoad inserting moddir, 	workshop-816057392	
+[00:01:38]: Could not load mod_config_data/modconfiguration_workshop-345692228	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-758532836	
+[00:01:38]: Overriding mod workshop-758532836's option ENABLECLIENTPAUSE with value true	
+[00:01:38]: Overriding mod workshop-758532836's option ENABLEHOTKEY with value true	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-346962876	
+[00:01:38]: Overriding mod workshop-346962876's option blank with value 0	
+[00:01:38]: Overriding mod workshop-346962876's option chilltime with value 0.01	
+[00:01:38]: Overriding mod workshop-346962876's option f_recipe with value hard	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-378160973	
+[00:01:38]: Overriding mod workshop-378160973's option FIREOPTIONS with value 2	
+[00:01:38]: Overriding mod workshop-378160973's option SHAREMINIMAPPROGRESS with value true	
+[00:01:38]: Overriding mod workshop-378160973's option SHOWPLAYERICONS with value true	
+[00:01:38]: Overriding mod workshop-378160973's option OVERRIDEMODE with value false	
+[00:01:38]: Overriding mod workshop-378160973's option SHOWPLAYERSOPTIONS with value 2	
+[00:01:38]: Overriding mod workshop-378160973's option SHOWFIREICONS with value true	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-352499675	
+[00:01:38]: Overriding mod workshop-352499675's option  with value 0	
+[00:01:38]: Overriding mod workshop-352499675's option  with value 0	
+[00:01:38]: Overriding mod workshop-352499675's option Mode with value hard	
+[00:01:38]: Overriding mod workshop-352499675's option ShelterLight with value yes	
+[00:01:38]: Overriding mod workshop-352499675's option ShelterUses with value 10	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-382177939	
+[00:01:38]: Overriding mod workshop-382177939's option  with value true	
+[00:01:38]: Overriding mod workshop-382177939's option eightxten with value 8x10	
+[00:01:38]: Overriding mod workshop-382177939's option workit with value nope	
+[00:01:38]: Loading mod: workshop-345692228 (Minimap HUD) Version:1.0.7	
+[00:01:38]: Could not load mod_config_data/modconfiguration_workshop-346962876	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-758532836	
+[00:01:38]: Overriding mod workshop-758532836's option ENABLECLIENTPAUSE with value true	
+[00:01:38]: Overriding mod workshop-758532836's option ENABLEHOTKEY with value true	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-346962876	
+[00:01:38]: Overriding mod workshop-346962876's option blank with value 0	
+[00:01:38]: Overriding mod workshop-346962876's option chilltime with value 0.01	
+[00:01:38]: Overriding mod workshop-346962876's option f_recipe with value hard	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-378160973	
+[00:01:38]: Overriding mod workshop-378160973's option FIREOPTIONS with value 2	
+[00:01:38]: Overriding mod workshop-378160973's option SHAREMINIMAPPROGRESS with value true	
+[00:01:38]: Overriding mod workshop-378160973's option SHOWPLAYERICONS with value true	
+[00:01:38]: Overriding mod workshop-378160973's option OVERRIDEMODE with value false	
+[00:01:38]: Overriding mod workshop-378160973's option SHOWPLAYERSOPTIONS with value 2	
+[00:01:38]: Overriding mod workshop-378160973's option SHOWFIREICONS with value true	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-352499675	
+[00:01:38]: Overriding mod workshop-352499675's option  with value 0	
+[00:01:38]: Overriding mod workshop-352499675's option  with value 0	
+[00:01:38]: Overriding mod workshop-352499675's option Mode with value hard	
+[00:01:38]: Overriding mod workshop-352499675's option ShelterLight with value yes	
+[00:01:38]: Overriding mod workshop-352499675's option ShelterUses with value 10	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-382177939	
+[00:01:38]: Overriding mod workshop-382177939's option  with value true	
+[00:01:38]: Overriding mod workshop-382177939's option eightxten with value 8x10	
+[00:01:38]: Overriding mod workshop-382177939's option workit with value nope	
+[00:01:38]: Loading mod: workshop-346962876 (DST Freezer) Version:2.7	
+[00:01:38]: Could not load mod_config_data/modconfiguration_workshop-352499675	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-758532836	
+[00:01:38]: Overriding mod workshop-758532836's option ENABLECLIENTPAUSE with value true	
+[00:01:38]: Overriding mod workshop-758532836's option ENABLEHOTKEY with value true	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-346962876	
+[00:01:38]: Overriding mod workshop-346962876's option blank with value 0	
+[00:01:38]: Overriding mod workshop-346962876's option chilltime with value 0.01	
+[00:01:38]: Overriding mod workshop-346962876's option f_recipe with value hard	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-378160973	
+[00:01:38]: Overriding mod workshop-378160973's option FIREOPTIONS with value 2	
+[00:01:38]: Overriding mod workshop-378160973's option SHAREMINIMAPPROGRESS with value true	
+[00:01:38]: Overriding mod workshop-378160973's option SHOWPLAYERICONS with value true	
+[00:01:38]: Overriding mod workshop-378160973's option OVERRIDEMODE with value false	
+[00:01:38]: Overriding mod workshop-378160973's option SHOWPLAYERSOPTIONS with value 2	
+[00:01:38]: Overriding mod workshop-378160973's option SHOWFIREICONS with value true	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-352499675	
+[00:01:38]: Overriding mod workshop-352499675's option  with value 0	
+[00:01:38]: Overriding mod workshop-352499675's option  with value 0	
+[00:01:38]: Overriding mod workshop-352499675's option Mode with value hard	
+[00:01:38]: Overriding mod workshop-352499675's option ShelterLight with value yes	
+[00:01:38]: Overriding mod workshop-352499675's option ShelterUses with value 10	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-382177939	
+[00:01:38]: Overriding mod workshop-382177939's option  with value true	
+[00:01:38]: Overriding mod workshop-382177939's option eightxten with value 8x10	
+[00:01:38]: Overriding mod workshop-382177939's option workit with value nope	
+[00:01:38]: Loading mod: workshop-352499675 (DST Resurrection Shelter) Version:1.4	
+[00:01:38]: Could not load mod_config_data/modconfiguration_workshop-363989569	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-758532836	
+[00:01:38]: Overriding mod workshop-758532836's option ENABLECLIENTPAUSE with value true	
+[00:01:38]: Overriding mod workshop-758532836's option ENABLEHOTKEY with value true	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-346962876	
+[00:01:38]: Overriding mod workshop-346962876's option blank with value 0	
+[00:01:38]: Overriding mod workshop-346962876's option chilltime with value 0.01	
+[00:01:38]: Overriding mod workshop-346962876's option f_recipe with value hard	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-378160973	
+[00:01:38]: Overriding mod workshop-378160973's option FIREOPTIONS with value 2	
+[00:01:38]: Overriding mod workshop-378160973's option SHAREMINIMAPPROGRESS with value true	
+[00:01:38]: Overriding mod workshop-378160973's option SHOWPLAYERICONS with value true	
+[00:01:38]: Overriding mod workshop-378160973's option OVERRIDEMODE with value false	
+[00:01:38]: Overriding mod workshop-378160973's option SHOWPLAYERSOPTIONS with value 2	
+[00:01:38]: Overriding mod workshop-378160973's option SHOWFIREICONS with value true	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-352499675	
+[00:01:38]: Overriding mod workshop-352499675's option  with value 0	
+[00:01:38]: Overriding mod workshop-352499675's option  with value 0	
+[00:01:38]: Overriding mod workshop-352499675's option Mode with value hard	
+[00:01:38]: Overriding mod workshop-352499675's option ShelterLight with value yes	
+[00:01:38]: Overriding mod workshop-352499675's option ShelterUses with value 10	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-382177939	
+[00:01:38]: Overriding mod workshop-382177939's option  with value true	
+[00:01:38]: Overriding mod workshop-382177939's option eightxten with value 8x10	
+[00:01:38]: Overriding mod workshop-382177939's option workit with value nope	
+[00:01:38]: Loading mod: workshop-363989569 (Growable Marble Trees) Version:0.11	
+[00:01:38]: Could not load mod_config_data/modconfiguration_workshop-365119238	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-758532836	
+[00:01:38]: Overriding mod workshop-758532836's option ENABLECLIENTPAUSE with value true	
+[00:01:38]: Overriding mod workshop-758532836's option ENABLEHOTKEY with value true	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-346962876	
+[00:01:38]: Overriding mod workshop-346962876's option blank with value 0	
+[00:01:38]: Overriding mod workshop-346962876's option chilltime with value 0.01	
+[00:01:38]: Overriding mod workshop-346962876's option f_recipe with value hard	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-378160973	
+[00:01:38]: Overriding mod workshop-378160973's option FIREOPTIONS with value 2	
+[00:01:38]: Overriding mod workshop-378160973's option SHAREMINIMAPPROGRESS with value true	
+[00:01:38]: Overriding mod workshop-378160973's option SHOWPLAYERICONS with value true	
+[00:01:38]: Overriding mod workshop-378160973's option OVERRIDEMODE with value false	
+[00:01:38]: Overriding mod workshop-378160973's option SHOWPLAYERSOPTIONS with value 2	
+[00:01:38]: Overriding mod workshop-378160973's option SHOWFIREICONS with value true	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-352499675	
+[00:01:38]: Overriding mod workshop-352499675's option  with value 0	
+[00:01:38]: Overriding mod workshop-352499675's option  with value 0	
+[00:01:38]: Overriding mod workshop-352499675's option Mode with value hard	
+[00:01:38]: Overriding mod workshop-352499675's option ShelterLight with value yes	
+[00:01:38]: Overriding mod workshop-352499675's option ShelterUses with value 10	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-382177939	
+[00:01:38]: Overriding mod workshop-382177939's option  with value true	
+[00:01:38]: Overriding mod workshop-382177939's option eightxten with value 8x10	
+[00:01:38]: Overriding mod workshop-382177939's option workit with value nope	
+[00:01:38]: Loading mod: workshop-365119238 (SmartCrockPot) Version:4.02	
+[00:01:38]: Could not load mod_config_data/modconfiguration_workshop-375850593	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-758532836	
+[00:01:38]: Overriding mod workshop-758532836's option ENABLECLIENTPAUSE with value true	
+[00:01:38]: Overriding mod workshop-758532836's option ENABLEHOTKEY with value true	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-346962876	
+[00:01:38]: Overriding mod workshop-346962876's option blank with value 0	
+[00:01:38]: Overriding mod workshop-346962876's option chilltime with value 0.01	
+[00:01:38]: Overriding mod workshop-346962876's option f_recipe with value hard	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-378160973	
+[00:01:38]: Overriding mod workshop-378160973's option FIREOPTIONS with value 2	
+[00:01:38]: Overriding mod workshop-378160973's option SHAREMINIMAPPROGRESS with value true	
+[00:01:38]: Overriding mod workshop-378160973's option SHOWPLAYERICONS with value true	
+[00:01:38]: Overriding mod workshop-378160973's option OVERRIDEMODE with value false	
+[00:01:38]: Overriding mod workshop-378160973's option SHOWPLAYERSOPTIONS with value 2	
+[00:01:38]: Overriding mod workshop-378160973's option SHOWFIREICONS with value true	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-352499675	
+[00:01:38]: Overriding mod workshop-352499675's option  with value 0	
+[00:01:38]: Overriding mod workshop-352499675's option  with value 0	
+[00:01:38]: Overriding mod workshop-352499675's option Mode with value hard	
+[00:01:38]: Overriding mod workshop-352499675's option ShelterLight with value yes	
+[00:01:38]: Overriding mod workshop-352499675's option ShelterUses with value 10	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-382177939	
+[00:01:38]: Overriding mod workshop-382177939's option  with value true	
+[00:01:38]: Overriding mod workshop-382177939's option eightxten with value 8x10	
+[00:01:38]: Overriding mod workshop-382177939's option workit with value nope	
+[00:01:38]: Loading mod: workshop-375850593 (Extra Equip Slots) Version:1.8.0	
+[00:01:38]: Could not load mod_config_data/modconfiguration_workshop-378160973	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-758532836	
+[00:01:38]: Overriding mod workshop-758532836's option ENABLECLIENTPAUSE with value true	
+[00:01:38]: Overriding mod workshop-758532836's option ENABLEHOTKEY with value true	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-346962876	
+[00:01:38]: Overriding mod workshop-346962876's option blank with value 0	
+[00:01:38]: Overriding mod workshop-346962876's option chilltime with value 0.01	
+[00:01:38]: Overriding mod workshop-346962876's option f_recipe with value hard	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-378160973	
+[00:01:38]: Overriding mod workshop-378160973's option FIREOPTIONS with value 2	
+[00:01:38]: Overriding mod workshop-378160973's option SHAREMINIMAPPROGRESS with value true	
+[00:01:38]: Overriding mod workshop-378160973's option SHOWPLAYERICONS with value true	
+[00:01:38]: Overriding mod workshop-378160973's option OVERRIDEMODE with value false	
+[00:01:38]: Overriding mod workshop-378160973's option SHOWPLAYERSOPTIONS with value 2	
+[00:01:38]: Overriding mod workshop-378160973's option SHOWFIREICONS with value true	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-352499675	
+[00:01:38]: Overriding mod workshop-352499675's option  with value 0	
+[00:01:38]: Overriding mod workshop-352499675's option  with value 0	
+[00:01:38]: Overriding mod workshop-352499675's option Mode with value hard	
+[00:01:38]: Overriding mod workshop-352499675's option ShelterLight with value yes	
+[00:01:38]: Overriding mod workshop-352499675's option ShelterUses with value 10	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-382177939	
+[00:01:38]: Overriding mod workshop-382177939's option  with value true	
+[00:01:38]: Overriding mod workshop-382177939's option eightxten with value 8x10	
+[00:01:38]: Overriding mod workshop-382177939's option workit with value nope	
+[00:01:38]: Loading mod: workshop-378160973 (Global Positions) Version:1.6.5	
+[00:01:38]: Could not load mod_config_data/modconfiguration_workshop-380423963	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-758532836	
+[00:01:38]: Overriding mod workshop-758532836's option ENABLECLIENTPAUSE with value true	
+[00:01:38]: Overriding mod workshop-758532836's option ENABLEHOTKEY with value true	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-346962876	
+[00:01:38]: Overriding mod workshop-346962876's option blank with value 0	
+[00:01:38]: Overriding mod workshop-346962876's option chilltime with value 0.01	
+[00:01:38]: Overriding mod workshop-346962876's option f_recipe with value hard	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-378160973	
+[00:01:38]: Overriding mod workshop-378160973's option FIREOPTIONS with value 2	
+[00:01:38]: Overriding mod workshop-378160973's option SHAREMINIMAPPROGRESS with value true	
+[00:01:38]: Overriding mod workshop-378160973's option SHOWPLAYERICONS with value true	
+[00:01:38]: Overriding mod workshop-378160973's option OVERRIDEMODE with value false	
+[00:01:38]: Overriding mod workshop-378160973's option SHOWPLAYERSOPTIONS with value 2	
+[00:01:38]: Overriding mod workshop-378160973's option SHOWFIREICONS with value true	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-352499675	
+[00:01:38]: Overriding mod workshop-352499675's option  with value 0	
+[00:01:38]: Overriding mod workshop-352499675's option  with value 0	
+[00:01:38]: Overriding mod workshop-352499675's option Mode with value hard	
+[00:01:38]: Overriding mod workshop-352499675's option ShelterLight with value yes	
+[00:01:38]: Overriding mod workshop-352499675's option ShelterUses with value 10	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-382177939	
+[00:01:38]: Overriding mod workshop-382177939's option  with value true	
+[00:01:38]: Overriding mod workshop-382177939's option eightxten with value 8x10	
+[00:01:38]: Overriding mod workshop-382177939's option workit with value nope	
+[00:01:38]: Loading mod: workshop-380423963 (Mineable Gems) Version:2.20	
+[00:01:38]: Could not load mod_config_data/modconfiguration_workshop-382177939	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-758532836	
+[00:01:38]: Overriding mod workshop-758532836's option ENABLECLIENTPAUSE with value true	
+[00:01:38]: Overriding mod workshop-758532836's option ENABLEHOTKEY with value true	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-346962876	
+[00:01:38]: Overriding mod workshop-346962876's option blank with value 0	
+[00:01:38]: Overriding mod workshop-346962876's option chilltime with value 0.01	
+[00:01:38]: Overriding mod workshop-346962876's option f_recipe with value hard	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-378160973	
+[00:01:38]: Overriding mod workshop-378160973's option FIREOPTIONS with value 2	
+[00:01:38]: Overriding mod workshop-378160973's option SHAREMINIMAPPROGRESS with value true	
+[00:01:38]: Overriding mod workshop-378160973's option SHOWPLAYERICONS with value true	
+[00:01:38]: Overriding mod workshop-378160973's option OVERRIDEMODE with value false	
+[00:01:38]: Overriding mod workshop-378160973's option SHOWPLAYERSOPTIONS with value 2	
+[00:01:38]: Overriding mod workshop-378160973's option SHOWFIREICONS with value true	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-352499675	
+[00:01:38]: Overriding mod workshop-352499675's option  with value 0	
+[00:01:38]: Overriding mod workshop-352499675's option  with value 0	
+[00:01:38]: Overriding mod workshop-352499675's option Mode with value hard	
+[00:01:38]: Overriding mod workshop-352499675's option ShelterLight with value yes	
+[00:01:38]: Overriding mod workshop-352499675's option ShelterUses with value 10	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-382177939	
+[00:01:38]: Overriding mod workshop-382177939's option  with value true	
+[00:01:38]: Overriding mod workshop-382177939's option eightxten with value 8x10	
+[00:01:38]: Overriding mod workshop-382177939's option workit with value nope	
+[00:01:38]: Loading mod: workshop-382177939 (DST Storm Cellar) Version:1.8	
+[00:01:38]: Could not load mod_config_data/modconfiguration_workshop-456028339	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-758532836	
+[00:01:38]: Overriding mod workshop-758532836's option ENABLECLIENTPAUSE with value true	
+[00:01:38]: Overriding mod workshop-758532836's option ENABLEHOTKEY with value true	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-346962876	
+[00:01:38]: Overriding mod workshop-346962876's option blank with value 0	
+[00:01:38]: Overriding mod workshop-346962876's option chilltime with value 0.01	
+[00:01:38]: Overriding mod workshop-346962876's option f_recipe with value hard	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-378160973	
+[00:01:38]: Overriding mod workshop-378160973's option FIREOPTIONS with value 2	
+[00:01:38]: Overriding mod workshop-378160973's option SHAREMINIMAPPROGRESS with value true	
+[00:01:38]: Overriding mod workshop-378160973's option SHOWPLAYERICONS with value true	
+[00:01:38]: Overriding mod workshop-378160973's option OVERRIDEMODE with value false	
+[00:01:38]: Overriding mod workshop-378160973's option SHOWPLAYERSOPTIONS with value 2	
+[00:01:38]: Overriding mod workshop-378160973's option SHOWFIREICONS with value true	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-352499675	
+[00:01:38]: Overriding mod workshop-352499675's option  with value 0	
+[00:01:38]: Overriding mod workshop-352499675's option  with value 0	
+[00:01:38]: Overriding mod workshop-352499675's option Mode with value hard	
+[00:01:38]: Overriding mod workshop-352499675's option ShelterLight with value yes	
+[00:01:38]: Overriding mod workshop-352499675's option ShelterUses with value 10	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-382177939	
+[00:01:38]: Overriding mod workshop-382177939's option  with value true	
+[00:01:38]: Overriding mod workshop-382177939's option eightxten with value 8x10	
+[00:01:38]: Overriding mod workshop-382177939's option workit with value nope	
+[00:01:38]: Loading mod: workshop-456028339 (Craftable Living Logs) Version:1.0.7	
+[00:01:38]: Could not load mod_config_data/modconfiguration_workshop-458587300	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-758532836	
+[00:01:38]: Overriding mod workshop-758532836's option ENABLECLIENTPAUSE with value true	
+[00:01:38]: Overriding mod workshop-758532836's option ENABLEHOTKEY with value true	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-346962876	
+[00:01:38]: Overriding mod workshop-346962876's option blank with value 0	
+[00:01:38]: Overriding mod workshop-346962876's option chilltime with value 0.01	
+[00:01:38]: Overriding mod workshop-346962876's option f_recipe with value hard	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-378160973	
+[00:01:38]: Overriding mod workshop-378160973's option FIREOPTIONS with value 2	
+[00:01:38]: Overriding mod workshop-378160973's option SHAREMINIMAPPROGRESS with value true	
+[00:01:38]: Overriding mod workshop-378160973's option SHOWPLAYERICONS with value true	
+[00:01:38]: Overriding mod workshop-378160973's option OVERRIDEMODE with value false	
+[00:01:38]: Overriding mod workshop-378160973's option SHOWPLAYERSOPTIONS with value 2	
+[00:01:38]: Overriding mod workshop-378160973's option SHOWFIREICONS with value true	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-352499675	
+[00:01:38]: Overriding mod workshop-352499675's option  with value 0	
+[00:01:38]: Overriding mod workshop-352499675's option  with value 0	
+[00:01:38]: Overriding mod workshop-352499675's option Mode with value hard	
+[00:01:38]: Overriding mod workshop-352499675's option ShelterLight with value yes	
+[00:01:38]: Overriding mod workshop-352499675's option ShelterUses with value 10	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-382177939	
+[00:01:38]: Overriding mod workshop-382177939's option  with value true	
+[00:01:38]: Overriding mod workshop-382177939's option eightxten with value 8x10	
+[00:01:38]: Overriding mod workshop-382177939's option workit with value nope	
+[00:01:38]: Loading mod: workshop-458587300 (Fast Travel) Version:1.1.0	
+[00:01:38]: Could not load mod_config_data/modconfiguration_workshop-537902048	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-758532836	
+[00:01:38]: Overriding mod workshop-758532836's option ENABLECLIENTPAUSE with value true	
+[00:01:38]: Overriding mod workshop-758532836's option ENABLEHOTKEY with value true	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-346962876	
+[00:01:38]: Overriding mod workshop-346962876's option blank with value 0	
+[00:01:38]: Overriding mod workshop-346962876's option chilltime with value 0.01	
+[00:01:38]: Overriding mod workshop-346962876's option f_recipe with value hard	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-378160973	
+[00:01:38]: Overriding mod workshop-378160973's option FIREOPTIONS with value 2	
+[00:01:38]: Overriding mod workshop-378160973's option SHAREMINIMAPPROGRESS with value true	
+[00:01:38]: Overriding mod workshop-378160973's option SHOWPLAYERICONS with value true	
+[00:01:38]: Overriding mod workshop-378160973's option OVERRIDEMODE with value false	
+[00:01:38]: Overriding mod workshop-378160973's option SHOWPLAYERSOPTIONS with value 2	
+[00:01:38]: Overriding mod workshop-378160973's option SHOWFIREICONS with value true	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-352499675	
+[00:01:38]: Overriding mod workshop-352499675's option  with value 0	
+[00:01:38]: Overriding mod workshop-352499675's option  with value 0	
+[00:01:38]: Overriding mod workshop-352499675's option Mode with value hard	
+[00:01:38]: Overriding mod workshop-352499675's option ShelterLight with value yes	
+[00:01:38]: Overriding mod workshop-352499675's option ShelterUses with value 10	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-382177939	
+[00:01:38]: Overriding mod workshop-382177939's option  with value true	
+[00:01:38]: Overriding mod workshop-382177939's option eightxten with value 8x10	
+[00:01:38]: Overriding mod workshop-382177939's option workit with value nope	
+[00:01:38]: Loading mod: workshop-537902048 (Scythestest) Version:2.3	
+[00:01:38]: Could not load mod_config_data/modconfiguration_workshop-556027744	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-758532836	
+[00:01:38]: Overriding mod workshop-758532836's option ENABLECLIENTPAUSE with value true	
+[00:01:38]: Overriding mod workshop-758532836's option ENABLEHOTKEY with value true	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-346962876	
+[00:01:38]: Overriding mod workshop-346962876's option blank with value 0	
+[00:01:38]: Overriding mod workshop-346962876's option chilltime with value 0.01	
+[00:01:38]: Overriding mod workshop-346962876's option f_recipe with value hard	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-378160973	
+[00:01:38]: Overriding mod workshop-378160973's option FIREOPTIONS with value 2	
+[00:01:38]: Overriding mod workshop-378160973's option SHAREMINIMAPPROGRESS with value true	
+[00:01:38]: Overriding mod workshop-378160973's option SHOWPLAYERICONS with value true	
+[00:01:38]: Overriding mod workshop-378160973's option OVERRIDEMODE with value false	
+[00:01:38]: Overriding mod workshop-378160973's option SHOWPLAYERSOPTIONS with value 2	
+[00:01:38]: Overriding mod workshop-378160973's option SHOWFIREICONS with value true	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-352499675	
+[00:01:38]: Overriding mod workshop-352499675's option  with value 0	
+[00:01:38]: Overriding mod workshop-352499675's option  with value 0	
+[00:01:38]: Overriding mod workshop-352499675's option Mode with value hard	
+[00:01:38]: Overriding mod workshop-352499675's option ShelterLight with value yes	
+[00:01:38]: Overriding mod workshop-352499675's option ShelterUses with value 10	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-382177939	
+[00:01:38]: Overriding mod workshop-382177939's option  with value true	
+[00:01:38]: Overriding mod workshop-382177939's option eightxten with value 8x10	
+[00:01:38]: Overriding mod workshop-382177939's option workit with value nope	
+[00:01:38]: Loading mod: workshop-556027744 (SUMMON BIGFOOT( With Old Bell)) Version:1.6	
+[00:01:38]: Could not load mod_config_data/modconfiguration_workshop-576037565	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-758532836	
+[00:01:38]: Overriding mod workshop-758532836's option ENABLECLIENTPAUSE with value true	
+[00:01:38]: Overriding mod workshop-758532836's option ENABLEHOTKEY with value true	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-346962876	
+[00:01:38]: Overriding mod workshop-346962876's option blank with value 0	
+[00:01:38]: Overriding mod workshop-346962876's option chilltime with value 0.01	
+[00:01:38]: Overriding mod workshop-346962876's option f_recipe with value hard	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-378160973	
+[00:01:38]: Overriding mod workshop-378160973's option FIREOPTIONS with value 2	
+[00:01:38]: Overriding mod workshop-378160973's option SHAREMINIMAPPROGRESS with value true	
+[00:01:38]: Overriding mod workshop-378160973's option SHOWPLAYERICONS with value true	
+[00:01:38]: Overriding mod workshop-378160973's option OVERRIDEMODE with value false	
+[00:01:38]: Overriding mod workshop-378160973's option SHOWPLAYERSOPTIONS with value 2	
+[00:01:38]: Overriding mod workshop-378160973's option SHOWFIREICONS with value true	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-352499675	
+[00:01:38]: Overriding mod workshop-352499675's option  with value 0	
+[00:01:38]: Overriding mod workshop-352499675's option  with value 0	
+[00:01:38]: Overriding mod workshop-352499675's option Mode with value hard	
+[00:01:38]: Overriding mod workshop-352499675's option ShelterLight with value yes	
+[00:01:38]: Overriding mod workshop-352499675's option ShelterUses with value 10	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-382177939	
+[00:01:38]: Overriding mod workshop-382177939's option  with value true	
+[00:01:38]: Overriding mod workshop-382177939's option eightxten with value 8x10	
+[00:01:38]: Overriding mod workshop-382177939's option workit with value nope	
+[00:01:38]: Loading mod: workshop-576037565 (Ethereal spear) Version:1.1.3.1 (Old API! (mod: nil game: 10) )	
+[00:01:38]: Could not load mod_config_data/modconfiguration_workshop-670918115	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-758532836	
+[00:01:38]: Overriding mod workshop-758532836's option ENABLECLIENTPAUSE with value true	
+[00:01:38]: Overriding mod workshop-758532836's option ENABLEHOTKEY with value true	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-346962876	
+[00:01:38]: Overriding mod workshop-346962876's option blank with value 0	
+[00:01:38]: Overriding mod workshop-346962876's option chilltime with value 0.01	
+[00:01:38]: Overriding mod workshop-346962876's option f_recipe with value hard	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-378160973	
+[00:01:38]: Overriding mod workshop-378160973's option FIREOPTIONS with value 2	
+[00:01:38]: Overriding mod workshop-378160973's option SHAREMINIMAPPROGRESS with value true	
+[00:01:38]: Overriding mod workshop-378160973's option SHOWPLAYERICONS with value true	
+[00:01:38]: Overriding mod workshop-378160973's option OVERRIDEMODE with value false	
+[00:01:38]: Overriding mod workshop-378160973's option SHOWPLAYERSOPTIONS with value 2	
+[00:01:38]: Overriding mod workshop-378160973's option SHOWFIREICONS with value true	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-352499675	
+[00:01:38]: Overriding mod workshop-352499675's option  with value 0	
+[00:01:38]: Overriding mod workshop-352499675's option  with value 0	
+[00:01:38]: Overriding mod workshop-352499675's option Mode with value hard	
+[00:01:38]: Overriding mod workshop-352499675's option ShelterLight with value yes	
+[00:01:38]: Overriding mod workshop-352499675's option ShelterUses with value 10	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-382177939	
+[00:01:38]: Overriding mod workshop-382177939's option  with value true	
+[00:01:38]: Overriding mod workshop-382177939's option eightxten with value 8x10	
+[00:01:38]: Overriding mod workshop-382177939's option workit with value nope	
+[00:01:38]: Loading mod: workshop-670918115 (Imperishable Thermal Stone) Version:0.5	
+[00:01:38]: Could not load mod_config_data/modconfiguration_workshop-683788408	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-758532836	
+[00:01:38]: Overriding mod workshop-758532836's option ENABLECLIENTPAUSE with value true	
+[00:01:38]: Overriding mod workshop-758532836's option ENABLEHOTKEY with value true	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-346962876	
+[00:01:38]: Overriding mod workshop-346962876's option blank with value 0	
+[00:01:38]: Overriding mod workshop-346962876's option chilltime with value 0.01	
+[00:01:38]: Overriding mod workshop-346962876's option f_recipe with value hard	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-378160973	
+[00:01:38]: Overriding mod workshop-378160973's option FIREOPTIONS with value 2	
+[00:01:38]: Overriding mod workshop-378160973's option SHAREMINIMAPPROGRESS with value true	
+[00:01:38]: Overriding mod workshop-378160973's option SHOWPLAYERICONS with value true	
+[00:01:38]: Overriding mod workshop-378160973's option OVERRIDEMODE with value false	
+[00:01:38]: Overriding mod workshop-378160973's option SHOWPLAYERSOPTIONS with value 2	
+[00:01:38]: Overriding mod workshop-378160973's option SHOWFIREICONS with value true	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-352499675	
+[00:01:38]: Overriding mod workshop-352499675's option  with value 0	
+[00:01:38]: Overriding mod workshop-352499675's option  with value 0	
+[00:01:38]: Overriding mod workshop-352499675's option Mode with value hard	
+[00:01:38]: Overriding mod workshop-352499675's option ShelterLight with value yes	
+[00:01:38]: Overriding mod workshop-352499675's option ShelterUses with value 10	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-382177939	
+[00:01:38]: Overriding mod workshop-382177939's option  with value true	
+[00:01:38]: Overriding mod workshop-382177939's option eightxten with value 8x10	
+[00:01:38]: Overriding mod workshop-382177939's option workit with value nope	
+[00:01:38]: Loading mod: workshop-683788408 (Better Thulecite Items) Version:1.3	
+[00:01:38]: Could not load mod_config_data/modconfiguration_workshop-758532836	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-758532836	
+[00:01:38]: Overriding mod workshop-758532836's option ENABLECLIENTPAUSE with value true	
+[00:01:38]: Overriding mod workshop-758532836's option ENABLEHOTKEY with value true	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-346962876	
+[00:01:38]: Overriding mod workshop-346962876's option blank with value 0	
+[00:01:38]: Overriding mod workshop-346962876's option chilltime with value 0.01	
+[00:01:38]: Overriding mod workshop-346962876's option f_recipe with value hard	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-378160973	
+[00:01:38]: Overriding mod workshop-378160973's option FIREOPTIONS with value 2	
+[00:01:38]: Overriding mod workshop-378160973's option SHAREMINIMAPPROGRESS with value true	
+[00:01:38]: Overriding mod workshop-378160973's option SHOWPLAYERICONS with value true	
+[00:01:38]: Overriding mod workshop-378160973's option OVERRIDEMODE with value false	
+[00:01:38]: Overriding mod workshop-378160973's option SHOWPLAYERSOPTIONS with value 2	
+[00:01:38]: Overriding mod workshop-378160973's option SHOWFIREICONS with value true	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-352499675	
+[00:01:38]: Overriding mod workshop-352499675's option  with value 0	
+[00:01:38]: Overriding mod workshop-352499675's option  with value 0	
+[00:01:38]: Overriding mod workshop-352499675's option Mode with value hard	
+[00:01:38]: Overriding mod workshop-352499675's option ShelterLight with value yes	
+[00:01:38]: Overriding mod workshop-352499675's option ShelterUses with value 10	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-382177939	
+[00:01:38]: Overriding mod workshop-382177939's option  with value true	
+[00:01:38]: Overriding mod workshop-382177939's option eightxten with value 8x10	
+[00:01:38]: Overriding mod workshop-382177939's option workit with value nope	
+[00:01:38]: Loading mod: workshop-758532836 (Global Pause) Version:1.3.2	
+[00:01:38]: Could not load mod_config_data/modconfiguration_workshop-771629575	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-758532836	
+[00:01:38]: Overriding mod workshop-758532836's option ENABLECLIENTPAUSE with value true	
+[00:01:38]: Overriding mod workshop-758532836's option ENABLEHOTKEY with value true	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-346962876	
+[00:01:38]: Overriding mod workshop-346962876's option blank with value 0	
+[00:01:38]: Overriding mod workshop-346962876's option chilltime with value 0.01	
+[00:01:38]: Overriding mod workshop-346962876's option f_recipe with value hard	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-378160973	
+[00:01:38]: Overriding mod workshop-378160973's option FIREOPTIONS with value 2	
+[00:01:38]: Overriding mod workshop-378160973's option SHAREMINIMAPPROGRESS with value true	
+[00:01:38]: Overriding mod workshop-378160973's option SHOWPLAYERICONS with value true	
+[00:01:38]: Overriding mod workshop-378160973's option OVERRIDEMODE with value false	
+[00:01:38]: Overriding mod workshop-378160973's option SHOWPLAYERSOPTIONS with value 2	
+[00:01:38]: Overriding mod workshop-378160973's option SHOWFIREICONS with value true	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-352499675	
+[00:01:38]: Overriding mod workshop-352499675's option  with value 0	
+[00:01:38]: Overriding mod workshop-352499675's option  with value 0	
+[00:01:38]: Overriding mod workshop-352499675's option Mode with value hard	
+[00:01:38]: Overriding mod workshop-352499675's option ShelterLight with value yes	
+[00:01:38]: Overriding mod workshop-352499675's option ShelterUses with value 10	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-382177939	
+[00:01:38]: Overriding mod workshop-382177939's option  with value true	
+[00:01:38]: Overriding mod workshop-382177939's option eightxten with value 8x10	
+[00:01:38]: Overriding mod workshop-382177939's option workit with value nope	
+[00:01:38]: Loading mod: workshop-771629575 (Improved Beekeeper Hat) Version:1.2	
+[00:01:38]: Could not load mod_config_data/modconfiguration_workshop-797304209	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-758532836	
+[00:01:38]: Overriding mod workshop-758532836's option ENABLECLIENTPAUSE with value true	
+[00:01:38]: Overriding mod workshop-758532836's option ENABLEHOTKEY with value true	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-346962876	
+[00:01:38]: Overriding mod workshop-346962876's option blank with value 0	
+[00:01:38]: Overriding mod workshop-346962876's option chilltime with value 0.01	
+[00:01:38]: Overriding mod workshop-346962876's option f_recipe with value hard	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-378160973	
+[00:01:38]: Overriding mod workshop-378160973's option FIREOPTIONS with value 2	
+[00:01:38]: Overriding mod workshop-378160973's option SHAREMINIMAPPROGRESS with value true	
+[00:01:38]: Overriding mod workshop-378160973's option SHOWPLAYERICONS with value true	
+[00:01:38]: Overriding mod workshop-378160973's option OVERRIDEMODE with value false	
+[00:01:38]: Overriding mod workshop-378160973's option SHOWPLAYERSOPTIONS with value 2	
+[00:01:38]: Overriding mod workshop-378160973's option SHOWFIREICONS with value true	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-352499675	
+[00:01:38]: Overriding mod workshop-352499675's option  with value 0	
+[00:01:38]: Overriding mod workshop-352499675's option  with value 0	
+[00:01:38]: Overriding mod workshop-352499675's option Mode with value hard	
+[00:01:38]: Overriding mod workshop-352499675's option ShelterLight with value yes	
+[00:01:38]: Overriding mod workshop-352499675's option ShelterUses with value 10	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-382177939	
+[00:01:38]: Overriding mod workshop-382177939's option  with value true	
+[00:01:38]: Overriding mod workshop-382177939's option eightxten with value 8x10	
+[00:01:38]: Overriding mod workshop-382177939's option workit with value nope	
+[00:01:38]: Loading mod: workshop-797304209 (no grassgekko) Version:0.0	
+[00:01:38]: Could not load mod_config_data/modconfiguration_workshop-816057392	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-758532836	
+[00:01:38]: Overriding mod workshop-758532836's option ENABLECLIENTPAUSE with value true	
+[00:01:38]: Overriding mod workshop-758532836's option ENABLEHOTKEY with value true	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-346962876	
+[00:01:38]: Overriding mod workshop-346962876's option blank with value 0	
+[00:01:38]: Overriding mod workshop-346962876's option chilltime with value 0.01	
+[00:01:38]: Overriding mod workshop-346962876's option f_recipe with value hard	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-378160973	
+[00:01:38]: Overriding mod workshop-378160973's option FIREOPTIONS with value 2	
+[00:01:38]: Overriding mod workshop-378160973's option SHAREMINIMAPPROGRESS with value true	
+[00:01:38]: Overriding mod workshop-378160973's option SHOWPLAYERICONS with value true	
+[00:01:38]: Overriding mod workshop-378160973's option OVERRIDEMODE with value false	
+[00:01:38]: Overriding mod workshop-378160973's option SHOWPLAYERSOPTIONS with value 2	
+[00:01:38]: Overriding mod workshop-378160973's option SHOWFIREICONS with value true	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-352499675	
+[00:01:38]: Overriding mod workshop-352499675's option  with value 0	
+[00:01:38]: Overriding mod workshop-352499675's option  with value 0	
+[00:01:38]: Overriding mod workshop-352499675's option Mode with value hard	
+[00:01:38]: Overriding mod workshop-352499675's option ShelterLight with value yes	
+[00:01:38]: Overriding mod workshop-352499675's option ShelterUses with value 10	
+[00:01:38]: applying configuration_options from modoverrides.lua to mod workshop-382177939	
+[00:01:38]: Overriding mod workshop-382177939's option  with value true	
+[00:01:38]: Overriding mod workshop-382177939's option eightxten with value 8x10	
+[00:01:38]: Overriding mod workshop-382177939's option workit with value nope	
+[00:01:38]: Loading mod: workshop-816057392 (Combined Status Server Version) Version:1.6.14	
+[00:01:38]: Mod: workshop-380423963 (Mineable Gems)	Loading modworldgenmain.lua	
+[00:01:38]: Mod: workshop-380423963 (Mineable Gems)	  Mod had no modworldgenmain.lua. Skipping.	
+[00:01:38]: Mod: workshop-380423963 (Mineable Gems)	Loading modmain.lua	
+[00:01:38]: Mod: workshop-365119238 (SmartCrockPot)	Loading modworldgenmain.lua	
+[00:01:38]: Mod: workshop-365119238 (SmartCrockPot)	  Mod had no modworldgenmain.lua. Skipping.	
+[00:01:38]: Mod: workshop-365119238 (SmartCrockPot)	Loading modmain.lua	
+[00:01:38]: modimport: ../mods/workshop-365119238/modmain_segments/containerwidgetfunction.lua	
+[00:01:38]: modimport: ../mods/workshop-365119238/modmain_segments/containers_setup.lua	
+[00:01:38]: modimport: ../mods/workshop-365119238/modmain_segments/action_predict.lua	
+[00:01:38]: WARNING: Positional Action parameters are deprecated. Please pass action a table instead.	
+[00:01:38]: Action defined at 	../mods/workshop-365119238/modmain_segments/action_predict.lua:1 in (local) result (main) <0-0>	
+[00:01:38]: Mod: workshop-758532836 (Global Pause)	Loading modworldgenmain.lua	
+[00:01:38]: Mod: workshop-758532836 (Global Pause)	  Mod had no modworldgenmain.lua. Skipping.	
+[00:01:38]: Mod: workshop-758532836 (Global Pause)	Loading modmain.lua	
+[00:01:39]: Mod: workshop-375850593 (Extra Equip Slots)	Loading modworldgenmain.lua	
+[00:01:39]: Mod: workshop-375850593 (Extra Equip Slots)	  Mod had no modworldgenmain.lua. Skipping.	
+[00:01:39]: Mod: workshop-375850593 (Extra Equip Slots)	Loading modmain.lua	
+[00:01:39]: Mod: workshop-346962876 (DST Freezer)	Loading modworldgenmain.lua	
+[00:01:39]: Mod: workshop-346962876 (DST Freezer)	  Mod had no modworldgenmain.lua. Skipping.	
+[00:01:39]: Mod: workshop-346962876 (DST Freezer)	Loading modmain.lua	
+[00:01:39]: Warning: Calling Recipe from a mod is now deprecated. Please call AddRecipe from your modmain.lua file.	
+[00:01:39]: Mod: workshop-797304209 (no grassgekko)	Loading modworldgenmain.lua	
+[00:01:39]: Mod: workshop-797304209 (no grassgekko)	  Mod had no modworldgenmain.lua. Skipping.	
+[00:01:39]: Mod: workshop-797304209 (no grassgekko)	Loading modmain.lua	
+[00:01:39]: Mod: workshop-537902048 (Scythestest)	Loading modworldgenmain.lua	
+[00:01:39]: Mod: workshop-537902048 (Scythestest)	  Mod had no modworldgenmain.lua. Skipping.	
+[00:01:39]: Mod: workshop-537902048 (Scythestest)	Loading modmain.lua	
+[00:01:39]: Warning: Calling Recipe from a mod is now deprecated. Please call AddRecipe from your modmain.lua file.	
+[00:01:39]: Warning: Calling Recipe from a mod is now deprecated. Please call AddRecipe from your modmain.lua file.	
+[00:01:39]: WARNING: Positional Action parameters are deprecated. Please pass action a table instead.	
+[00:01:39]: Action defined at 	../mods/workshop-537902048/modmain.lua:130 in () ? (main) <0-0>	
+[00:01:39]: Mod: workshop-556027744 (SUMMON BIGFOOT( With Old Bell))	Loading modworldgenmain.lua	
+[00:01:39]: Mod: workshop-556027744 (SUMMON BIGFOOT( With Old Bell))	  Mod had no modworldgenmain.lua. Skipping.	
+[00:01:39]: Mod: workshop-556027744 (SUMMON BIGFOOT( With Old Bell))	Loading modmain.lua	
+[00:01:39]: Mod: workshop-345692228 (Minimap HUD)	Loading modworldgenmain.lua	
+[00:01:39]: Mod: workshop-345692228 (Minimap HUD)	  Mod had no modworldgenmain.lua. Skipping.	
+[00:01:39]: Mod: workshop-345692228 (Minimap HUD)	Loading modmain.lua	
+[00:01:39]: Mod: workshop-771629575 (Improved Beekeeper Hat)	Loading modworldgenmain.lua	
+[00:01:39]: Mod: workshop-771629575 (Improved Beekeeper Hat)	  Mod had no modworldgenmain.lua. Skipping.	
+[00:01:39]: Mod: workshop-771629575 (Improved Beekeeper Hat)	Loading modmain.lua	
+[00:01:39]: Mod: workshop-670918115 (Imperishable Thermal Stone)	Loading modworldgenmain.lua	
+[00:01:39]: Mod: workshop-670918115 (Imperishable Thermal Stone)	  Mod had no modworldgenmain.lua. Skipping.	
+[00:01:39]: Mod: workshop-670918115 (Imperishable Thermal Stone)	Loading modmain.lua	
+[00:01:39]: Mod: workshop-363989569 (Growable Marble Trees)	Loading modworldgenmain.lua	
+[00:01:39]: Mod: workshop-363989569 (Growable Marble Trees)	  Mod had no modworldgenmain.lua. Skipping.	
+[00:01:39]: Mod: workshop-363989569 (Growable Marble Trees)	Loading modmain.lua	
+[00:01:39]: Mod: workshop-458587300 (Fast Travel)	Loading modworldgenmain.lua	
+[00:01:39]: Mod: workshop-458587300 (Fast Travel)	  Mod had no modworldgenmain.lua. Skipping.	
+[00:01:39]: Mod: workshop-458587300 (Fast Travel)	Loading modmain.lua	
+[00:01:39]: Mod: workshop-576037565 (Ethereal spear)	Loading modworldgenmain.lua	
+[00:01:39]: Mod: workshop-576037565 (Ethereal spear)	  Mod had no modworldgenmain.lua. Skipping.	
+[00:01:39]: Mod: workshop-576037565 (Ethereal spear)	Loading modmain.lua	
+[00:01:39]: Warning: Calling Recipe from a mod is now deprecated. Please call AddRecipe from your modmain.lua file.	
+[00:01:39]: Mod: workshop-352499675 (DST Resurrection Shelter)	Loading modworldgenmain.lua	
+[00:01:39]: Mod: workshop-352499675 (DST Resurrection Shelter)	  Mod had no modworldgenmain.lua. Skipping.	
+[00:01:39]: Mod: workshop-352499675 (DST Resurrection Shelter)	Loading modmain.lua	
+[00:01:39]: Warning: Calling Recipe from a mod is now deprecated. Please call AddRecipe from your modmain.lua file.	
+[00:01:39]: Mod: workshop-456028339 (Craftable Living Logs)	Loading modworldgenmain.lua	
+[00:01:39]: Mod: workshop-456028339 (Craftable Living Logs)	  Mod had no modworldgenmain.lua. Skipping.	
+[00:01:39]: Mod: workshop-456028339 (Craftable Living Logs)	Loading modmain.lua	
+[00:01:39]: Warning: Calling Recipe from a mod is now deprecated. Please call AddRecipe from your modmain.lua file.	
+[00:01:39]: Mod: workshop-816057392 (Combined Status Server Version)	Loading modworldgenmain.lua	
+[00:01:39]: Mod: workshop-816057392 (Combined Status Server Version)	  Mod had no modworldgenmain.lua. Skipping.	
+[00:01:39]: Mod: workshop-816057392 (Combined Status Server Version)	Loading modmain.lua	
+[00:01:39]: ModIndex:GetModsToLoad inserting moddir, 	workshop-345692228	
+[00:01:39]: ModIndex:GetModsToLoad inserting moddir, 	workshop-346962876	
+[00:01:39]: ModIndex:GetModsToLoad inserting moddir, 	workshop-352499675	
+[00:01:39]: ModIndex:GetModsToLoad inserting moddir, 	workshop-363989569	
+[00:01:39]: ModIndex:GetModsToLoad inserting moddir, 	workshop-365119238	
+[00:01:39]: ModIndex:GetModsToLoad inserting moddir, 	workshop-375850593	
+[00:01:39]: ModIndex:GetModsToLoad inserting moddir, 	workshop-378160973	
+[00:01:39]: ModIndex:GetModsToLoad inserting moddir, 	workshop-380423963	
+[00:01:39]: ModIndex:GetModsToLoad inserting moddir, 	workshop-382177939	
+[00:01:39]: ModIndex:GetModsToLoad inserting moddir, 	workshop-456028339	
+[00:01:39]: ModIndex:GetModsToLoad inserting moddir, 	workshop-458587300	
+[00:01:39]: ModIndex:GetModsToLoad inserting moddir, 	workshop-537902048	
+[00:01:39]: ModIndex:GetModsToLoad inserting moddir, 	workshop-556027744	
+[00:01:39]: ModIndex:GetModsToLoad inserting moddir, 	workshop-576037565	
+[00:01:39]: ModIndex:GetModsToLoad inserting moddir, 	workshop-670918115	
+[00:01:39]: ModIndex:GetModsToLoad inserting moddir, 	workshop-683788408	
+[00:01:39]: ModIndex:GetModsToLoad inserting moddir, 	workshop-758532836	
+[00:01:39]: ModIndex:GetModsToLoad inserting moddir, 	workshop-771629575	
+[00:01:39]: ModIndex:GetModsToLoad inserting moddir, 	workshop-797304209	
+[00:01:39]: ModIndex:GetModsToLoad inserting moddir, 	workshop-816057392	
+[00:01:39]: Mod: workshop-683788408 (Better Thulecite Items)	Loading modworldgenmain.lua	
+[00:01:39]: Mod: workshop-683788408 (Better Thulecite Items)	  Mod had no modworldgenmain.lua. Skipping.	
+[00:01:39]: Mod: workshop-683788408 (Better Thulecite Items)	Loading modmain.lua	
+[00:01:39]: Warning: Calling Recipe from a mod is now deprecated. Please call AddRecipe from your modmain.lua file.	
+[00:01:39]: Warning: Calling Recipe from a mod is now deprecated. Please call AddRecipe from your modmain.lua file.	
+[00:01:39]: Warning: Calling Recipe from a mod is now deprecated. Please call AddRecipe from your modmain.lua file.	
+[00:01:39]: Warning: Calling Recipe from a mod is now deprecated. Please call AddRecipe from your modmain.lua file.	
+[00:01:39]: Warning: Calling Recipe from a mod is now deprecated. Please call AddRecipe from your modmain.lua file.	
+[00:01:39]: Warning: Calling Recipe from a mod is now deprecated. Please call AddRecipe from your modmain.lua file.	
+[00:01:39]: Warning: Calling Recipe from a mod is now deprecated. Please call AddRecipe from your modmain.lua file.	
+[00:01:39]: Warning: Calling Recipe from a mod is now deprecated. Please call AddRecipe from your modmain.lua file.	
+[00:01:39]: Warning: Calling Recipe from a mod is now deprecated. Please call AddRecipe from your modmain.lua file.	
+[00:01:39]: Warning: Calling Recipe from a mod is now deprecated. Please call AddRecipe from your modmain.lua file.	
+[00:01:39]: Warning: Calling Recipe from a mod is now deprecated. Please call AddRecipe from your modmain.lua file.	
+[00:01:39]: Warning: Calling Recipe from a mod is now deprecated. Please call AddRecipe from your modmain.lua file.	
+[00:01:39]: Mod: workshop-382177939 (DST Storm Cellar)	Loading modworldgenmain.lua	
+[00:01:39]: Mod: workshop-382177939 (DST Storm Cellar)	  Mod had no modworldgenmain.lua. Skipping.	
+[00:01:39]: Mod: workshop-382177939 (DST Storm Cellar)	Loading modmain.lua	
+[00:01:39]: Warning: Calling Recipe from a mod is now deprecated. Please call AddRecipe from your modmain.lua file.	
+[00:01:39]: Mod: workshop-378160973 (Global Positions)	Loading modworldgenmain.lua	
+[00:01:39]: Mod: workshop-378160973 (Global Positions)	  Mod had no modworldgenmain.lua. Skipping.	
+[00:01:39]: Mod: workshop-378160973 (Global Positions)	Loading modmain.lua	
+[00:01:39]: ModIndex:GetModsToLoad inserting moddir, 	workshop-345692228	
+[00:01:39]: ModIndex:GetModsToLoad inserting moddir, 	workshop-346962876	
+[00:01:39]: ModIndex:GetModsToLoad inserting moddir, 	workshop-352499675	
+[00:01:39]: ModIndex:GetModsToLoad inserting moddir, 	workshop-363989569	
+[00:01:39]: ModIndex:GetModsToLoad inserting moddir, 	workshop-365119238	
+[00:01:39]: ModIndex:GetModsToLoad inserting moddir, 	workshop-375850593	
+[00:01:39]: ModIndex:GetModsToLoad inserting moddir, 	workshop-378160973	
+[00:01:39]: ModIndex:GetModsToLoad inserting moddir, 	workshop-380423963	
+[00:01:39]: ModIndex:GetModsToLoad inserting moddir, 	workshop-382177939	
+[00:01:39]: ModIndex:GetModsToLoad inserting moddir, 	workshop-456028339	
+[00:01:39]: ModIndex:GetModsToLoad inserting moddir, 	workshop-458587300	
+[00:01:39]: ModIndex:GetModsToLoad inserting moddir, 	workshop-537902048	
+[00:01:39]: ModIndex:GetModsToLoad inserting moddir, 	workshop-556027744	
+[00:01:39]: ModIndex:GetModsToLoad inserting moddir, 	workshop-576037565	
+[00:01:39]: ModIndex:GetModsToLoad inserting moddir, 	workshop-670918115	
+[00:01:39]: ModIndex:GetModsToLoad inserting moddir, 	workshop-683788408	
+[00:01:39]: ModIndex:GetModsToLoad inserting moddir, 	workshop-758532836	
+[00:01:39]: ModIndex:GetModsToLoad inserting moddir, 	workshop-771629575	
+[00:01:39]: ModIndex:GetModsToLoad inserting moddir, 	workshop-797304209	
+[00:01:39]: ModIndex:GetModsToLoad inserting moddir, 	workshop-816057392	
+[00:01:39]: LOADING LUA SUCCESS
+[00:01:39]: Registering mod namespace "workshop-378160973"
+[00:01:39]: Registering mod namespace "globalpause"
+[00:01:39]: PlayerDeaths could not load morgue	
+[00:01:39]: PlayerHistory could not load player_history	
+[00:01:39]: bloom_enabled	false	
+[00:01:39]: loaded saveindex	
+[00:01:39]: OnFilesLoaded()	
+[00:01:39]: OnUpdatePurchaseStateComplete	
+[00:01:39]: 	Unload FE	
+[00:01:39]: 	Unload FE done	
+[00:01:41]: Mod: workshop-380423963 (Mineable Gems)	Registering prefabs	
+[00:01:41]: Mod: workshop-380423963 (Mineable Gems)	  Registering default mod prefab	
+[00:01:41]: Mod: workshop-365119238 (SmartCrockPot)	Registering prefabs	
+[00:01:41]: Mod: workshop-365119238 (SmartCrockPot)	  Registering default mod prefab	
+[00:01:41]: Mod: workshop-758532836 (Global Pause)	Registering prefabs	
+[00:01:41]: Mod: workshop-758532836 (Global Pause)	  Registering default mod prefab	
+[00:01:41]: Mod: workshop-375850593 (Extra Equip Slots)	Registering prefabs	
+[00:01:41]: Mod: workshop-375850593 (Extra Equip Slots)	  Registering default mod prefab	
+[00:01:41]: Mod: workshop-346962876 (DST Freezer)	Registering prefabs	
+[00:01:41]: Mod: workshop-346962876 (DST Freezer)	  Registering prefab file: prefabs/freezer	
+[00:01:41]: Mod: workshop-346962876 (DST Freezer)	    freezer	
+[00:01:41]: Mod: workshop-346962876 (DST Freezer)	    freezer_placer	
+[00:01:41]: Mod: workshop-346962876 (DST Freezer)	  Registering default mod prefab	
+[00:01:41]: Mod: workshop-797304209 (no grassgekko)	Registering prefabs	
+[00:01:41]: Mod: workshop-797304209 (no grassgekko)	  Registering default mod prefab	
+[00:01:41]: Mod: workshop-537902048 (Scythestest)	Registering prefabs	
+[00:01:41]: Mod: workshop-537902048 (Scythestest)	  Registering prefab file: prefabs/scythe	
+[00:01:41]: Mod: workshop-537902048 (Scythestest)	    scythe	
+[00:01:41]: Mod: workshop-537902048 (Scythestest)	  Registering prefab file: prefabs/scythe_golden	
+[00:01:41]: Mod: workshop-537902048 (Scythestest)	    scythe_golden	
+[00:01:41]: Mod: workshop-537902048 (Scythestest)	  Registering default mod prefab	
+[00:01:41]: Mod: workshop-556027744 (SUMMON BIGFOOT( With Old Bell))	Registering prefabs	
+[00:01:41]: Mod: workshop-556027744 (SUMMON BIGFOOT( With Old Bell))	  Registering prefab file: prefabs/bigfoot	
+[00:01:41]: Mod: workshop-556027744 (SUMMON BIGFOOT( With Old Bell))	    bigfoot	
+[00:01:41]: Mod: workshop-556027744 (SUMMON BIGFOOT( With Old Bell))	    bigfootprint	
+[00:01:41]: Mod: workshop-556027744 (SUMMON BIGFOOT( With Old Bell))	    bigfootshadow	
+[00:01:41]: Mod: workshop-556027744 (SUMMON BIGFOOT( With Old Bell))	  Registering prefab file: prefabs/glommerbell	
+[00:01:41]: Mod: workshop-556027744 (SUMMON BIGFOOT( With Old Bell))	    bell	
+[00:01:41]: Mod: workshop-556027744 (SUMMON BIGFOOT( With Old Bell))	  Registering default mod prefab	
+[00:01:41]: Mod: workshop-345692228 (Minimap HUD)	Registering prefabs	
+[00:01:41]: Mod: workshop-345692228 (Minimap HUD)	  Registering default mod prefab	
+[00:01:41]: Mod: workshop-771629575 (Improved Beekeeper Hat)	Registering prefabs	
+[00:01:41]: Mod: workshop-771629575 (Improved Beekeeper Hat)	  Registering default mod prefab	
+[00:01:41]: Mod: workshop-670918115 (Imperishable Thermal Stone)	Registering prefabs	
+[00:01:41]: Mod: workshop-670918115 (Imperishable Thermal Stone)	  Registering default mod prefab	
+[00:01:41]: Mod: workshop-363989569 (Growable Marble Trees)	Registering prefabs	
+[00:01:41]: Mod: workshop-363989569 (Growable Marble Trees)	  Registering prefab file: prefabs/marbleseed	
+[00:01:41]: Mod: workshop-363989569 (Growable Marble Trees)	    marbleseed	
+[00:01:41]: Mod: workshop-363989569 (Growable Marble Trees)	    marbleseed_placer	
+[00:01:41]: Mod: workshop-363989569 (Growable Marble Trees)	  Registering default mod prefab	
+[00:01:41]: Mod: workshop-458587300 (Fast Travel)	Registering prefabs	
+[00:01:41]: Mod: workshop-458587300 (Fast Travel)	  Registering default mod prefab	
+[00:01:41]: Mod: workshop-576037565 (Ethereal spear)	Registering prefabs	
+[00:01:41]: Mod: workshop-576037565 (Ethereal spear)	  Registering prefab file: prefabs/ethrl_spear	
+[00:01:41]: Mod: workshop-576037565 (Ethereal spear)	    ethrl_spear	
+[00:01:41]: Mod: workshop-576037565 (Ethereal spear)	  Registering default mod prefab	
+[00:01:41]: Mod: workshop-352499675 (DST Resurrection Shelter)	Registering prefabs	
+[00:01:41]: Mod: workshop-352499675 (DST Resurrection Shelter)	  Registering prefab file: prefabs/r_shelter	
+[00:01:41]: Mod: workshop-352499675 (DST Resurrection Shelter)	    r_shelter	
+[00:01:41]: Mod: workshop-352499675 (DST Resurrection Shelter)	    r_shelter_placer	
+[00:01:41]: Mod: workshop-352499675 (DST Resurrection Shelter)	  Registering default mod prefab	
+[00:01:41]: Mod: workshop-456028339 (Craftable Living Logs)	Registering prefabs	
+[00:01:41]: Mod: workshop-456028339 (Craftable Living Logs)	  Registering default mod prefab	
+[00:01:41]: Mod: workshop-816057392 (Combined Status Server Version)	Registering prefabs	
+[00:01:41]: Mod: workshop-816057392 (Combined Status Server Version)	  Registering default mod prefab	
+[00:01:41]: Mod: workshop-683788408 (Better Thulecite Items)	Registering prefabs	
+[00:01:41]: Mod: workshop-683788408 (Better Thulecite Items)	  Registering default mod prefab	
+[00:01:41]: Mod: workshop-382177939 (DST Storm Cellar)	Registering prefabs	
+[00:01:41]: Mod: workshop-382177939 (DST Storm Cellar)	  Registering prefab file: prefabs/cellar	
+[00:01:41]: Mod: workshop-382177939 (DST Storm Cellar)	    cellar	
+[00:01:41]: Mod: workshop-382177939 (DST Storm Cellar)	    cellar_placer	
+[00:01:41]: Mod: workshop-382177939 (DST Storm Cellar)	  Registering default mod prefab	
+[00:01:41]: Mod: workshop-378160973 (Global Positions)	Registering prefabs	
+[00:01:41]: Mod: workshop-378160973 (Global Positions)	  Registering prefab file: prefabs/globalposition_classified	
+[00:01:41]: Mod: workshop-378160973 (Global Positions)	    globalposition_classified	
+[00:01:41]: Mod: workshop-378160973 (Global Positions)	  Registering prefab file: prefabs/smoketrail	
+[00:01:41]: Mod: workshop-378160973 (Global Positions)	    smoketrail	
+[00:01:41]: Mod: workshop-378160973 (Global Positions)	  Registering prefab file: prefabs/globalmapicon_noproxy	
+[00:01:41]: Mod: workshop-378160973 (Global Positions)	    globalmapicon_noproxy	
+[00:01:41]: Mod: workshop-378160973 (Global Positions)	  Registering prefab file: prefabs/pings	
+[00:01:41]: Mod: workshop-378160973 (Global Positions)	    ping_generic	
+[00:01:41]: Mod: workshop-378160973 (Global Positions)	    ping_omw	
+[00:01:41]: Mod: workshop-378160973 (Global Positions)	    ping_danger	
+[00:01:41]: Mod: workshop-378160973 (Global Positions)	    ping_explore	
+[00:01:41]: Mod: workshop-378160973 (Global Positions)	    ping_gohere	
+[00:01:41]: Mod: workshop-378160973 (Global Positions)	  Registering default mod prefab	
+[00:01:41]: 	LOAD BE	
+[00:01:48]: Could not preload undefined prefab 0xf76051cb (FROMNUM)
+[00:01:49]: Could not preload undefined prefab 0xf76051cb (FROMNUM)
+[00:01:50]: Could not preload undefined prefab 0x2a2e3095 (FROMNUM)
+[00:01:51]: Could not preload undefined prefab 0xffe9ff87 (FROMNUM)
+[00:01:51]: Could not preload undefined prefab 0x72fec59e (FROMNUM)
+[00:01:51]: Could not preload undefined prefab 0x2953c8d4 (opalstaff)
+[00:01:51]: 	LOAD BE: done	
+[00:01:51]: Loading world: session/760D45A42BC0ABA5/0000000179	
+[00:01:51]: Save file is at version 4.5	
+[00:01:51]: Begin Session: 760D45A42BC0ABA5
+[00:01:52]: saving to server_temp/server_save	
+[00:01:52]: MiniMapComponent::AddAtlas( minimap/minimap_data.xml )
+[00:01:52]: MiniMapComponent::AddAtlas( ../mods/workshop-346962876/minimap/freezer.xml )
+[00:01:52]: MiniMapComponent::AddAtlas( ../mods/workshop-352499675/minimap/r_shelter.xml )
+[00:01:52]: MiniMapComponent::AddAtlas( ../mods/workshop-382177939/minimap/cellar.xml )
+[00:01:52]: MiniMapComponent::AddAtlas( ../mods/workshop-378160973/minimap/campfire.xml )
+[00:01:52]: MiniMapComponent::AddAtlas( ../mods/workshop-378160973/minimap/ping_generic.xml )
+[00:01:52]: MiniMapComponent::AddAtlas( ../mods/workshop-378160973/minimap/ping_gohere.xml )
+[00:01:52]: MiniMapComponent::AddAtlas( ../mods/workshop-378160973/minimap/ping_explore.xml )
+[00:01:52]: MiniMapComponent::AddAtlas( ../mods/workshop-378160973/minimap/ping_danger.xml )
+[00:01:52]: MiniMapComponent::AddAtlas( ../mods/workshop-378160973/minimap/ping_omw.xml )
+[00:01:55]: Loading Nav Grid	
+[00:01:55]: setting 	summerlength	0	
+[00:01:55]: setting 	isnightmaredawn	false	
+[00:01:55]: setting 	elapseddaysinseason	276	
+[00:01:55]: setting 	isfullmoon	false	
+[00:01:55]: setting 	moisture	517.80877685547	
+[00:01:55]: setting 	springlength	0	
+[00:01:55]: setting 	isnightmarewild	false	
+[00:01:55]: setting 	moonphase	half	
+[00:01:55]: setting 	precipitationrate	0.6146944915398	
+[00:01:55]: setting 	iswet	false	
+[00:01:55]: setting 	isnewmoon	false	
+[00:01:55]: setting 	iswinter	true	
+[00:01:55]: setting 	israining	false	
+[00:01:55]: setting 	isnightmarewarn	false	
+[00:01:55]: setting 	precipitation	snow	
+[00:01:55]: setting 	cavephase	night	
+[00:01:55]: setting 	moistureceil	517.80877685547	
+[00:01:55]: setting 	isday	false	
+[00:01:55]: setting 	iscaveday	false	
+[00:01:55]: setting 	season	winter	
+[00:01:55]: setting 	timeinphase	0.92495317459106	
+[00:01:55]: setting 	temperature	-26.40154473802	
+[00:01:55]: setting 	isnightmarecalm	false	
+[00:01:55]: setting 	isnight	true	
+[00:01:55]: setting 	isdusk	false	
+[00:01:55]: setting 	iscavedusk	false	
+[00:01:55]: setting 	isautumn	false	
+[00:01:55]: setting 	issnowing	true	
+[00:01:55]: setting 	iswaxingmoon	false	
+[00:01:55]: setting 	pop	1	
+[00:01:55]: setting 	snowlevel	1	
+[00:01:55]: setting 	issnowcovered	true	
+[00:01:55]: setting 	autumnlength	0	
+[00:01:55]: setting 	phase	night	
+[00:01:55]: setting 	nightmaretime	0	
+[00:01:55]: setting 	winterlength	22	
+[00:01:55]: setting 	isspring	false	
+[00:01:55]: setting 	nightmarephase	none	
+[00:01:55]: setting 	remainingdaysinseason	10000	
+[00:01:55]: setting 	cycles	276	
+[00:01:55]: setting 	iscavenight	true	
+[00:01:55]: setting 	nightmaretimeinphase	0	
+[00:01:55]: setting 	wetness	0	
+[00:01:55]: setting 	time	0.92495317459106	
+[00:01:55]: setting 	issummer	false	
+[00:01:55]: [Shard] Slave is waiting for LUA...
+[00:01:56]: OVERRIDE: setting	regrowth	to	veryslow	
+[00:01:56]: OVERRIDE: setting	bearger	to	never	
+[00:01:56]: OVERRIDE: setting	hunt	to	often	
+[00:01:56]: OVERRIDE: setting	birds	to	never	
+[00:01:56]: DEPRECATED: SetMaxBirds() in birdspawner.lua, use birdattractor.spawnmodifier instead	
+[00:01:56]: OVERRIDE: setting	day	to	onlynight	
+[00:01:56]: OVERRIDE: setting	lureplants	to	never	
+[00:01:56]: OVERRIDE: setting	krampus	to	often	
+[00:01:56]: OVERRIDE: setting	deciduousmonster	to	often	
+[00:01:56]: OVERRIDE: setting	flowers	to	rare	
+[00:01:56]: OVERRIDE: setting	dragonfly	to	never	
+[00:01:56]: OVERRIDE: setting	perd	to	never	
+[00:01:56]: OVERRIDE: setting	butterfly	to	never	
+[00:01:56]: OVERRIDE: setting	goosemoose	to	never	
+[00:01:56]: OVERRIDE: setting	penguins	to	often	
+[00:01:56]: OVERRIDE: setting	hounds	to	never	
+[00:01:56]: OVERRIDE: setting	weather	to	always	
+[00:02:03]: Reconstructing topology	
+[00:02:03]: 	...Sorting points	
+[00:02:03]: 	...Sorting edges	
+[00:02:03]: 	...Connecting nodes	
+[00:02:03]: 	...Validating connections	
+[00:02:03]: 	...Housekeeping	
+[00:02:03]: 	...Done!	
+[00:02:03]: 1 uploads added to server. From server_temp
+[00:02:03]: About to start a shard with these settings:
+[00:02:03]:   ShardName: Cold
+[00:02:03]:   ShardID: 2
+[00:02:03]:   ShardRole: SLAVE
+[00:02:03]:   MasterHost: 127.0.0.1
+[00:02:03]:   MasterBind: (null)
+[00:02:03]:   MasterPort: 10998
+[00:02:03]: [Shard] Connecting to master...
+[00:02:03]: Telling Client our new session identifier: 760D45A42BC0ABA5
+[00:02:03]: ModIndex: Load sequence finished successfully.	
+[00:02:03]: Reset() returning
+[00:02:03]: [Steam] SteamGameServer_Init(12349, 11001, 12350)
+[00:02:04]: [Steam] SteamGameServer_Init success
+[00:02:04]: [Shard] Connection to master failed. Waiting to reconnect...
+[00:02:04]: Validating portal[3] <-> 3[3] (inactive)	
+[00:02:04]: Validating portal[1] <-> 1[1] (inactive)	
+[00:02:09]: About to start a shard with these settings:
+[00:02:09]:   ShardName: Cold
+[00:02:09]:   ShardID: 2
+[00:02:09]:   ShardRole: SLAVE
+[00:02:09]:   MasterHost: 127.0.0.1
+[00:02:09]:   MasterBind: (null)
+[00:02:09]:   MasterPort: 10998
+[00:02:09]: [Shard] Connecting to master...
+[00:02:10]: [Shard] Sending slave information to master...
+[00:02:11]: [Shard] Registering in lobby as a slave server...
+[00:02:11]: [Shard] Slave is now ready!
+[00:02:11]: World 3 is now connected	
+[00:02:11]: Validating portal[3] <-> 3[3] (active)	
+[00:02:11]: Skipping portal[1] (different permanent world)	
+[00:02:11]: World 3 is now connected	
+[00:02:11]: Validating portal[3] <-> 3[3] (active)	
+[00:02:11]: Skipping portal[1] (different permanent world)	
+[00:02:11]: World 1 is now connected	
+[00:02:11]: Skipping portal[3] (different permanent world)	
+[00:02:11]: Validating portal[1] <-> 1[1] (active)	
+[00:02:12]: [Shard] Slave LUA is now ready!
+[00:02:12]: Sim paused
+[00:09:52]: Sim unpaused
+[00:12:06]: Serializing world: session/760D45A42BC0ABA5/0000000180
+[00:12:06]: Truncating to snapshot #180...
+[00:12:06]:  - session/760D45A42BC0ABA5/0000000174
+[00:12:06]:    1 file(s) removed
+[00:20:07]: Serializing world: session/760D45A42BC0ABA5/0000000181
+[00:20:07]: Truncating to snapshot #181...
+[00:20:07]:  - session/760D45A42BC0ABA5/0000000175
+[00:20:07]:  - session/760D45A42BC0ABA5/KU_3DNugH8W_/0000000174
+[00:20:07]:    2 file(s) removed
+[00:28:07]: Serializing world: session/760D45A42BC0ABA5/0000000182
+[00:28:07]: Truncating to snapshot #182...
+[00:28:07]:  - session/760D45A42BC0ABA5/0000000176
+[00:28:07]:  - session/760D45A42BC0ABA5/KU_3DNugH8W_/0000000176
+[00:28:07]:    2 file(s) removed
+[00:31:38]: [200] Account Communication Success (6)
+[00:31:38]: Received (KU_3DNugH8W) from TokenPurpose
+[00:36:08]: Serializing world: session/760D45A42BC0ABA5/0000000183
+[00:36:08]: Truncating to snapshot #183...
+[00:36:08]:  - session/760D45A42BC0ABA5/0000000177
+[00:36:08]:    1 file(s) removed
+[00:44:09]: Serializing world: session/760D45A42BC0ABA5/0000000184
+[00:44:09]: Truncating to snapshot #184...
+[00:44:09]:  - session/760D45A42BC0ABA5/0000000178
+[00:44:09]:    1 file(s) removed
+[00:52:09]: Serializing world: session/760D45A42BC0ABA5/0000000185
+[00:52:09]: Truncating to snapshot #185...
+[00:52:09]:  - session/760D45A42BC0ABA5/0000000179
+[00:52:09]:    1 file(s) removed
+[01:00:10]: Serializing world: session/760D45A42BC0ABA5/0000000186
+[01:00:10]: Truncating to snapshot #186...
+[01:00:10]:  - session/760D45A42BC0ABA5/0000000180
+[01:00:10]:    1 file(s) removed
+[01:01:38]: [200] Account Communication Success (6)
+[01:01:38]: Received (KU_3DNugH8W) from TokenPurpose
+[01:08:10]: Serializing world: session/760D45A42BC0ABA5/0000000187
+[01:08:10]: Truncating to snapshot #187...
+[01:08:10]:  - session/760D45A42BC0ABA5/0000000181
+[01:08:10]:    1 file(s) removed
+[01:16:11]: Serializing world: session/760D45A42BC0ABA5/0000000188
+[01:16:11]: Truncating to snapshot #188...
+[01:16:11]:  - session/760D45A42BC0ABA5/0000000182
+[01:16:11]:    1 file(s) removed
+[01:24:11]: Serializing world: session/760D45A42BC0ABA5/0000000189
+[01:24:11]: Truncating to snapshot #189...
+[01:24:11]:  - session/760D45A42BC0ABA5/0000000183
+[01:24:11]:    1 file(s) removed
+[01:31:38]: [200] Account Communication Success (6)
+[01:31:38]: Received (KU_3DNugH8W) from TokenPurpose
+[01:32:12]: Serializing world: session/760D45A42BC0ABA5/0000000190
+[01:32:12]: Truncating to snapshot #190...
+[01:32:12]:  - session/760D45A42BC0ABA5/0000000184
+[01:32:12]:    1 file(s) removed
+[01:40:12]: Serializing world: session/760D45A42BC0ABA5/0000000191
+[01:40:12]: Truncating to snapshot #191...
+[01:40:12]:  - session/760D45A42BC0ABA5/0000000185
+[01:40:12]:    1 file(s) removed
+[01:43:50]: [Shard] #1 -> session/760D45A42BC0ABA5/KU_6omkkCsT_/0000000192
+[01:43:50]: [Shard] Received migration #1 data for (KU_6omkkCsT)
+[01:43:53]: [Shard] #2 -> session/760D45A42BC0ABA5/KU_XLVzuluj_/0000000192
+[01:43:53]: [Shard] Received migration #2 data for (KU_XLVzuluj)
+[01:43:58]: New incoming connection 173.21.39.102|55111 <7332470219704505702>
+[01:43:58]: Client connected from 173.21.39.102|55111 <7332470219704505702>
+[01:43:58]: ValidateGameSessionToken pgs-usc^KU_6omkkCsT^DontStarveTogether^0nW51dQ3OGP9PMTnDLCaC3oz5YnNI2B38U+SLr3NTo8= for <7332470219704505702>
+[01:43:58]: Client authenticated: (KU_6omkkCsT) Untrius
+[01:43:58]: [Steam] SendUserConnectAndAuthenticate for '76561198124787121'
+[01:43:59]: [Steam] Authenticated client '76561198124787121'
+[01:43:59]: [Shard] Completed incoming migration #1 for (KU_6omkkCsT)
+[01:43:59]: [Shard] #3 -> session/760D45A42BC0ABA5/KU_3DNugH8W_/0000000192
+[01:43:59]: [Shard] Received migration #3 data for (KU_3DNugH8W)
+[01:43:59]: New incoming connection 173.25.94.20|63778 <1876169299044605782>
+[01:43:59]: Client connected from 173.25.94.20|63778 <1876169299044605782>
+[01:43:59]: ValidateGameSessionToken pgs-usc^KU_XLVzuluj^DontStarveTogether^i3Q/d7e3pVDDVoxAwdK33wKKNUwP0stHFPeqVI6t4C0= for <1876169299044605782>
+[01:44:00]: Client authenticated: (KU_XLVzuluj) Eagles and Apples
+[01:44:00]: [Steam] SendUserConnectAndAuthenticate for '76561198000016866'
+[01:44:00]: [Steam] Authenticated client '76561198000016866'
+[01:44:00]: [Shard] Completed incoming migration #2 for (KU_XLVzuluj)
+[01:44:01]: New incoming connection 192.168.1.110|54978 <4754417020665139617>
+[01:44:01]: Client connected from [LAN] 192.168.1.110|54978 <4754417020665139617>
+[01:44:01]: ValidateGameSessionToken pgs-usc^KU_3DNugH8W^DontStarveTogether^lIO4Lyv3Iqp876+IPVZOq6wRVqDR0ISsU+NayHPeanM= for <4754417020665139617>
+[01:44:01]: Client authenticated: (KU_3DNugH8W) Striker
+[01:44:01]: [Steam] Authenticated host '76561198103077369'
+[01:44:01]: [Shard] Completed incoming migration #3 for (KU_3DNugH8W)
+[01:44:07]: Resuming user: session/760D45A42BC0ABA5/KU_3DNugH8W_/0000000192
+[01:44:07]: Player will spawn close to portal #1	
+[01:44:07]: Spawning player at: [Load] (49.30, 0.00, 59.35)	
+[01:44:13]: Resuming user: session/760D45A42BC0ABA5/KU_6omkkCsT_/0000000192
+[01:44:13]: Player will spawn close to portal #1	
+[01:44:13]: Spawning player at: [Load] (52.04, 0.00, 55.18)	
+[01:44:22]: Resuming user: session/760D45A42BC0ABA5/KU_XLVzuluj_/0000000192
+[01:44:22]: Player will spawn close to portal #1	
+[01:44:22]: Spawning player at: [Load] (52.52, 0.00, 55.54)	
+[01:44:45]: Activating portal[3] to 3	
+[01:44:46]: Serializing user: session/760D45A42BC0ABA5/KU_6omkkCsT_/0000000192
+[01:44:46]: [Shard] Migration request: (KU_6omkkCsT) to Caves(3)
+[01:44:46]: [Shard] #4 <- session/760D45A42BC0ABA5/KU_6omkkCsT_/0000000192
+[01:44:46]: Ignored request to resume during migration
+[01:44:46]: CloseConnectionWithReason: ID_DST_SHARD_SILENT_DISCONNECT
+[01:44:46]: [Steam] SendUserDisconnect for '76561198124787121'
+[01:44:54]: Activating portal[3] to 3	
+[01:44:55]: Serializing user: session/760D45A42BC0ABA5/KU_XLVzuluj_/0000000192
+[01:44:55]: [Shard] Migration request: (KU_XLVzuluj) to Caves(3)
+[01:44:55]: [Shard] #5 <- session/760D45A42BC0ABA5/KU_XLVzuluj_/0000000192
+[01:44:55]: CloseConnectionWithReason: ID_DST_SHARD_SILENT_DISCONNECT
+[01:44:55]: [Steam] SendUserDisconnect for '76561198000016866'
+[01:44:55]: Activating portal[3] to 3	
+[01:44:56]: Serializing user: session/760D45A42BC0ABA5/KU_3DNugH8W_/0000000192
+[01:44:56]: [Shard] Migration request: (KU_3DNugH8W) to Caves(3)
+[01:44:56]: [Shard] #6 <- session/760D45A42BC0ABA5/KU_3DNugH8W_/0000000192
+[01:44:56]: CloseConnectionWithReason: ID_DST_SHARD_SILENT_DISCONNECT
+[01:44:56]: [Steam] SendUserDisconnect for '76561198103077369'
+[01:48:13]: Serializing world: session/760D45A42BC0ABA5/0000000192
+[01:48:13]: Truncating to snapshot #192...
+[01:48:13]:  - session/760D45A42BC0ABA5/0000000186
+[01:48:13]:    1 file(s) removed
+[01:56:13]: Serializing world: session/760D45A42BC0ABA5/0000000193
+[01:56:13]: Truncating to snapshot #193...
+[01:56:13]:  - session/760D45A42BC0ABA5/0000000187
+[01:56:13]:    1 file(s) removed
+[01:59:40]: [Shard] #7 -> session/760D45A42BC0ABA5/KU_XLVzuluj_/0000000194
+[01:59:40]: [Shard] Received migration #7 data for (KU_XLVzuluj)
+[01:59:43]: [Shard] #8 -> session/760D45A42BC0ABA5/KU_6omkkCsT_/0000000194
+[01:59:43]: [Shard] Received migration #8 data for (KU_6omkkCsT)
+[01:59:44]: New incoming connection 173.25.94.20|54556 <7691622267342320917>
+[01:59:44]: Client connected from 173.25.94.20|54556 <7691622267342320917>
+[01:59:44]: ValidateGameSessionToken pgs-usc^KU_XLVzuluj^DontStarveTogether^8cg3x3WC5CQMm9sEDlhqJ4XSE8om/QLiMBD3fqYBwTo= for <7691622267342320917>
+[01:59:45]: Client authenticated: (KU_XLVzuluj) Eagles and Apples
+[01:59:45]: [Steam] SendUserConnectAndAuthenticate for '76561198000016866'
+[01:59:45]: [Steam] Authenticated client '76561198000016866'
+[01:59:45]: [Shard] Completed incoming migration #7 for (KU_XLVzuluj)
+[01:59:46]: New incoming connection 173.21.39.102|50739 <8205692106832108608>
+[01:59:46]: Client connected from 173.21.39.102|50739 <8205692106832108608>
+[01:59:46]: ValidateGameSessionToken pgs-usc^KU_6omkkCsT^DontStarveTogether^TcC3pUgyFcfpdvXIUP82XqvIBVX8q/Qe9WIkFeflvww= for <8205692106832108608>
+[01:59:46]: Client authenticated: (KU_6omkkCsT) Untrius
+[01:59:46]: [Steam] SendUserConnectAndAuthenticate for '76561198124787121'
+[01:59:47]: [Steam] Authenticated client '76561198124787121'
+[01:59:47]: [Shard] Completed incoming migration #8 for (KU_6omkkCsT)
+[01:59:48]: [Shard] #9 -> session/760D45A42BC0ABA5/KU_3DNugH8W_/0000000194
+[01:59:48]: [Shard] Received migration #9 data for (KU_3DNugH8W)
+[01:59:49]: New incoming connection 192.168.1.110|58300 <7397237283511484485>
+[01:59:49]: Client connected from [LAN] 192.168.1.110|58300 <7397237283511484485>
+[01:59:49]: ValidateGameSessionToken pgs-usc^KU_3DNugH8W^DontStarveTogether^uXYKWE86C5oNr8BMkJatwBbnrrG8U47b7M/B/X4jQIY= for <7397237283511484485>
+[01:59:50]: Client authenticated: (KU_3DNugH8W) Striker
+[01:59:50]: [Steam] Authenticated host '76561198103077369'
+[01:59:50]: [Shard] Completed incoming migration #9 for (KU_3DNugH8W)
+[01:59:56]: Resuming user: session/760D45A42BC0ABA5/KU_3DNugH8W_/0000000194
+[01:59:56]: Player will spawn close to portal #3	
+[01:59:56]: Spawning player at: [Load] (-19.85, 0.00, 179.69)	
+[02:00:00]: Resuming user: session/760D45A42BC0ABA5/KU_XLVzuluj_/0000000194
+[02:00:00]: Player will spawn close to portal #3	
+[02:00:00]: Spawning player at: [Load] (-19.58, 0.00, 179.82)	
+[02:00:05]: Resuming user: session/760D45A42BC0ABA5/KU_6omkkCsT_/0000000194
+[02:00:05]: Player will spawn close to portal #3	
+[02:00:05]: Spawning player at: [Load] (-18.21, 0.00, 179.64)	
+[02:00:17]: Activating portal[1] to 1	
+[02:00:17]: Serializing user: session/760D45A42BC0ABA5/KU_3DNugH8W_/0000000194
+[02:00:17]: [Shard] Migration request: (KU_3DNugH8W) to [SHDMASTER](1)
+[02:00:17]: [Shard] #10 <- session/760D45A42BC0ABA5/KU_3DNugH8W_/0000000194
+[02:00:17]: CloseConnectionWithReason: ID_DST_SHARD_SILENT_DISCONNECT
+[02:00:17]: [Steam] SendUserDisconnect for '76561198103077369'
+[02:00:32]: Activating portal[1] to 1	
+[02:00:33]: Serializing user: session/760D45A42BC0ABA5/KU_6omkkCsT_/0000000194
+[02:00:33]: [Shard] Migration request: (KU_6omkkCsT) to [SHDMASTER](1)
+[02:00:33]: [Shard] #11 <- session/760D45A42BC0ABA5/KU_6omkkCsT_/0000000194
+[02:00:33]: CloseConnectionWithReason: ID_DST_SHARD_SILENT_DISCONNECT
+[02:00:33]: [Steam] SendUserDisconnect for '76561198124787121'
+[02:00:34]: Activating portal[1] to 1	
+[02:00:34]: Serializing user: session/760D45A42BC0ABA5/KU_XLVzuluj_/0000000194
+[02:00:34]: [Shard] Migration request: (KU_XLVzuluj) to [SHDMASTER](1)
+[02:00:34]: [Shard] #12 <- session/760D45A42BC0ABA5/KU_XLVzuluj_/0000000194
+[02:00:34]: CloseConnectionWithReason: ID_DST_SHARD_SILENT_DISCONNECT
+[02:00:34]: [Steam] SendUserDisconnect for '76561198000016866'
+[02:01:38]: [200] Account Communication Success (6)
+[02:01:38]: Received (KU_3DNugH8W) from TokenPurpose
+[02:02:23]: [Shard] Received forward request #13 for (KU_6omkkCsT)
+[02:02:28]: New incoming connection 173.21.39.102|54994 <8354471103987781536>
+[02:02:28]: Client connected from 173.21.39.102|54994 <8354471103987781536>
+[02:02:28]: ValidateGameSessionToken pgs-usc^KU_6omkkCsT^DontStarveTogether^DatqzRnobpw/zG1+Qwp78joRS3zjJMpuwqtcfjOwIaw= for <8354471103987781536>
+[02:02:28]: Client authenticated: (KU_6omkkCsT) Untrius
+[02:02:28]: [Steam] SendUserConnectAndAuthenticate for '76561198124787121'
+[02:02:28]: [Steam] Authenticated client '76561198124787121'
+[02:02:29]: [Shard] Completed incoming migration #13 for (KU_6omkkCsT)
+[02:02:43]: Resuming user: session/760D45A42BC0ABA5/KU_6omkkCsT_/0000000194
+[02:02:43]: Spawning player at: [Load] (50.90, 0.00, 59.95)	
+[02:02:48]: Activating portal[1] to 1	
+[02:02:49]: Serializing user: session/760D45A42BC0ABA5/KU_6omkkCsT_/0000000194
+[02:02:49]: [Shard] Migration request: (KU_6omkkCsT) to [SHDMASTER](1)
+[02:02:49]: [Shard] #14 <- session/760D45A42BC0ABA5/KU_6omkkCsT_/0000000194
+[02:02:49]: CloseConnectionWithReason: ID_DST_SHARD_SILENT_DISCONNECT
+[02:02:49]: [Steam] SendUserDisconnect for '76561198124787121'
+[02:04:14]: Serializing world: session/760D45A42BC0ABA5/0000000194
+[02:04:14]: Truncating to snapshot #194...
+[02:04:14]:  - session/760D45A42BC0ABA5/0000000188
+[02:04:14]:    1 file(s) removed
+[02:12:14]: Serializing world: session/760D45A42BC0ABA5/0000000195
+[02:12:14]: Truncating to snapshot #195...
+[02:12:14]:  - session/760D45A42BC0ABA5/0000000189
+[02:12:14]:    1 file(s) removed
+[02:14:40]: [Shard] #15 -> session/760D45A42BC0ABA5/KU_3DNugH8W_/0000000196
+[02:14:40]: [Shard] Received migration #15 data for (KU_3DNugH8W)
+[02:14:42]: New incoming connection 192.168.1.110|56909 <7620708997577599380>
+[02:14:42]: Client connected from [LAN] 192.168.1.110|56909 <7620708997577599380>
+[02:14:42]: ValidateGameSessionToken pgs-usc^KU_3DNugH8W^DontStarveTogether^6HlH0UgjqKlrSbnvf2IeaExKwwHj9KUrNg8LgbxfTf8= for <7620708997577599380>
+[02:14:42]: Client authenticated: (KU_3DNugH8W) Striker
+[02:14:42]: [Steam] Authenticated host '76561198103077369'
+[02:14:42]: [Shard] Completed incoming migration #15 for (KU_3DNugH8W)
+[02:14:48]: Resuming user: session/760D45A42BC0ABA5/KU_3DNugH8W_/0000000196
+[02:14:48]: Player will spawn close to portal #1	
+[02:14:48]: Spawning player at: [Load] (53.16, 0.00, 56.58)	
+[02:15:07]: Activating portal[3] to 3	
+[02:15:08]: Serializing user: session/760D45A42BC0ABA5/KU_3DNugH8W_/0000000196
+[02:15:08]: [Shard] Migration request: (KU_3DNugH8W) to Caves(3)
+[02:15:08]: [Shard] #16 <- session/760D45A42BC0ABA5/KU_3DNugH8W_/0000000196
+[02:15:08]: CloseConnectionWithReason: ID_DST_SHARD_SILENT_DISCONNECT
+[02:15:08]: [Steam] SendUserDisconnect for '76561198103077369'
+[02:20:15]: Serializing world: session/760D45A42BC0ABA5/0000000196
+[02:20:15]: Truncating to snapshot #196...
+[02:20:15]:  - session/760D45A42BC0ABA5/0000000190
+[02:20:15]:    1 file(s) removed
+[02:21:33]: [Shard] #17 -> session/760D45A42BC0ABA5/KU_XLVzuluj_/0000000197
+[02:21:33]: [Shard] Received migration #17 data for (KU_XLVzuluj)
+[02:21:40]: New incoming connection 173.25.94.20|56596 <4778048079033481629>
+[02:21:40]: Client connected from 173.25.94.20|56596 <4778048079033481629>
+[02:21:40]: ValidateGameSessionToken pgs-usc^KU_XLVzuluj^DontStarveTogether^h6ccCvIamDUnihylrNemE5URqS1BfVJ/IPBOsS6zH88= for <4778048079033481629>
+[02:21:40]: Client authenticated: (KU_XLVzuluj) Eagles and Apples
+[02:21:40]: [Steam] SendUserConnectAndAuthenticate for '76561198000016866'
+[02:21:41]: [Steam] Authenticated client '76561198000016866'
+[02:21:41]: [Shard] Completed incoming migration #17 for (KU_XLVzuluj)
+[02:22:18]: Resuming user: session/760D45A42BC0ABA5/KU_XLVzuluj_/0000000197
+[02:22:18]: Player will spawn close to portal #1	
+[02:22:18]: Spawning player at: [Load] (52.35, 0.00, 55.39)	
+[02:22:35]: Activating portal[3] to 3	
+[02:22:36]: Serializing user: session/760D45A42BC0ABA5/KU_XLVzuluj_/0000000197
+[02:22:36]: [Shard] Migration request: (KU_XLVzuluj) to Caves(3)
+[02:22:36]: [Shard] #18 <- session/760D45A42BC0ABA5/KU_XLVzuluj_/0000000197
+[02:22:36]: CloseConnectionWithReason: ID_DST_SHARD_SILENT_DISCONNECT
+[02:22:36]: [Steam] SendUserDisconnect for '76561198000016866'
+[02:25:15]: [Shard] #19 -> session/760D45A42BC0ABA5/KU_XLVzuluj_/0000000197
+[02:25:15]: [Shard] Received migration #19 data for (KU_XLVzuluj)
+[02:25:19]: New incoming connection 173.25.94.20|59489 <3112564531426019302>
+[02:25:19]: Client connected from 173.25.94.20|59489 <3112564531426019302>
+[02:25:19]: ValidateGameSessionToken pgs-usc^KU_XLVzuluj^DontStarveTogether^Ozg1zYH292KavoPVa0dfs0Y0kg3GCu/L8mKj/xsEz5g= for <3112564531426019302>
+[02:25:19]: Client authenticated: (KU_XLVzuluj) Eagles and Apples
+[02:25:19]: [Steam] SendUserConnectAndAuthenticate for '76561198000016866'
+[02:25:19]: [Steam] Authenticated client '76561198000016866'
+[02:25:19]: [Shard] Completed incoming migration #19 for (KU_XLVzuluj)
+[02:25:34]: Resuming user: session/760D45A42BC0ABA5/KU_XLVzuluj_/0000000197
+[02:25:34]: Player will spawn close to portal #3	
+[02:25:34]: Spawning player at: [Load] (-17.75, 0.00, 177.71)	
+[02:25:49]: Activating portal[1] to 1	
+[02:25:49]: Serializing user: session/760D45A42BC0ABA5/KU_XLVzuluj_/0000000197
+[02:25:49]: [Shard] Migration request: (KU_XLVzuluj) to [SHDMASTER](1)
+[02:25:49]: [Shard] #20 <- session/760D45A42BC0ABA5/KU_XLVzuluj_/0000000197
+[02:25:50]: CloseConnectionWithReason: ID_DST_SHARD_SILENT_DISCONNECT
+[02:25:50]: [Steam] SendUserDisconnect for '76561198000016866'
+[02:28:15]: Serializing world: session/760D45A42BC0ABA5/0000000197
+[02:28:15]: Truncating to snapshot #197...
+[02:28:15]:  - session/760D45A42BC0ABA5/0000000191
+[02:28:15]:  - session/760D45A42BC0ABA5/KU_3DNugH8W_/0000000177
+[02:28:15]:  - session/760D45A42BC0ABA5/KU_6omkkCsT_/0000000055
+[02:28:15]:    3 file(s) removed
+[02:31:38]: [200] Account Communication Success (6)
+[02:31:38]: Received (KU_3DNugH8W) from TokenPurpose
+[02:36:16]: Serializing world: session/760D45A42BC0ABA5/0000000198
+[02:36:16]: Truncating to snapshot #198...
+[02:36:16]:  - session/760D45A42BC0ABA5/0000000192
+[02:36:16]:    1 file(s) removed
+[02:38:47]: [Shard] #21 -> session/760D45A42BC0ABA5/KU_3DNugH8W_/0000000199
+[02:38:47]: [Shard] Received migration #21 data for (KU_3DNugH8W)
+[02:38:48]: New incoming connection 192.168.1.110|62264 <8950626653412741282>
+[02:38:48]: Client connected from [LAN] 192.168.1.110|62264 <8950626653412741282>
+[02:38:48]: ValidateGameSessionToken pgs-usc^KU_3DNugH8W^DontStarveTogether^Y+1gafveLHFY+QYeUlfJzWPr3vlE66EsKVLmTWK2RiE= for <8950626653412741282>
+[02:38:49]: Client authenticated: (KU_3DNugH8W) Striker
+[02:38:49]: [Steam] Authenticated host '76561198103077369'
+[02:38:49]: [Shard] Completed incoming migration #21 for (KU_3DNugH8W)
+[02:38:55]: Resuming user: session/760D45A42BC0ABA5/KU_3DNugH8W_/0000000199
+[02:38:55]: Player will spawn close to portal #3	
+[02:38:55]: Spawning player at: [Load] (-20.12, 0.00, 179.49)	
+[02:39:14]: Activating portal[1] to 1	
+[02:39:14]: Serializing user: session/760D45A42BC0ABA5/KU_3DNugH8W_/0000000199
+[02:39:14]: [Shard] Migration request: (KU_3DNugH8W) to [SHDMASTER](1)
+[02:39:14]: [Shard] #22 <- session/760D45A42BC0ABA5/KU_3DNugH8W_/0000000199
+[02:39:15]: CloseConnectionWithReason: ID_DST_SHARD_SILENT_DISCONNECT
+[02:39:15]: [Steam] SendUserDisconnect for '76561198103077369'
+[02:44:16]: Serializing world: session/760D45A42BC0ABA5/0000000199
+[02:44:16]: Truncating to snapshot #199...
+[02:44:16]:  - session/760D45A42BC0ABA5/0000000193
+[02:44:16]:  - session/760D45A42BC0ABA5/KU_3DNugH8W_/0000000192
+[02:44:16]:  - session/760D45A42BC0ABA5/KU_6omkkCsT_/0000000192
+[02:44:16]:  - session/760D45A42BC0ABA5/KU_XLVzuluj_/0000000192
+[02:44:16]:    4 file(s) removed
+[02:52:17]: Serializing world: session/760D45A42BC0ABA5/0000000200
+[02:52:17]: Truncating to snapshot #200...
+[02:52:17]:  - session/760D45A42BC0ABA5/0000000194
+[02:52:17]:    1 file(s) removed
+[03:00:22]: Serializing world: session/760D45A42BC0ABA5/0000000201
+[03:00:22]: Truncating to snapshot #201...
+[03:00:22]:  - session/760D45A42BC0ABA5/0000000195
+[03:00:22]:  - session/760D45A42BC0ABA5/KU_3DNugH8W_/0000000194
+[03:00:22]:    2 file(s) removed
+[03:01:38]: [200] Account Communication Success (6)
+[03:01:38]: Received (KU_3DNugH8W) from TokenPurpose
+[03:08:22]: Serializing world: session/760D45A42BC0ABA5/0000000202
+[03:08:22]: Truncating to snapshot #202...
+[03:08:22]:  - session/760D45A42BC0ABA5/0000000196
+[03:08:22]:  - session/760D45A42BC0ABA5/KU_XLVzuluj_/0000000194
+[03:08:22]:    2 file(s) removed
+[03:16:23]: Serializing world: session/760D45A42BC0ABA5/0000000203
+[03:16:23]: Truncating to snapshot #203...
+[03:16:23]:  - session/760D45A42BC0ABA5/0000000197
+[03:16:23]:    1 file(s) removed
+[03:24:23]: Serializing world: session/760D45A42BC0ABA5/0000000204
+[03:24:23]: Truncating to snapshot #204...
+[03:24:23]:  - session/760D45A42BC0ABA5/0000000198
+[03:24:23]:  - session/760D45A42BC0ABA5/KU_3DNugH8W_/0000000196
+[03:24:23]:    2 file(s) removed
+[03:31:32]: Sim paused
+[03:31:38]: [200] Account Communication Success (6)
+[03:31:38]: Received (KU_3DNugH8W) from TokenPurpose
+[04:01:38]: [200] Account Communication Success (6)
+[04:01:38]: Received (KU_3DNugH8W) from TokenPurpose
+[04:05:30]: Sim unpaused
+[04:06:19]: Start world reset countdown... 120 seconds...	
+[04:06:22]: Serializing world: session/760D45A42BC0ABA5/0000000205
+[04:06:22]: Truncating to snapshot #205...
+[04:06:22]:  - session/760D45A42BC0ABA5/0000000199
+[04:06:22]:    1 file(s) removed
+[04:06:29]: [Shard] We have been disconnected from the master. Waiting to reconnect...
+[04:06:29]: Sim paused
+[04:06:31]: Serializing world: session/760D45A42BC0ABA5/0000000206
+[04:06:31]: Truncating to snapshot #206...
+[04:06:31]:  - session/760D45A42BC0ABA5/0000000200
+[04:06:31]:    1 file(s) removed
+[04:06:31]: Could not unload undefined prefab 0xf76051cb (FROMNUM)
+[04:06:31]: Could not unload undefined prefab 0xf76051cb (FROMNUM)
+[04:06:31]: unloading prefabs for mod MOD_workshop-380423963	
+[04:06:31]: unloading prefabs for mod MOD_workshop-365119238	
+[04:06:31]: unloading prefabs for mod MOD_workshop-758532836	
+[04:06:31]: unloading prefabs for mod MOD_workshop-375850593	
+[04:06:31]: unloading prefabs for mod MOD_workshop-346962876	
+[04:06:31]: unloading prefabs for mod MOD_workshop-797304209	
+[04:06:31]: unloading prefabs for mod MOD_workshop-537902048	
+[04:06:31]: unloading prefabs for mod MOD_workshop-556027744	
+[04:06:31]: unloading prefabs for mod MOD_workshop-345692228	
+[04:06:31]: unloading prefabs for mod MOD_workshop-771629575	
+[04:06:31]: unloading prefabs for mod MOD_workshop-670918115	
+[04:06:31]: unloading prefabs for mod MOD_workshop-363989569	
+[04:06:31]: unloading prefabs for mod MOD_workshop-458587300	
+[04:06:31]: unloading prefabs for mod MOD_workshop-576037565	
+[04:06:31]: unloading prefabs for mod MOD_workshop-352499675	
+[04:06:31]: unloading prefabs for mod MOD_workshop-456028339	
+[04:06:31]: unloading prefabs for mod MOD_workshop-816057392	
+[04:06:31]: unloading prefabs for mod MOD_workshop-683788408	
+[04:06:31]: unloading prefabs for mod MOD_workshop-382177939	
+[04:06:31]: unloading prefabs for mod MOD_workshop-378160973	
+[04:06:31]: [Shard] Stopping shard mode
+[04:06:31]: Collecting garbage...
+[04:06:32]: lua_gc took 0.13 seconds
+[04:06:32]: ~ShardLuaProxy()
+[04:06:32]: ~ItemServerLuaProxy()
+[04:06:32]: ~InventoryLuaProxy()
+[04:06:32]: ~NetworkLuaProxy()
+[04:06:32]: ~SimLuaProxy()
+[04:06:32]: lua_close took 0.26 seconds
+[04:06:32]:  Manager - ORPHANED UNKNOWN RESOURCES:
+[04:06:32]: shaders/ui_yuv.ksh - 1
+[04:06:32]: CurlRequestManager::ClientThread::Main() complete
+[04:06:32]: HttpClient2 discarded 0 callbacks.
+[04:06:32]: Shutting down

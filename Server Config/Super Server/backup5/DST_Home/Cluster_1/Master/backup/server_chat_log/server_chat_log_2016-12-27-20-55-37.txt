@@ -1,0 +1,11 @@
+[00:01:42]: [Join Announcement] Striker
+[00:02:12]: [Resurrect Announcement] Striker was resurrected by Life Giving Amulet.
+[00:02:58]: [Death Announcement] Striker was killed by MacTusk. He became a spooky ghost!
+[00:03:10]: [Resurrect Announcement] Striker was resurrected by Life Giving Amulet.
+[00:04:03]: [Death Announcement] Striker was killed by MacTusk. He became a spooky ghost!
+[00:04:12]: [Resurrect Announcement] Striker was resurrected by Life Giving Amulet.
+[00:04:24]: [Death Announcement] Striker was killed by MacTusk. He became a spooky ghost!
+[00:04:44]: [Resurrect Announcement] Striker was resurrected by Life Giving Amulet.
+[00:04:56]: [Death Announcement] Striker was killed by MacTusk. He became a spooky ghost!
+[00:05:19]: [Resurrect Announcement] Striker was resurrected by Life Giving Amulet.
+[02:39:32]: [Leave Announcement] Striker
