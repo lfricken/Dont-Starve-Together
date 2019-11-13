@@ -1,6 +1,0 @@
-[00:43:16]: [Join Announcement] Striker
-[01:56:33]: [Join Announcement] Untrius
-[02:10:33]: [Death Announcement] Untrius was killed by Monster Meat. She became a spooky ghost!
-[02:15:06]: [Resurrect Announcement] Untrius was resurrected by Striker.
-[02:30:33]: [Leave Announcement] Untrius
-[02:32:49]: [Leave Announcement] Striker
