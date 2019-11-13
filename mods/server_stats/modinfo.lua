@@ -22,10 +22,10 @@ shipwrecked_compatible = true
 dst_compatible = true
 
 --This lets clients know if they need to get the mod from the Steam Workshop to join the game
-all_clients_require_mod = false
+all_clients_require_mod = true
 
 --This determines whether it causes a server to be marked as modded (and shows in the mod list)
-client_only_mod = true
+client_only_mod = false
 
 --This lets people search for servers with this mod by these tags
 server_filter_tags = {}

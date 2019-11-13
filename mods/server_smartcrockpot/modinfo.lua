@@ -5,8 +5,8 @@ author = "Nadevill"
 version = "4.02"
 priority = 10
 dst_compatible = true
-client_only_mod = true
-all_clients_require_mod = false
+client_only_mod = false
+all_clients_require_mod = true
 -- This is the URL name of the mod's thread on the forum; the part after the ? and before the first & in the URL
 -- Example:
 -- http://forums.kleientertainment.com/showthread.php?19505-Modders-Your-new-friend-at-Klei!
