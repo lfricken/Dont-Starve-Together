@@ -1,5 +1,3 @@
-require "prefabutil"
-
 local assets =
 {
     Asset("ANIM", "anim/nightmare_torch.zip"),
@@ -31,29 +29,11 @@ local function onextinguish(inst)
 end
 
 local function CalcSanityAura(inst, observer)
-    local lightRadius = inst.components.burnable ~= nil and inst.components.burnable:GetLargestLightRadius() or 0
-    return lightRadius > 0 and observer:IsNear(inst, .5 * lightRadius) and -.05 or 0
-end
-
-local function ontakefuel(inst)
-    inst.SoundEmitter:PlaySound("dontstarve/common/nightmareAddFuel")
-end
-
-local function onupdatefueled(inst)
-    if inst.components.burnable ~= nil then
-        inst.components.burnable:SetFXLevel(inst.components.fueled:GetCurrentSection(), inst.components.fueled:GetSectionPercent())
-    end
-end
-
-local function onfuelchange(newsection, oldsection, inst)
-    if newsection <= 0 then
-        inst.components.burnable:Extinguish()
+    local lightRadius = inst.components.burnable and inst.components.burnable:GetLargestLightRadius()
+    if lightRadius and inst:GetDistanceSqToInst(observer) < 0.9*lightRadius then
+        return TUNING.NightmareLightSanityAura
     else
-        if not inst.components.burnable:IsBurning() then
-            inst.components.burnable:Ignite()
-        end
-
-        inst.components.burnable:SetFXLevel(newsection, inst.components.fueled:GetSectionPercent())
+        return 0
     end
 end
 
@@ -61,6 +41,22 @@ local function onbuilt(inst)
     inst.SoundEmitter:PlaySound("dontstarve/common/nightmareAddFuel")
     inst.AnimState:PlayAnimation("place")
     inst.AnimState:PushAnimation("idle", false)
+end
+
+local function stateRemaining(inst)
+	local healthStatus = math.floor(0.5 + inst.components.fueled:GetPercent() * TUNING.NIGHTLIGHT_FUEL_MAX_DAYS)
+	inst.components.talker:Say(healthStatus .. " Days", 4, nil, true)
+end
+
+local function ontakefuel(inst)
+    inst.SoundEmitter:PlaySound("dontstarve/common/nightmareAddFuel")
+	stateRemaining(inst)
+end
+
+local function onupdatefueled(inst)
+    if inst.components.burnable ~= nil then
+        inst.components.burnable:SetFXLevel(inst.components.fueled:GetCurrentSection(), inst.components.fueled:GetSectionPercent())
+    end
 end
 
 local function OnHaunt(inst, haunter)
@@ -82,6 +78,7 @@ local function OnHaunt(inst, haunter)
     --end
     return ret
 end
+
 
 local function fn()
     local inst = CreateEntity()
@@ -109,10 +106,19 @@ local function fn()
         return inst
     end
 
+	
+    -----------------------
+	--leon mod
+	inst:AddComponent("talker")
+    inst.components.talker.fontsize = 24
+    inst.components.talker.font = TALKINGFONT
+    inst.components.talker.offset = Vector3(0, -500, 0)
+	
+	inst.speak = inst:DoPeriodicTask(TUNING.NIGHTLIGHT_FUEL_SAY_PERIOD, stateRemaining, 1)
+	--leon mod end
     -----------------------
     inst:AddComponent("burnable")
     inst.components.burnable:AddBurnFX("nightlight_flame", Vector3(0, 0, 0), "fire_marker")
-    inst.components.burnable.canlight = false
     inst:ListenForEvent("onextinguish", onextinguish)
 
     inst:AddComponent("sanityaura")
@@ -132,9 +138,21 @@ local function fn()
     inst.components.fueled.accepting = true
     inst.components.fueled.fueltype = FUELTYPE.NIGHTMARE
     inst.components.fueled:SetSections(4)
-    inst.components.fueled:SetTakeFuelFn(ontakefuel)
+    inst.components.fueled.ontakefuelfn = ontakefuel
     inst.components.fueled:SetUpdateFn(onupdatefueled)
-    inst.components.fueled:SetSectionCallback(onfuelchange)
+
+    inst.components.fueled:SetSectionCallback(function(section)
+        if section == 0 then
+            inst.components.burnable:Extinguish()
+        else
+            if not inst.components.burnable:IsBurning() then
+                inst.components.burnable:Ignite()
+            end
+
+            inst.components.burnable:SetFXLevel(section, inst.components.fueled:GetSectionPercent())
+        end
+    end)
+
     inst.components.fueled:InitializeFuelLevel(TUNING.NIGHTLIGHT_FUEL_START)
 
     -----------------------------

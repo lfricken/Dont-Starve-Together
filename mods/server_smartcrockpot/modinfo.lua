@@ -2,7 +2,7 @@
 name = "SmartCrockPot"
 description = "Predicts your cooking !"
 author = "Nadevill"
-version = "4.02"
+version = "4.02a"
 priority = 10
 dst_compatible = true
 client_only_mod = false

@@ -46,8 +46,6 @@ local function fn()
 
     inst.foleysound = "dontstarve/movement/foley/nightarmour"
     
-    MakeInventoryFloatable(inst, "small", 0.2, 0.80)
-
     inst.entity:SetPristine()
 
     if not TheWorld.ismastersim then
@@ -64,7 +62,7 @@ local function fn()
 
     inst:AddComponent("equippable")
     inst.components.equippable.equipslot = EQUIPSLOTS.BODY
-    inst.components.equippable.dapperness = TUNING.CRAZINESS_SMALL
+    inst.components.equippable.dapperness = TUNING.ArmourSanityDrain
 
     inst.components.equippable:SetOnEquip(onequip)
     inst.components.equippable:SetOnUnequip(onunequip)

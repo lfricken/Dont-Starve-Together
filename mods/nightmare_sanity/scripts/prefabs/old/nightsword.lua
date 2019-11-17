@@ -1,53 +1,52 @@
 local assets =
 {
-    Asset("ANIM", "anim/nightmaresword.zip"),
-    Asset("ANIM", "anim/swap_nightmaresword.zip"),
-    Asset("ANIM", "anim/floating_items.zip"),
+	Asset("ANIM", "anim/nightmaresword.zip"),
+	Asset("ANIM", "anim/swap_nightmaresword.zip"),
+    
 }
 
 local function onequip(inst, owner)
     owner.AnimState:OverrideSymbol("swap_object", "swap_nightmaresword", "swap_nightmaresword")
-    owner.AnimState:Show("ARM_carry")
-    owner.AnimState:Hide("ARM_normal")
+    owner.AnimState:Show("ARM_carry") 
+    owner.AnimState:Hide("ARM_normal") 
 end
 
-local function onunequip(inst, owner)
-    owner.AnimState:Hide("ARM_carry")
-    owner.AnimState:Show("ARM_normal")
+local function onunequip(inst, owner) 
+    owner.AnimState:Hide("ARM_carry") 
+    owner.AnimState:Show("ARM_normal") 
+end
+
+local function onattack(inst, owner, target)
+    if owner and owner.components.sanity then
+        owner.components.sanity:DoDelta(-TUNING.SanityPerSwing)
+    end
 end
 
 local function fn()
-    local inst = CreateEntity()
+	local inst = CreateEntity()
 
-    inst.entity:AddTransform()
-    inst.entity:AddAnimState()
+	inst.entity:AddTransform()
+	inst.entity:AddAnimState()
     inst.entity:AddNetwork()
 
     MakeInventoryPhysics(inst)
-
-    inst.AnimState:SetBank("nightmaresword")
-    inst.AnimState:SetBuild("nightmaresword")
-    inst.AnimState:PlayAnimation("idle")
-    --inst.AnimState:SetMultColour(1, 1, 1, .6)
-
-    inst:AddTag("shadow")
-    inst:AddTag("sharp")
-
-    --weapon (from weapon component) added to pristine state for optimization
-    inst:AddTag("weapon")
-
-    local swap_data = {sym_build = "swap_nightmaresword", bank = "nightmaresword"}
-    MakeInventoryFloatable(inst, "med", 0.05, {1.0, 0.4, 1.0}, true, -17.5, swap_data)
-
-    inst.entity:SetPristine()
 
     if not TheWorld.ismastersim then
         return inst
     end
 
+    inst.AnimState:SetBank("nightmaresword")
+    inst.AnimState:SetBuild("nightmaresword")
+    inst.AnimState:PlayAnimation("idle")
+    inst.AnimState:SetMultColour(1, 1, 1, 0.6)
+    
+    inst:AddTag("shadow")
+    inst:AddTag("sharp")
+    
     inst:AddComponent("weapon")
     inst.components.weapon:SetDamage(TUNING.NIGHTSWORD_DAMAGE)
-
+    inst.components.weapon:SetOnAttack(onattack)
+    
     -------
 
     inst:AddComponent("finiteuses")
@@ -62,7 +61,7 @@ local function fn()
     inst:AddComponent("equippable")
     inst.components.equippable:SetOnEquip(onequip)
     inst.components.equippable:SetOnUnequip(onunequip)
-    inst.components.equippable.dapperness = TUNING.CRAZINESS_MED
+    inst.components.equippable.dapperness = TUNING.SwordSanityDrain
 
     MakeHauntableLaunch(inst)
 

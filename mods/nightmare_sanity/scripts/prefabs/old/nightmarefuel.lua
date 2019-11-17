@@ -17,8 +17,6 @@ local function fn()
     inst.AnimState:PlayAnimation("idle_loop", true)
     inst.AnimState:SetMultColour(1, 1, 1, 0.5)
 
-    MakeInventoryFloatable(inst)
-
     inst.entity:SetPristine()
 
     if not TheWorld.ismastersim then
@@ -30,7 +28,7 @@ local function fn()
     inst:AddComponent("inspectable")
     inst:AddComponent("fuel")
     inst.components.fuel.fueltype = FUELTYPE.NIGHTMARE
-    inst.components.fuel.fuelvalue = TUNING.LARGE_FUEL
+    inst.components.fuel.fuelvalue = TUNING.NightmareFuelFuel
 
     MakeHauntableLaunch(inst)
 
