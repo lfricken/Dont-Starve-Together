@@ -11,6 +11,13 @@ local prefabs =
     "nightlight_flame",
 }
 
+--LEON MOD
+local function stateRemaining(inst)
+	local healthStatus = math.floor(0.5 + inst.components.fueled:GetPercent() * TUNING.NIGHTLIGHT_FUEL_MAX_DAYS)
+	inst.components.talker:Say(healthStatus .. " Days", 4, nil, true)
+end
+--END LEON MOD
+
 local function onhammered(inst)
     inst.components.lootdropper:DropLoot()
     local fx = SpawnPrefab("collapse_small")
@@ -37,6 +44,7 @@ end
 
 local function ontakefuel(inst)
     inst.SoundEmitter:PlaySound("dontstarve/common/nightmareAddFuel")
+	stateRemaining(inst)
 end
 
 local function onupdatefueled(inst)
@@ -108,15 +116,23 @@ local function fn()
     if not TheWorld.ismastersim then
         return inst
     end
+    
+    -----------------------
+	--leon mod
+	inst:AddComponent("talker")
+    inst.components.talker.fontsize = 24
+    inst.components.talker.font = TALKINGFONT
+    inst.components.talker.offset = Vector3(0, -500, 0)
+	
+	inst.speak = inst:DoPeriodicTask(TUNING.NIGHTLIGHT_FUEL_SAY_PERIOD, stateRemaining, 1)
+	--leon mod end
+    -----------------------
 
     -----------------------
     inst:AddComponent("burnable")
     inst.components.burnable:AddBurnFX("nightlight_flame", Vector3(0, 0, 0), "fire_marker")
     inst.components.burnable.canlight = false
     inst:ListenForEvent("onextinguish", onextinguish)
-
-    inst:AddComponent("sanityaura")
-    inst.components.sanityaura.aurafn = CalcSanityAura
 
     -------------------------
     inst:AddComponent("lootdropper")
